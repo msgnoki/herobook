@@ -9,11 +9,10 @@
     'Mémoire des légendes', 'Bricolage', 'Orientation'
   ];
 
-  const STATE_KEYWORDS = ['FATIGUÉ', 'BLESSÉ LÉGER', 'PERDU', 'ACCOMPAGNÉ'];
+  const STATE_KEYWORDS = ['FATIGUÉ', 'BLESSÉ LÉGER', 'ACCOMPAGNÉ'];
   const STATE_LABELS = {
     'FATIGUÉ': 'Fatigué',
     'BLESSÉ LÉGER': 'Blessé léger',
-    'PERDU': 'Perdu',
     'ACCOMPAGNÉ': 'Accompagné'
   };
 

@@ -3220,7 +3220,7 @@ Il te tend une petite boule serrée dans son poing. Il l'ouvre. À l'intérieur,
 
 Tu manges, lentement. Tu n'avais pas réalisé à quel point tu avais faim.
 
-**Tu n'es plus FATIGUÉ. Si tu n'avais pas AMITIÉ DE NILO, tu obtiens maintenant ce mot-clé.**
+**Tu n'es plus FATIGUÉ. Note le mot-clé AMITIÉ DE NILO sur ta fiche.**
 
 Choix :
 - Pour repartir avec Nilo vers la Serre, va au **201**.
@@ -4587,7 +4587,7 @@ Il s'approche. Il pose sa main sur ton épaule. Sa main est tiède. *Réelle*.
 
 — « Si tu choisis la première voie, je m'allongerai dans l'herbe. Si tu choisis la deuxième, je redeviendrai homme. Si tu choisis la troisième, je continuerai un peu. Toutes ces trois fins sont acceptables. »
 
-**Note le mot-clé VEILLEUR REMERCIÉ sur ta fiche. Si tu n'avais pas déjà VEILLEUR APAISÉ, tu obtiens ce mot-clé maintenant.**
+**Note le mot-clé VEILLEUR REMERCIÉ sur ta fiche. Note le mot-clé VEILLEUR APAISÉ sur ta fiche.**
 
 Choix :
 - Pour revenir à la sphère, va au **310**.

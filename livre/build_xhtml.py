@@ -78,10 +78,18 @@ OBJECT_INFO = {
     "Joubarbe verte": ("principal", "La petite plante de ton appui de fenêtre, redevenue verte."),
     "ruban d'écorce gravé": ("secondaire", "Marqué du signe ancien du Veilleur."),
     "Graine sombre": ("secondaire", "Une graine lourde, inverse de la lumineuse."),
+    # Équipement de départ (accordé d'office à §4)
+    "Pain aux noix de Mère Aïna": ("secondaire", "Un quignon dense, parfumé. Pour la faim, et un peu pour la maison."),
+    "Ruban rouge": ("secondaire", "Noué à ton poignet par Mère Aïna. Peut être déposé en promesse au Pont."),
+    "Lampe-tempête": ("secondaire", "Petite lampe à huile, à l'épreuve du vent. Lumière de réserve."),
+    "Petit couteau": ("secondaire", "Lame courte, fidèle. Tu sais t'en servir."),
 }
 
 # Octrois manuels pour les cas spéciaux non détectés par les regex
 MANUAL_GRANTS = {
+    # Équipement de départ : accordé à la fin de la scène avec Mère Aïna.
+    4: {"objects": ["Pain aux noix de Mère Aïna", "Ruban rouge",
+                    "Lampe-tempête", "Petit couteau"]},
     200: {"keywords": ["AMITIÉ DE NILO"], "remove_keywords": ["FATIGUÉ"]},
     195: {"keywords": ["VEILLEUR APAISÉ"]},
     205: {"remove_keywords": ["FATIGUÉ", "BLESSÉ LÉGER"]},
@@ -89,8 +97,9 @@ MANUAL_GRANTS = {
     245: {"remove_keywords": ["FATIGUÉ"]},
 }
 
-# Mots-clés d'état (cumulables/retirable)
-STATE_KEYWORDS = {"FATIGUÉ", "BLESSÉ LÉGER", "ACCOMPAGNÉ", "PERDU"}
+# Mots-clés d'état (cumulables/retirable). PERDU a été retiré : il n'était
+# jamais accordé ni testé, donc du code mort.
+STATE_KEYWORDS = {"FATIGUÉ", "BLESSÉ LÉGER", "ACCOMPAGNÉ"}
 
 # Fins reconnues (pour le toc)
 ENDINGS = {333, 336, 339, 342, 345, 348, 350}
@@ -640,11 +649,10 @@ GAME_JS = r"""
     'Mémoire des légendes', 'Bricolage', 'Orientation'
   ];
 
-  const STATE_KEYWORDS = ['FATIGUÉ', 'BLESSÉ LÉGER', 'PERDU', 'ACCOMPAGNÉ'];
+  const STATE_KEYWORDS = ['FATIGUÉ', 'BLESSÉ LÉGER', 'ACCOMPAGNÉ'];
   const STATE_LABELS = {
     'FATIGUÉ': 'Fatigué',
     'BLESSÉ LÉGER': 'Blessé léger',
-    'PERDU': 'Perdu',
     'ACCOMPAGNÉ': 'Accompagné'
   };
 
@@ -1765,6 +1773,9 @@ for num, name, body in sections:
     objs, kws, rm_kws = detect_grants(body)
     # Octrois manuels
     if num in MANUAL_GRANTS:
+        for o in MANUAL_GRANTS[num].get("objects", []):
+            if o not in objs:
+                objs.append(o)
         for k in MANUAL_GRANTS[num].get("keywords", []):
             if k not in kws:
                 kws.append(k)

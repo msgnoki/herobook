@@ -1601,11 +1601,10 @@ Plus loin encore, le ravin se rétrécit, mais il devient plus profond.
 
 Tu remontes. Le Pont des Racines reste, finalement, le meilleur chemin.
 
-Si tu possèdes la compétence **Agilité**, tu peux tenter la corde basse : tu te suspends, tu avances, et tu retombes de l'autre côté. **Tu es FATIGUÉ.** Va au **97**.
-
 Sinon, tu n'as pas le choix : il faut le Pont des Racines.
 
 Choix :
+- Si tu possèdes la compétence **Agilité**, tu peux tenter la corde basse au-dessus du torrent, va au **97**.
 - Pour revenir au Pont, va au **88**.
 
 ### 91
@@ -1700,7 +1699,7 @@ Tu te suspends à la corde basse, les jambes balançant au-dessus du torrent. C'
 
 Au milieu, la corde grince. Tu sens un brin claquer. Tu accélères. Tu arrives à l'autre rive, le souffle court, juste avant que la corde ne lâche d'un seul coup et tombe en sifflant dans le torrent.
 
-Tu te laisses rouler dans l'herbe. Tu es vivant(e). Tu es passé(e).
+Tu te laisses rouler dans l'herbe. Tu es vivant(e). Tu es passé(e). **Tu es FATIGUÉ.**
 
 Mais tu n'as pas pris le Pont des Racines. Tu as perdu la possibilité de voir ce qu'il y avait dessus.
 
@@ -2708,11 +2707,10 @@ Choix :
 
 Tu remarques que l'herbe est piétinée à un endroit précis, comme si quelqu'un y revenait souvent. Tu suis le chemin d'herbe écrasée. Il te mène à un trou dans la rive, sous une racine. Le trou est étroit, mais on pourrait s'y glisser.
 
-Si tu possèdes la compétence **Agilité**, tu peux te tortiller dans le trou et passer dessous. Tu en ressors de l'autre côté du Bassin, près du vieillard à la cape claire. Va au **181**.
-
 Sinon, tu n'oses pas. Tu fais demi-tour.
 
 Choix :
+- Si tu possèdes la compétence **Agilité**, tu peux te tortiller dans le trou et ressortir de l'autre côté du Bassin, va au **181**.
 - Pour faire le tour normal de l'étang, va au **160**.
 
 ### 167

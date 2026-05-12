@@ -1235,16 +1235,24 @@ def detect_grants(body):
     keywords = []
     removed = []
 
-    # Objets : on parcourt les noms connus
+    # Objets : on parcourt les noms connus. On reconnaît plusieurs tournures :
+    #   **Ajoute la X à tes objets / à ta liste**
+    #   **Prends la X dans tes objets**
+    #   **Note la X sur ta fiche / dans tes objets**
     for obj_name in OBJECT_INFO.keys():
-        # Pattern : "Ajoute ... obj_name ... à tes objets" / "à ta liste"
-        pattern = re.compile(
-            r'\*\*Ajoute[^*]{0,80}?' + re.escape(obj_name) + r'[^*]{0,80}?à (?:tes objets|ta liste)',
-            re.IGNORECASE,
-        )
-        if pattern.search(body):
-            if obj_name not in objects:
-                objects.append(obj_name)
+        patterns = [
+            r'\*\*[^*]*?Ajoute[^*]{0,80}?' + re.escape(obj_name) +
+                r'[^*]{0,80}?à (?:tes objets|ta liste)',
+            r'\*\*[^*]*?Prends[^*]{0,80}?' + re.escape(obj_name) +
+                r'[^*]{0,80}?(?:dans tes objets|à tes objets)',
+            r'\*\*[^*]*?Note[^*]{0,80}?' + re.escape(obj_name) +
+                r'[^*]{0,80}?(?:sur ta fiche|dans tes objets)',
+        ]
+        for pat in patterns:
+            if re.search(pat, body, flags=re.IGNORECASE):
+                if obj_name not in objects:
+                    objects.append(obj_name)
+                break
 
     # Mots-clés : "Note le mot-clé X sur ..."
     kw_pattern = re.compile(
@@ -1258,23 +1266,25 @@ def detect_grants(body):
         if kw and kw not in keywords:
             keywords.append(kw)
 
-    # États : "Tu es FATIGUÉ", "Tu es BLESSÉ LÉGER" → ajoute en mot-clé d'état
-    state_grant = re.compile(
-        r'\*\*Tu es\s+(FATIGUÉ|BLESSÉ LÉGER|PERDU|ACCOMPAGNÉ)',
-    )
+    # États : "**Tu es FATIGUÉ**", "**Tu es FATIGUÉ et BLESSÉ LÉGER**", etc.
+    # On scanne TOUT le contenu du bloc en gras pour attraper TOUS les états
+    # listés (sinon une formulation "et / ni" en perdait la moitié).
+    state_grant = re.compile(r'\*\*Tu es\b([^*]+?)\*\*')
     for m in state_grant.finditer(body):
-        kw = m.group(1).strip()
-        if kw not in keywords:
-            keywords.append(kw)
+        chunk = m.group(1)
+        for kw in STATE_KEYWORDS:
+            if re.search(r'\b' + re.escape(kw) + r'\b', chunk):
+                if kw not in keywords:
+                    keywords.append(kw)
 
-    # États retirés : "Tu n'es plus FATIGUÉ"
-    state_rm = re.compile(
-        r'\*\*Tu n\'es plus\s+(FATIGUÉ|BLESSÉ LÉGER|PERDU|ACCOMPAGNÉ)',
-    )
+    # États retirés : "**Tu n'es plus FATIGUÉ ni BLESSÉ LÉGER**", etc.
+    state_rm = re.compile(r"\*\*Tu n'es plus\b([^*]+?)\*\*")
     for m in state_rm.finditer(body):
-        kw = m.group(1).strip()
-        if kw not in removed:
-            removed.append(kw)
+        chunk = m.group(1)
+        for kw in STATE_KEYWORDS:
+            if re.search(r'\b' + re.escape(kw) + r'\b', chunk):
+                if kw not in removed:
+                    removed.append(kw)
 
     return objects, keywords, removed
 

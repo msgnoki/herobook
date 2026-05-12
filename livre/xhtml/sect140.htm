@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Section 140</title>
+<link rel="stylesheet" href="main.css"/>
+</head>
+<body>
+<header>
+<h1>Les Jardins de Verre-Lune</h1>
+<h2>Une aventure dont tu es le héros</h2>
+</header>
+<main class="reader">
+<article data-section="140">
+<h1 class="sectnum">140</h1>
+<p>Tu marches dans les couloirs depuis longtemps. Tu commences à les connaître. Tu sais quels passages mènent où.</p>
+<p>À un moment, tu te retrouves, sans l&#x27;avoir cherché, devant une grande porte de bronze que tu n&#x27;avais pas remarquée. Elle est entrouverte. Tu pousses.</p>
+<p>Tu débouches dans une salle vaste, beaucoup plus grande que les autres. Le sol est dallé. Le plafond a complètement disparu — au-dessus, c&#x27;est le ciel, ouvert, gris-perle. La salle est à demi à ciel ouvert. C&#x27;est un ancien observatoire effondré.</p>
+<p>Au centre, un grand cercle gravé, divisé en douze parts. Sur chaque part, une marque. Et sur le sol, à côté du cercle, une seconde marque : <em>13.</em></p>
+<p>Quelque chose, ici, attend qu&#x27;on dispose treize choses.</p>
+<p><strong>Choix :</strong></p>
+<ul class="choices">
+<li data-target="148">T&#x27;approcher du cercle et l&#x27;examiner.</li>
+<li data-target="150">Repartir et descendre par l&#x27;escalier de Mémorine.</li>
+<li data-target="124">Pousses une porte basse couverte d&#x27;un miroir au plafond.</li>
+<li data-target="125">Trébuches sur une plaque de bronze dans le sol.</li>
+<li data-target="126">Entends une voix d&#x27;enfant derrière une porte.</li>
+<li data-target="127">Vois des ombres anciennes se dessiner sur un mur.</li>
+<li data-target="129">Pousses, par curiosité, une porte oubliée.</li>
+<li data-target="132">Entends, dans un couloir voisin, un sanglot étouffé.</li>
+<li data-target="133">Trouves un manteau gris accroché.</li>
+<li data-target="134">Pousses une dernière porte qui s&#x27;ouvre sur un mur.</li>
+<li data-target="135">Déboules dans une chambre où se dresse une statue de fer.</li>
+<li data-target="137">Ressens un poids étrange dans la poitrine.</li>
+<li data-target="138">Suis une note tenue chantonnée par une voix invisible.</li>
+<li data-target="139">Trouves, sur le sol, un signe et une rainure tracée.</li>
+<li data-target="141">Sens qu&#x27;on te regarde depuis le pilier au fond de la salle.</li>
+<li data-target="146">Trouves, dans un couloir étroit, une fresque à hauteur d&#x27;enfant.</li>
+<li data-target="147">Trouves, derrière un rideau pourri, une autre fresque.</li>
+<li data-target="149">T&#x27;arrêtes un instant sur un palier de pierre et regardes les marches du dessous.</li>
+</ul>
+</article>
+
+<button class="fab-sheet" type="button" aria-label="Ouvrir ma fiche d'aventure">
+<svg class="icon-scroll" width="30" height="30" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+<path d="M7 6h14a3 3 0 0 1 3 3v14a3 3 0 0 1-3 3H10a3 3 0 0 1-3-3V6z"></path>
+<path d="M7 6a3 3 0 0 0-3 3v2h3"></path>
+<path d="M24 26a3 3 0 0 0 3-3v-2h-3"></path>
+<path d="M11 12h9M11 16h9M11 20h6"></path>
+</svg>
+</button>
+<div class="sheet-layer" id="adventure-sheet-layer" hidden>
+<div class="sheet-scrim" data-sheet-close aria-hidden="true"></div>
+<section class="sheet" id="adventure-sheet" role="dialog" aria-modal="true" aria-labelledby="sheet-title" aria-hidden="true" tabindex="-1">
+<div class="sheet-grabber" data-sheet-grabber aria-hidden="true"></div>
+<div class="sheet-top">
+<div class="sheet-title-wrap">
+<h2 class="sheet-title" id="sheet-title">Fiche d'aventure</h2>
+<p class="sheet-context" id="sheet-context">Aventure en cours</p>
+</div>
+<button class="sheet-close" type="button" aria-label="Fermer" data-sheet-close>
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
+<path d="M6 6l12 12M18 6L6 18"></path>
+</svg>
+</button>
+</div>
+<div class="sheet-rule"></div>
+<section class="sheet-block" data-block="competences">
+<h3>Compétences</h3>
+<div class="sheet-chips" id="sheet-skills"></div>
+</section>
+<section class="sheet-block" data-block="objets">
+<h3>Objets</h3>
+<div class="sheet-object-list" id="sheet-objects"></div>
+</section>
+<section class="sheet-block" data-block="mots-cles">
+<h3>Mots-clés</h3>
+<div class="sheet-keywords" id="sheet-keywords"></div>
+</section>
+<section class="sheet-block" data-block="etat">
+<h3>État</h3>
+<div class="sheet-state-list" id="sheet-states"></div>
+</section>
+<footer class="sheet-actions">
+<button class="sheet-menu" id="sheet-menu-main" type="button">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+<path d="M3 11l9-7 9 7"></path>
+<path d="M5 10v9h14v-9"></path>
+</svg>
+Menu principal
+</button>
+<button class="sheet-resume" type="button" data-sheet-close>Reprendre la lecture</button>
+</footer>
+</section>
+</div>
+
+</main>
+<script src="data.js"></script>
+<script src="game.js"></script>
+</body>
+</html>

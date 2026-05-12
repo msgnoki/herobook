@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Android / Gradle
+android/local.properties
+android/.gradle/
+android/build/
+android/app/build/
+android/captures/
+android/.idea/
+*.iml
+
+# Editor / OS
+.DS_Store
+Thumbs.db
+*.swp
+*~
+
+# Agent metadata
+.agents/
+.codex/

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Section 148</title>
+<link rel="stylesheet" href="main.css"/>
+</head>
+<body>
+<header>
+<h1>Les Jardins de Verre-Lune</h1>
+<h2>Une aventure dont tu es le héros</h2>
+</header>
+<main class="reader">
+<article data-section="148">
+<h1 class="sectnum">148</h1>
+<p>Tu t&#x27;approches du cercle gravé. Il est large d&#x27;environ trois pas. Sur chacune des douze parts, une figure : une chouette, un renard, une luciole, un faon, un lièvre, un poisson, une grue, un papillon, un ours, une chèvre, un loup, un cheval. Une treizième case, à l&#x27;écart, montre une silhouette humaine : une enfant.</p>
+<p>Quelqu&#x27;un a effleuré certaines figures avec quelque chose — peut-être de la cendre — récemment. Tu remarques que la figure de la luciole, par exemple, est plus claire que les autres.</p>
+<p>Si tu portes des mots-clés liés (CONFIANCE DES LUCIOLES, FAON SAUVÉ, RENARD GUIDE), tu pourras t&#x27;en servir plus tard, quand on te demandera de prouver ce que tu as appris.</p>
+<p><strong>Choix :</strong></p>
+<ul class="choices">
+<li data-target="140">Quitter la salle à ciel ouvert.</li>
+<li data-target="150">Descendre vers le miroir d&#x27;eau par l&#x27;escalier secret.</li>
+</ul>
+</article>
+
+<button class="fab-sheet" type="button" aria-label="Ouvrir ma fiche d'aventure">
+<svg class="icon-scroll" width="30" height="30" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+<path d="M7 6h14a3 3 0 0 1 3 3v14a3 3 0 0 1-3 3H10a3 3 0 0 1-3-3V6z"></path>
+<path d="M7 6a3 3 0 0 0-3 3v2h3"></path>
+<path d="M24 26a3 3 0 0 0 3-3v-2h-3"></path>
+<path d="M11 12h9M11 16h9M11 20h6"></path>
+</svg>
+</button>
+<div class="sheet-layer" id="adventure-sheet-layer" hidden>
+<div class="sheet-scrim" data-sheet-close aria-hidden="true"></div>
+<section class="sheet" id="adventure-sheet" role="dialog" aria-modal="true" aria-labelledby="sheet-title" aria-hidden="true" tabindex="-1">
+<div class="sheet-grabber" data-sheet-grabber aria-hidden="true"></div>
+<div class="sheet-top">
+<div class="sheet-title-wrap">
+<h2 class="sheet-title" id="sheet-title">Fiche d'aventure</h2>
+<p class="sheet-context" id="sheet-context">Aventure en cours</p>
+</div>
+<button class="sheet-close" type="button" aria-label="Fermer" data-sheet-close>
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
+<path d="M6 6l12 12M18 6L6 18"></path>
+</svg>
+</button>
+</div>
+<div class="sheet-rule"></div>
+<section class="sheet-block" data-block="competences">
+<h3>Compétences</h3>
+<div class="sheet-chips" id="sheet-skills"></div>
+</section>
+<section class="sheet-block" data-block="objets">
+<h3>Objets</h3>
+<div class="sheet-object-list" id="sheet-objects"></div>
+</section>
+<section class="sheet-block" data-block="mots-cles">
+<h3>Mots-clés</h3>
+<div class="sheet-keywords" id="sheet-keywords"></div>
+</section>
+<section class="sheet-block" data-block="etat">
+<h3>État</h3>
+<div class="sheet-state-list" id="sheet-states"></div>
+</section>
+<footer class="sheet-actions">
+<button class="sheet-menu" id="sheet-menu-main" type="button">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+<path d="M3 11l9-7 9 7"></path>
+<path d="M5 10v9h14v-9"></path>
+</svg>
+Menu principal
+</button>
+<button class="sheet-resume" type="button" data-sheet-close>Reprendre la lecture</button>
+</footer>
+</section>
+</div>
+
+</main>
+<script src="data.js"></script>
+<script src="game.js"></script>
+</body>
+</html>

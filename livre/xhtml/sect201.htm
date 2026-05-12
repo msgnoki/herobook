@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Section 201</title>
+<link rel="stylesheet" href="main.css"/>
+</head>
+<body>
+<header>
+<h1>Les Jardins de Verre-Lune</h1>
+<h2>Une aventure dont tu es le héros</h2>
+</header>
+<main class="reader">
+<article data-section="201">
+<h1 class="sectnum">201</h1>
+<p>Le sentier qui sort du Bassin grimpe en pente très douce. Au début, tu marches sans trop t&#x27;en apercevoir. Tu réfléchis. Tu repenses au Veilleur. Tu repenses aux trois choix qu&#x27;il t&#x27;a donnés. Tu ne sais pas encore lequel tu vas faire. Mais tu sens, dans ta poitrine, que ce sera bientôt nécessaire.</p>
+<p>Le paysage change. Les bouleaux laissent place à des arbres que tu ne connais pas : des troncs lisses, gris-perle, qui montent très haut sans branches latérales. On dirait des colonnes. C&#x27;est très calme.</p>
+<p>Tu sens, sur ton visage, un courant d&#x27;air léger qui sent la fleur en hiver — un parfum impossible.</p>
+<p><strong>Choix :</strong></p>
+<ul class="choices">
+<li data-target="202">Avancer prudemment dans ce bois nouveau.</li>
+<li data-target="203" data-requires-keyword="AMITIÉ DE NILO">Tu portes le mot-clé <strong>AMITIÉ DE NILO</strong> et que tu marches avec lui. <span class="req-badges"><span class="req req-keyword">✦ AMITIÉ DE NILO</span></span></li>
+<li data-target="205">Vois, à côté du sentier, une petite source claire entre deux racines.</li>
+<li data-target="206">Repères, accroché à un tronc, un petit miroir rond.</li>
+<li data-target="207">Repères, dans un buisson, un petit lapin tout blanc immobile.</li>
+<li data-target="208">Trouves, dans la mousse, une seule chaussure d&#x27;enfant oubliée.</li>
+<li data-target="209">Vois, près d&#x27;un tronc, une petite plaque de bronze fichée dans l&#x27;écorce.</li>
+</ul>
+</article>
+
+<button class="fab-sheet" type="button" aria-label="Ouvrir ma fiche d'aventure">
+<svg class="icon-scroll" width="30" height="30" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+<path d="M7 6h14a3 3 0 0 1 3 3v14a3 3 0 0 1-3 3H10a3 3 0 0 1-3-3V6z"></path>
+<path d="M7 6a3 3 0 0 0-3 3v2h3"></path>
+<path d="M24 26a3 3 0 0 0 3-3v-2h-3"></path>
+<path d="M11 12h9M11 16h9M11 20h6"></path>
+</svg>
+</button>
+<div class="sheet-layer" id="adventure-sheet-layer" hidden>
+<div class="sheet-scrim" data-sheet-close aria-hidden="true"></div>
+<section class="sheet" id="adventure-sheet" role="dialog" aria-modal="true" aria-labelledby="sheet-title" aria-hidden="true" tabindex="-1">
+<div class="sheet-grabber" data-sheet-grabber aria-hidden="true"></div>
+<div class="sheet-top">
+<div class="sheet-title-wrap">
+<h2 class="sheet-title" id="sheet-title">Fiche d'aventure</h2>
+<p class="sheet-context" id="sheet-context">Aventure en cours</p>
+</div>
+<button class="sheet-close" type="button" aria-label="Fermer" data-sheet-close>
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
+<path d="M6 6l12 12M18 6L6 18"></path>
+</svg>
+</button>
+</div>
+<div class="sheet-rule"></div>
+<section class="sheet-block" data-block="competences">
+<h3>Compétences</h3>
+<div class="sheet-chips" id="sheet-skills"></div>
+</section>
+<section class="sheet-block" data-block="objets">
+<h3>Objets</h3>
+<div class="sheet-object-list" id="sheet-objects"></div>
+</section>
+<section class="sheet-block" data-block="mots-cles">
+<h3>Mots-clés</h3>
+<div class="sheet-keywords" id="sheet-keywords"></div>
+</section>
+<section class="sheet-block" data-block="etat">
+<h3>État</h3>
+<div class="sheet-state-list" id="sheet-states"></div>
+</section>
+<footer class="sheet-actions">
+<button class="sheet-menu" id="sheet-menu-main" type="button">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+<path d="M3 11l9-7 9 7"></path>
+<path d="M5 10v9h14v-9"></path>
+</svg>
+Menu principal
+</button>
+<button class="sheet-resume" type="button" data-sheet-close>Reprendre la lecture</button>
+</footer>
+</section>
+</div>
+
+</main>
+<script src="data.js"></script>
+<script src="game.js"></script>
+</body>
+</html>

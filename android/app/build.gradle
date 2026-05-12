@@ -1,0 +1,28 @@
+plugins {
+    id "com.android.application"
+}
+
+android {
+    namespace "com.verrelune.gamebook"
+    compileSdk 36
+
+    defaultConfig {
+        applicationId "com.verrelune.gamebook"
+        minSdk 23
+        targetSdk 36
+        versionCode 1
+        versionName "1.0"
+    }
+}
+
+def bookSourceDir = rootProject.file("../livre/xhtml")
+def bookAssetsDir = layout.projectDirectory.dir("src/main/assets/book")
+
+tasks.register("syncBookAssets", Copy) {
+    from(bookSourceDir)
+    into(bookAssetsDir)
+}
+
+tasks.named("preBuild") {
+    dependsOn("syncBookAssets")
+}

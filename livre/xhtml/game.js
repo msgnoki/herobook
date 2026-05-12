@@ -137,13 +137,10 @@
     const sheet = document.getElementById('adventure-sheet');
     if (!sheet) return;
 
-    const sectionNumber = article ? article.getAttribute('data-section') : state.currentSection;
     const sectionName = article ? article.getAttribute('data-section-name') : '';
     const context = document.getElementById('sheet-context');
     if (context) {
-      context.textContent = sectionNumber
-        ? 'Section ' + sectionNumber + (sectionName ? ' · ' + sectionName : '')
-        : 'Aventure en cours';
+      context.textContent = sectionName || 'Aventure en cours';
     }
 
     const skills = document.getElementById('sheet-skills');
@@ -366,15 +363,14 @@
     if (continueBtn && state.currentSection) {
       continueBtn.style.display = 'inline-block';
       continueBtn.href = 'sect' + state.currentSection + '.htm';
-      continueBtn.textContent = 'Reprendre à la section ' + state.currentSection + ' →';
+      continueBtn.textContent = 'Reprendre →';
     } else if (continueBtn) {
       continueBtn.style.display = 'none';
     }
     if (statusDiv && state.currentSection) {
-      statusDiv.innerHTML = 'Une aventure est en cours : tu es à la section <strong>' + state.currentSection
-        + '</strong>, avec <strong>' + state.skills.length + ' compétence(s)</strong>, <strong>'
-        + state.objects.length + ' objet(s)</strong> et <strong>' + state.keywords.length
-        + ' mot(s)-clé(s)</strong>.';
+      statusDiv.innerHTML = 'Une aventure est en cours, avec <strong>' + state.skills.length
+        + ' compétence(s)</strong>, <strong>' + state.objects.length
+        + ' objet(s)</strong> et <strong>' + state.keywords.length + ' mot(s)-clé(s)</strong>.';
     } else if (statusDiv) {
       statusDiv.textContent = 'Aucune aventure en cours. Choisis « Nouvelle partie » pour commencer.';
     }
@@ -382,7 +378,7 @@
       newGameBtn.addEventListener('click', function (e) {
         e.preventDefault();
         if (state.currentSection) {
-          if (!confirm('Tu as une aventure en cours (section ' + state.currentSection + '). Vraiment commencer une nouvelle partie ?')) return;
+          if (!confirm('Tu as une aventure en cours. Vraiment commencer une nouvelle partie ?')) return;
         }
         resetState();
         window.location.href = 'setup.htm';

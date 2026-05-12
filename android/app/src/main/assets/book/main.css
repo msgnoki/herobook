@@ -49,18 +49,20 @@ p.choice { margin: .35em 0; }
 ul.choices { list-style: none; padding-left: 0; margin: 1em 0; }
 ul.choices li {
   border-left: 4px solid var(--vl-choice-bar);
-  padding: .65em .85em;
   margin: .55em 0;
   background: var(--vl-choice-bg);
   border-radius: 4px;
   transition: opacity .2s, background .2s;
 }
-ul.choices li a {
+ul.choices li .choice-link {
+  display: block;
+  padding: .65em .85em;
   color: var(--vl-gold);
   font-weight: bold;
   text-decoration: none;
 }
-ul.choices li a:hover { text-decoration: underline; }
+ul.choices li .choice-link:hover { background: var(--vl-chip-bg); }
+ul.choices li .choice-text { color: var(--vl-ink, #2a1f08); font-weight: 600; }
 
 /* Choix verrouillé : grisé et désactivé */
 ul.choices li.locked {
@@ -69,11 +71,12 @@ ul.choices li.locked {
   border-left-color: #999;
   cursor: not-allowed;
 }
-ul.choices li.locked a {
+ul.choices li.locked .choice-link {
   color: #7a6a4a;
   pointer-events: none;
   cursor: not-allowed;
 }
+ul.choices li.locked .choice-text { color: #7a6a4a; }
 ul.choices li.locked::after {
   content: " ⛔ verrouillé";
   font-size: .8em;

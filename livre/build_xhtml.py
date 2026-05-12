@@ -150,18 +150,20 @@ p.choice { margin: .35em 0; }
 ul.choices { list-style: none; padding-left: 0; margin: 1em 0; }
 ul.choices li {
   border-left: 4px solid var(--vl-choice-bar);
-  padding: .65em .85em;
   margin: .55em 0;
   background: var(--vl-choice-bg);
   border-radius: 4px;
   transition: opacity .2s, background .2s;
 }
-ul.choices li a {
+ul.choices li .choice-link {
+  display: block;
+  padding: .65em .85em;
   color: var(--vl-gold);
   font-weight: bold;
   text-decoration: none;
 }
-ul.choices li a:hover { text-decoration: underline; }
+ul.choices li .choice-link:hover { background: var(--vl-chip-bg); }
+ul.choices li .choice-text { color: var(--vl-ink, #2a1f08); font-weight: 600; }
 
 /* Choix verrouillé : grisé et désactivé */
 ul.choices li.locked {
@@ -170,11 +172,12 @@ ul.choices li.locked {
   border-left-color: #999;
   cursor: not-allowed;
 }
-ul.choices li.locked a {
+ul.choices li.locked .choice-link {
   color: #7a6a4a;
   pointer-events: none;
   cursor: not-allowed;
 }
+ul.choices li.locked .choice-text { color: #7a6a4a; }
 ul.choices li.locked::after {
   content: " ⛔ verrouillé";
   font-size: .8em;
@@ -751,13 +754,10 @@ GAME_JS = r"""
     const sheet = document.getElementById('adventure-sheet');
     if (!sheet) return;
 
-    const sectionNumber = article ? article.getAttribute('data-section') : state.currentSection;
     const sectionName = article ? article.getAttribute('data-section-name') : '';
     const context = document.getElementById('sheet-context');
     if (context) {
-      context.textContent = sectionNumber
-        ? 'Section ' + sectionNumber + (sectionName ? ' · ' + sectionName : '')
-        : 'Aventure en cours';
+      context.textContent = sectionName || 'Aventure en cours';
     }
 
     const skills = document.getElementById('sheet-skills');
@@ -980,15 +980,14 @@ GAME_JS = r"""
     if (continueBtn && state.currentSection) {
       continueBtn.style.display = 'inline-block';
       continueBtn.href = 'sect' + state.currentSection + '.htm';
-      continueBtn.textContent = 'Reprendre à la section ' + state.currentSection + ' →';
+      continueBtn.textContent = 'Reprendre →';
     } else if (continueBtn) {
       continueBtn.style.display = 'none';
     }
     if (statusDiv && state.currentSection) {
-      statusDiv.innerHTML = 'Une aventure est en cours : tu es à la section <strong>' + state.currentSection
-        + '</strong>, avec <strong>' + state.skills.length + ' compétence(s)</strong>, <strong>'
-        + state.objects.length + ' objet(s)</strong> et <strong>' + state.keywords.length
-        + ' mot(s)-clé(s)</strong>.';
+      statusDiv.innerHTML = 'Une aventure est en cours, avec <strong>' + state.skills.length
+        + ' compétence(s)</strong>, <strong>' + state.objects.length
+        + ' objet(s)</strong> et <strong>' + state.keywords.length + ' mot(s)-clé(s)</strong>.';
     } else if (statusDiv) {
       statusDiv.textContent = 'Aucune aventure en cours. Choisis « Nouvelle partie » pour commencer.';
     }
@@ -996,7 +995,7 @@ GAME_JS = r"""
       newGameBtn.addEventListener('click', function (e) {
         e.preventDefault();
         if (state.currentSection) {
-          if (!confirm('Tu as une aventure en cours (section ' + state.currentSection + '). Vraiment commencer une nouvelle partie ?')) return;
+          if (!confirm('Tu as une aventure en cours. Vraiment commencer une nouvelle partie ?')) return;
         }
         resetState();
         window.location.href = 'setup.htm';
@@ -1200,18 +1199,13 @@ Menu principal
 """
 
 def md_inline(text):
-    """Convertit le markdown inline en HTML et fait des liens vers les sections."""
+    """Convertit le markdown inline en HTML.
+
+    Note : les références **N** dans la narration ne sont plus auto-linkées —
+    les numéros de section sont cachés au lecteur. La navigation passe
+    exclusivement par les <a> générés dans les listes de choix.
+    """
     text = html.escape(text)
-    text = re.sub(
-        r'(va au )\*\*(\d+)\*\*',
-        lambda m: f'{m.group(1)}<a href="sect{m.group(2)}.htm"><strong>{m.group(2)}</strong></a>',
-        text, flags=re.IGNORECASE,
-    )
-    text = re.sub(
-        r'\*\*(\d+)\*\*',
-        lambda m: f'<a href="sect{m.group(1)}.htm"><strong>{m.group(1)}</strong></a>',
-        text,
-    )
     text = re.sub(r'\*\*(.+?)\*\*', r'<strong>\1</strong>', text)
     text = re.sub(r'(?<!\w)\*([^\*\n]+?)\*(?!\w)', r'<em>\1</em>', text)
     text = re.sub(r'`([^`\n]+)`', r'<code>\1</code>', text)
@@ -1539,7 +1533,16 @@ def md_section_to_html(body):
         badges = (' <span class="req-badges">' + ''.join(badge_parts) + '</span>'
                   if badge_parts else '')
 
-        out.append(f'<li{attrs_str}>{inner}{badges}</li>')
+        # Le <li> entier est cliquable via un <a> qui pointe sur la section cible ;
+        # le numéro n'est jamais affiché.
+        if target:
+            link_open = f'<a class="choice-link" href="sect{target}.htm">'
+            link_close = '</a>'
+        else:
+            link_open = '<span class="choice-link">'
+            link_close = '</span>'
+
+        out.append(f'<li{attrs_str}>{link_open}<span class="choice-text">{inner}</span>{badges}{link_close}</li>')
 
     out.append('</ul>')
     return '\n'.join(out)
@@ -1745,9 +1748,9 @@ for num, name, body in sections:
     if rm_kws:
         article_attrs.append(f'data-removes-keywords="{html.escape("|".join(rm_kws))}"')
 
-    title_html = f'<h1 class="sectnum">{num}</h1>'
-    if name:
-        title_html += f'<h2 class="sectname">{html.escape(name)}</h2>'
+    # Le numéro de section n'est plus affiché au lecteur ; il reste sur l'élément
+    # <article data-section="…"> pour le moteur de jeu (sauvegarde, etc.).
+    title_html = f'<h2 class="sectname">{html.escape(name)}</h2>' if name else ''
 
     body_html = md_section_to_html(body)
 
@@ -1761,7 +1764,7 @@ for num, name, body in sections:
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Section {num}{(" — " + html.escape(name)) if name else ""}</title>
+<title>{html.escape(name) if name else html.escape(TITLE)}</title>
 <link rel="stylesheet" href="main.css"/>
 </head>
 <body>

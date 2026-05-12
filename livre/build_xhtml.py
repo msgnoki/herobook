@@ -156,18 +156,30 @@ ul.choices li {
   transition: opacity .2s, background .2s;
 }
 ul.choices li .choice-link {
-  display: block;
-  padding: .65em .85em;
+  display: flex;
+  align-items: center;
+  gap: .6em;
+  min-height: 48px;
+  padding: .75em 1em;
   color: var(--vl-gold);
   font-weight: bold;
   text-decoration: none;
+  -webkit-tap-highlight-color: rgba(90, 58, 16, .12);
+}
+ul.choices li .choice-body { flex: 1 1 auto; min-width: 0; }
+ul.choices li .choice-chevron {
+  flex: 0 0 auto;
+  font-size: 1.5em;
+  line-height: 1;
+  color: var(--vl-gold-soft);
 }
 ul.choices li .choice-link:hover { background: var(--vl-chip-bg); }
+ul.choices li .choice-link:active { background: var(--vl-chip-bg); transform: scale(.995); }
 ul.choices li .choice-text { color: var(--vl-ink, #2a1f08); font-weight: 600; }
 
 /* Choix verrouillé : grisé et désactivé */
 ul.choices li.locked {
-  opacity: .42;
+  opacity: .55;
   background: #ece5d0;
   border-left-color: #999;
   cursor: not-allowed;
@@ -178,12 +190,14 @@ ul.choices li.locked .choice-link {
   cursor: not-allowed;
 }
 ul.choices li.locked .choice-text { color: #7a6a4a; }
-ul.choices li.locked::after {
-  content: " ⛔ verrouillé";
-  font-size: .8em;
-  font-style: italic;
+ul.choices li.locked .choice-chevron {
+  font-size: 0;
   color: #806a3a;
-  font-weight: normal;
+}
+ul.choices li.locked .choice-chevron::before {
+  content: "⛔";
+  font-size: 18px;
+  line-height: 1;
 }
 
 ul.choices .req-badges {
@@ -1534,15 +1548,20 @@ def md_section_to_html(body):
                   if badge_parts else '')
 
         # Le <li> entier est cliquable via un <a> qui pointe sur la section cible ;
-        # le numéro n'est jamais affiché.
+        # le numéro n'est jamais affiché. Le contenu est structuré en deux blocs
+        # (body + chevron) pour que le chevron reste à droite quand les badges
+        # passent à la ligne sur mobile.
+        body_html = (f'<span class="choice-body">'
+                     f'<span class="choice-text">{inner}</span>{badges}'
+                     f'</span>')
+        chevron = '<span class="choice-chevron" aria-hidden="true">›</span>'
         if target:
-            link_open = f'<a class="choice-link" href="sect{target}.htm">'
-            link_close = '</a>'
+            link_html = (f'<a class="choice-link" href="sect{target}.htm">'
+                         f'{body_html}{chevron}</a>')
         else:
-            link_open = '<span class="choice-link">'
-            link_close = '</span>'
+            link_html = f'<span class="choice-link">{body_html}{chevron}</span>'
 
-        out.append(f'<li{attrs_str}>{link_open}<span class="choice-text">{inner}</span>{badges}{link_close}</li>')
+        out.append(f'<li{attrs_str}>{link_html}</li>')
 
     out.append('</ul>')
     return '\n'.join(out)
@@ -1622,7 +1641,7 @@ index_body = """
 <hr/>
 
 <h2>Comment jouer</h2>
-<p>L'aventure est découpée en <strong>350 sections</strong> numérotées. Tu commences par choisir <strong>deux compétences</strong> parmi sept. Au fil de tes choix, tu trouveras des objets et noteras des mots-clés. Le système les retient automatiquement.</p>
+<p>L'aventure se déroule en <strong>350 scènes</strong>. Tu commences par choisir <strong>deux compétences</strong> parmi sept. Au fil de tes choix, tu trouveras des objets et noteras des mots-clés. Le système les retient automatiquement.</p>
 
 <ul>
 <li>Lis chaque section en entier avant de cliquer.</li>

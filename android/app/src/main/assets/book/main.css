@@ -55,18 +55,30 @@ ul.choices li {
   transition: opacity .2s, background .2s;
 }
 ul.choices li .choice-link {
-  display: block;
-  padding: .65em .85em;
+  display: flex;
+  align-items: center;
+  gap: .6em;
+  min-height: 48px;
+  padding: .75em 1em;
   color: var(--vl-gold);
   font-weight: bold;
   text-decoration: none;
+  -webkit-tap-highlight-color: rgba(90, 58, 16, .12);
+}
+ul.choices li .choice-body { flex: 1 1 auto; min-width: 0; }
+ul.choices li .choice-chevron {
+  flex: 0 0 auto;
+  font-size: 1.5em;
+  line-height: 1;
+  color: var(--vl-gold-soft);
 }
 ul.choices li .choice-link:hover { background: var(--vl-chip-bg); }
+ul.choices li .choice-link:active { background: var(--vl-chip-bg); transform: scale(.995); }
 ul.choices li .choice-text { color: var(--vl-ink, #2a1f08); font-weight: 600; }
 
 /* Choix verrouillé : grisé et désactivé */
 ul.choices li.locked {
-  opacity: .42;
+  opacity: .55;
   background: #ece5d0;
   border-left-color: #999;
   cursor: not-allowed;
@@ -77,12 +89,14 @@ ul.choices li.locked .choice-link {
   cursor: not-allowed;
 }
 ul.choices li.locked .choice-text { color: #7a6a4a; }
-ul.choices li.locked::after {
-  content: " ⛔ verrouillé";
-  font-size: .8em;
-  font-style: italic;
+ul.choices li.locked .choice-chevron {
+  font-size: 0;
   color: #806a3a;
-  font-weight: normal;
+}
+ul.choices li.locked .choice-chevron::before {
+  content: "⛔";
+  font-size: 18px;
+  line-height: 1;
 }
 
 ul.choices .req-badges {

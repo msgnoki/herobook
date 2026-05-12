@@ -1341,6 +1341,12 @@ def _strip_action_prefix(rest):
     return rest.strip()
 
 
+def _normalize_modal(rest):
+    """Dans une voix de choix, 'tu veux/voudrais X' lit mieux en 'tu peux X'."""
+    return re.sub(r'^tu\s+(?:veux|voudrais)\b', 'tu peux',
+                  rest, flags=re.IGNORECASE)
+
+
 def rewrite_choice_display(text):
     """Transforme une ligne de choix en action directe.
 
@@ -1357,38 +1363,37 @@ def rewrite_choice_display(text):
         return text
 
     # 2a) "Si tu (possèdes|portes|as|peux) … et que tu (peux|veux|voudrais) X"
+    #     → garde "Tu (peux|veux) X" comme voix déclarative.
     m = re.match(
-        r'^Si\s+tu\s+(?:possèdes|portes|as|peux)\b.*?\s+et\s+que\s+tu\s+'
-        r'(?:peux|veux|voudrais|décides\s+de)\s+(.+)$',
+        r'^Si\s+tu\s+(?:possèdes|portes|as|peux)\b.*?\s+et\s+que\s+'
+        r'(tu\s+(?:peux|veux|voudrais|décides\s+de)\s+.+)$',
         text, flags=re.IGNORECASE)
     if m:
-        return _finalize_choice(_strip_action_prefix(m.group(1)))
+        return _finalize_choice(_normalize_modal(m.group(1)))
 
     # 2b) "Si tu (possèdes|portes|as|peux) …, tu (peux|veux|voudrais|décides) X"
-    #     prend l'action APRÈS la dernière clause de condition (gère plusieurs
-    #     virgules dans la condition).
     m = re.match(
-        r'^Si\s+tu\s+(?:possèdes|portes|as|peux)\b.*,\s*tu\s+'
-        r'(?:peux|veux|voudrais|décides\s+de)\s+(.+)$',
+        r'^Si\s+tu\s+(?:possèdes|portes|as|peux)\b.*,\s*'
+        r'(tu\s+(?:peux|veux|voudrais|décides\s+de)\s+.+)$',
         text, flags=re.IGNORECASE)
     if m:
-        return _finalize_choice(m.group(1))
+        return _finalize_choice(_normalize_modal(m.group(1)))
 
     # 2c) "Si tu (possèdes|portes|as|peux) …, <rest>" (fallback générique)
     m = re.match(
         r'^Si\s+tu\s+(?:possèdes|portes|as|peux)\b[^,]*?,\s*(.+)$',
         text, flags=re.IGNORECASE)
     if m:
-        return _finalize_choice(_strip_action_prefix(m.group(1)))
+        return _finalize_choice(m.group(1))
 
-    # 2d) "Si tu <autre verbe> …" → retire "Si tu "
+    # 2d) "Si tu <autre verbe> …" → "Tu <verbe> …" (on remet le sujet)
     m = re.match(
         r'^Si\s+tu\s+(?!possèdes|portes|as|peux\b)(.+)$',
         text, flags=re.IGNORECASE)
     if m:
-        return _finalize_choice(m.group(1))
+        return _finalize_choice('Tu ' + m.group(1))
 
-    # 2e) "Si la/les/un/une/<...> …" → retire "Si "
+    # 2e) "Si la/les/un/une/<...> …" → retire "Si " (observation atmosphérique)
     m = re.match(r'^Si\s+(.+)$', text, flags=re.IGNORECASE)
     if m:
         return _finalize_choice(m.group(1))

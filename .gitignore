@@ -21,3 +21,8 @@ Thumbs.db
 # Agent metadata
 .agents/
 .codex/
+
+# Keystores et secrets de signature
+*.keystore
+*.jks
+keystore.properties

@@ -2,6 +2,13 @@ plugins {
     id "com.android.application"
 }
 
+// Charge les credentials de signature depuis un fichier hors du repo.
+def keystorePropsFile = file("${System.getProperty('user.home')}/.keystores/herobook-release.properties")
+def keystoreProps = new Properties()
+if (keystorePropsFile.exists()) {
+    keystorePropsFile.withInputStream { keystoreProps.load(it) }
+}
+
 android {
     namespace "com.verrelune.gamebook"
     compileSdk 36
@@ -13,6 +20,26 @@ android {
         versionCode 1
         versionName "1.0"
     }
+
+    signingConfigs {
+        release {
+            if (keystoreProps.containsKey('storeFile')) {
+                storeFile file(keystoreProps['storeFile'])
+                storePassword keystoreProps['storePassword']
+                keyAlias keystoreProps['keyAlias']
+                keyPassword keystoreProps['keyPassword']
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            signingConfig signingConfigs.release
+        }
+    }
+
+    // APK plus léger : un seul APK universel sans split (10 enfants, on s'en fout du split ABI)
 }
 
 def bookSourceDir = rootProject.file("../livre/xhtml")

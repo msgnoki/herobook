@@ -600,6 +600,74 @@ hr { border: none; border-top: 1px solid var(--vl-rule); margin: 1.5em 0; }
 .big-btn.secondary { background: transparent; color: var(--vl-gold) !important; border: 2px solid var(--vl-gold); }
 .big-btn.secondary:hover { background: var(--vl-chip-bg); }
 .center { text-align: center; }
+
+/* Splash d'accueil */
+/* On masque le header sur la page splash : le titre est dans la couverture. */
+body.splash-page > header { display: none; }
+body.splash-page > article { padding-top: 0; }
+
+.splash {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  padding-top: .5em;
+}
+.splash-cover {
+  margin: 0 0 .25em;
+  width: 100%;
+  max-width: 520px;
+  aspect-ratio: 4 / 5;
+  border-radius: 12px;
+  overflow: hidden;
+  background: linear-gradient(160deg, #efe2bf 0%, #d8c48a 50%, #8b6b1f 100%);
+  box-shadow: 0 10px 30px rgba(58,42,20,.25), inset 0 0 0 1px rgba(0,0,0,.05);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.splash-cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.splash-title {
+  font-family: var(--vl-serif);
+  font-size: 2.1em;
+  text-align: center;
+  margin: .3em 0 0;
+  color: #5a3a10;
+  font-variant: small-caps;
+  letter-spacing: .04em;
+  line-height: 1.1;
+}
+.splash-subtitle {
+  margin: .15em 0 .4em;
+  font-style: italic;
+  color: var(--vl-gold-soft);
+  text-align: center;
+}
+.splash-status {
+  text-align: center;
+  font-size: .95em;
+  color: var(--vl-ink-soft);
+  margin: .3em 0 .5em;
+  min-height: 1.2em;
+}
+.splash-actions {
+  display: flex;
+  flex-direction: column;
+  gap: .55em;
+  width: 100%;
+  max-width: 360px;
+}
+.splash-actions .big-btn {
+  margin: 0;
+  text-align: center;
+  font-size: 1.05em;
+  padding: .85em 1em;
+}
 .profile-list {
   list-style: none;
   padding: 0;
@@ -1000,9 +1068,9 @@ GAME_JS = r"""
     const newGameBtn = document.getElementById('newgame-btn');
     const statusDiv = document.getElementById('home-status');
     if (continueBtn && state.currentSection) {
-      continueBtn.style.display = 'inline-block';
+      continueBtn.style.display = '';
       continueBtn.href = 'sect' + state.currentSection + '.htm';
-      continueBtn.textContent = 'Reprendre →';
+      continueBtn.textContent = 'Continuer';
     } else if (continueBtn) {
       continueBtn.style.display = 'none';
     }
@@ -1138,7 +1206,8 @@ GAME_JS = r"""
 # ------------------------------- HELPERS -------------------------------
 
 
-def page_wrap(title, body_html, nav_html="", extra_head=""):
+def page_wrap(title, body_html, nav_html="", extra_head="", body_class=""):
+    body_class_attr = f' class="{body_class}"' if body_class else ""
     return f"""<!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -1148,7 +1217,7 @@ def page_wrap(title, body_html, nav_html="", extra_head=""):
 <link rel="stylesheet" href="main.css"/>
 {extra_head}
 </head>
-<body>
+<body{body_class_attr}>
 <header>
 <h1><a href="index.htm" style="color:inherit; text-decoration:none;">{html.escape(TITLE)}</a></h1>
 <h2>{html.escape(SUBTITLE)}</h2>
@@ -1636,12 +1705,32 @@ with open(OUT / "main.css", "w", encoding="utf-8") as f:
     f.write(CSS.lstrip())
 
 
-# index.htm — page d'accueil avec Nouvelle partie / Continuer
+# index.htm — splash : couverture + 3 boutons
 index_body = """
-<h1 class="sectnum" style="font-variant: small-caps;">Les Jardins de Verre-Lune</h1>
-<p style="text-align:center; font-style:italic; margin-bottom:1.5em;">Une aventure dont tu es le héros — pour les lectrices et lecteurs de 10 à 14 ans.</p>
+<div class="splash">
+  <figure class="splash-cover">
+    <img src="cover.jpg" alt="Les Jardins de Verre-Lune" onerror="this.style.display='none'"/>
+  </figure>
+  <h1 class="splash-title">Les Jardins de Verre-Lune</h1>
+  <p class="splash-subtitle">Une aventure dont tu es le héros</p>
 
-<h2>Introduction</h2>
+  <p class="splash-status" id="home-status"><em>Chargement de ta sauvegarde…</em></p>
+
+  <div class="splash-actions">
+    <a href="#" id="continue-btn" class="big-btn">Continuer</a>
+    <a href="#" id="newgame-btn" class="big-btn secondary">Nouvelle aventure</a>
+    <a href="aide.htm" class="big-btn secondary">Aide</a>
+  </div>
+</div>
+"""
+
+with open(OUT / "index.htm", "w", encoding="utf-8") as f:
+    f.write(page_wrap("Accueil", index_body, nav_html="", body_class="splash-page"))
+
+
+# aide.htm — Introduction + comment jouer
+aide_body = """
+<h2 class="sectname">Introduction</h2>
 <p>Depuis trois nuits, les étoiles s'effacent au-dessus du village de Brumeval. Au matin, les fleurs deviennent transparentes comme du verre et les bêtes oublient leur chemin. Les adultes haussent les épaules : « C'est la saison, c'est tout. » Mais toi, tu sens bien que ce n'est pas la saison.</p>
 
 <p>Tu n'as que douze ans, et pourtant tu es certain d'une chose : si personne ne va voir ce qui se passe sous la forêt des Fils d'Argent, les étoiles ne reviendront plus.</p>
@@ -1652,33 +1741,28 @@ index_body = """
 
 <p>Il existe au moins <strong>sept fins différentes</strong>. Une seule t'attend, celle que tu auras vraiment méritée.</p>
 
-<div class="notice" id="home-status">
-<em>Chargement de ta sauvegarde…</em>
-</div>
-
-<div class="center" style="margin: 1.5em 0;">
-<a href="#" id="newgame-btn" class="big-btn">Nouvelle partie</a>
-<a href="#" id="continue-btn" class="big-btn secondary">Reprendre</a>
-</div>
-
 <hr/>
 
-<h2>Comment jouer</h2>
+<h2 class="sectname">Comment jouer</h2>
 <p>L'aventure se déroule en <strong>350 scènes</strong>. Tu commences par choisir <strong>deux compétences</strong> parmi sept. Au fil de tes choix, tu trouveras des objets et noteras des mots-clés. Le système les retient automatiquement.</p>
 
 <ul>
 <li>Lis chaque section en entier avant de cliquer.</li>
 <li>Les choix grisés (⛔) signalent que tu n'as pas la compétence, l'objet ou le mot-clé requis. Ils restent visibles mais bloqués.</li>
 <li>Pendant la lecture, l'icône de fiche en bas à droite ouvre tes compétences, tes objets, tes mots-clés et ton état.</li>
-<li>Ta partie est sauvegardée automatiquement. Tu peux fermer l'onglet et revenir plus tard.</li>
-<li>« Nouvelle partie » efface complètement la sauvegarde et redémarre avec un nouveau choix de compétences.</li>
+<li>Ta partie est sauvegardée automatiquement. Tu peux fermer l'application et revenir plus tard.</li>
+<li>« Nouvelle aventure » efface complètement la sauvegarde et redémarre avec un nouveau choix de compétences.</li>
 </ul>
 
 <p>Si tu arrives à une <strong>fin</strong>, c'est qu'une de tes aventures est terminée. Rien ne t'empêche de recommencer pour essayer une autre route — il existe sept fins principales, dont une <em>secrète</em>.</p>
+
+<div class="center" style="margin-top:1.5em;">
+<a href="index.htm" class="big-btn secondary">← Retour à l'accueil</a>
+</div>
 """
 
-with open(OUT / "index.htm", "w", encoding="utf-8") as f:
-    f.write(page_wrap("Accueil", index_body, nav_html=""))
+with open(OUT / "aide.htm", "w", encoding="utf-8") as f:
+    f.write(page_wrap("Aide", aide_body, nav_html=""))
 
 
 # setup.htm — choix des 2 compétences

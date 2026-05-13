@@ -360,9 +360,9 @@
     const newGameBtn = document.getElementById('newgame-btn');
     const statusDiv = document.getElementById('home-status');
     if (continueBtn && state.currentSection) {
-      continueBtn.style.display = 'inline-block';
+      continueBtn.style.display = '';
       continueBtn.href = 'sect' + state.currentSection + '.htm';
-      continueBtn.textContent = 'Reprendre →';
+      continueBtn.textContent = 'Continuer';
     } else if (continueBtn) {
       continueBtn.style.display = 'none';
     }

@@ -8,7 +8,7 @@
 
 Depuis trois nuits, les étoiles s'effacent au-dessus du village de Brumeval. Au matin, les fleurs deviennent transparentes comme du verre et les bêtes oublient leur chemin. Les adultes haussent les épaules : « C'est la saison, c'est tout. » Mais toi, tu sens bien que ce n'est pas la saison.
 
-Tu n'as que douze ans, et pourtant tu es certain d'une chose : si personne ne va voir ce qui se passe sous la forêt des Fils d'Argent, les étoiles ne reviendront plus.
+Tu n'as que douze ans, et pourtant tu es certain(e) d'une chose : si personne ne va voir ce qui se passe sous la forêt des Fils d'Argent, les étoiles ne reviendront plus.
 
 Ta grand-mère, Mère Aïna, fredonne chaque soir une vieille comptine que plus personne n'écoute. Elle parle d'une serre cachée, d'une promesse oubliée et d'un Veilleur qui dort entre les racines. Personne n'y croit. Personne, sauf toi.
 
@@ -154,7 +154,7 @@ Ouvre les yeux sur la première lueur du matin, à la fenêtre de ta chambre, à
 
 ## Aventure
 
-### 1
+### 1 {lieu: Brumeval — Ta chambre}
 
 La lumière du matin n'est pas la lumière du matin.
 
@@ -171,7 +171,7 @@ Choix :
 - Si tu préfères ouvrir la fenêtre et regarder le village d'abord, va au **6**.
 - Si tu cherches d'abord ton vieux carnet sous ton lit, va au **8**.
 
-### 2
+### 2 {lieu: Brumeval — Maison de Mère Aïna}
 
 L'escalier de bois grince sous tes pieds. Dans la cuisine, ça sent le pain chaud et le miel. Mère Aïna est debout devant l'âtre, son tablier taché de farine, son chignon blanc bien serré. Elle ne se retourne pas, mais elle sait que tu es là.
 
@@ -188,7 +188,8 @@ Choix :
 - Si tu lui demandes ce que sont ces trois choses, va au **4**.
 - Si tu lui demandes ce qu'elle a vu la nuit dernière, va au **5**.
 
-### 3
+### 3 {lieu: Brumeval — Maison de Mère Aïna}
+{grants-keyword: COMPTINE COMPLÈTE}
 
 — « La comptine ? » Mère Aïna sourit comme on sourit quand on est triste et content en même temps.
 
@@ -213,7 +214,12 @@ Elle se tait. Ses yeux brillent.
 Choix :
 - Pour demander ensuite à quoi servent les trois objets sur la table, va au **4**.
 
-### 4
+### 4 {lieu: Brumeval — Maison de Mère Aïna}
+{grants-object: Boussole d'argent}
+{grants-object: Pain aux noix de Mère Aïna}
+{grants-object: Ruban rouge}
+{grants-object: Lampe-tempête}
+{grants-object: Petit couteau}
 
 Mère Aïna pose sa main sur la boussole d'argent.
 
@@ -246,7 +252,7 @@ Choix :
 - Si tu fais un crochet par chez Lyse, ton amie, va au **12**.
 - Si tu fais un détour par le tableau d'affichage de la mairie, va au **28**.
 
-### 5
+### 5 {lieu: Brumeval — Maison de Mère Aïna}
 
 Mère Aïna ne répond pas tout de suite. Elle reste devant l'âtre, le dos voûté.
 
@@ -262,7 +268,7 @@ Choix :
 - Si tu lui demandes de te chanter la comptine en entier, va au **3**.
 - Si tu lui demandes à quoi servent les trois objets posés sur la table, va au **4**.
 
-### 6
+### 6 {lieu: Brumeval — Ta chambre}
 
 Tu ouvres en grand la fenêtre. L'air est frais, et il sent l'herbe mouillée — mais aussi autre chose, une odeur très légère de pierre froide.
 
@@ -277,7 +283,7 @@ Choix :
 - Si tu décides de grimper sur le toit de la grange voisine pour avoir une vue d'ensemble du village, va au **26**.
 - Si tu sors et croises, au bout de la rue, une forme claire derrière une charrette, va au **17**.
 
-### 7
+### 7 {lieu: Brumeval — Place du village}
 
 La place du village n'est pas calme. Sans être bruyante, elle a quelque chose d'inquiet. Des grappes d'adultes parlent à voix basse. La boulangère secoue la tête. Le tailleur fait de grands gestes. Le maire Bertin, qui n'a jamais peur de rien, a les sourcils froncés.
 
@@ -294,7 +300,7 @@ Choix :
 - Si tu remarques un groupe d'enfants attroupés un peu plus loin, va au **16**.
 - Si tu te glisses derrière l'auvent de la mercerie pour épier le tailleur et le maire, va au **29**.
 
-### 8
+### 8 {lieu: Brumeval — Ta chambre}
 
 Tu te baisses sous ton lit. Ton carnet est là, à la couverture toilée, plein de croquis d'oiseaux, de pas dans la boue, de feuilles séchées et de plans imaginaires. Tu as toujours aimé dessiner ce que les autres ne voient pas.
 
@@ -308,7 +314,7 @@ Choix :
 - Si tu descends maintenant à la cuisine pour voir Mère Aïna, va au **2**.
 - Si tu sors par la fenêtre en passant par le toit, va au **9**.
 
-### 9
+### 9 {lieu: Brumeval — Jardin de Mère Aïna}
 
 Tu enjambes la fenêtre. Le toit est en pente douce, recouvert d'ardoises grises. Tu connais ce chemin par cœur. Trois pas vers la cheminée, un saut sur la petite annexe, et tu peux descendre par la treille.
 
@@ -321,7 +327,7 @@ Choix :
 - Si tu enjambes la haie et files droit vers la grande rue, va au **7**.
 - Si tu fais un détour par la forge de Maître Orven, qui se trouve à deux pas, va au **11**.
 
-### 10
+### 10 {lieu: Brumeval — Jardin de Mère Aïna}
 
 Tu tournes la manivelle. La corde grince. Le seau remonte, plein.
 
@@ -337,7 +343,8 @@ Choix :
 - Si tu vas tout de suite chez Maître Orven le forgeron, va au **11**.
 - Si tu cours rejoindre la place du village, va au **7**.
 
-### 11
+### 11 {lieu: Brumeval — Forge}
+{grants-object: Corde tressée}
 
 La forge de Maître Orven est ouverte malgré l'heure. Le grand homme noir de suie est debout devant son enclume, mais il ne tape pas. Il regarde le métal rougi dans la braise sans rien faire. Quand tu entres, il sursaute, comme s'il revenait de loin.
 
@@ -357,7 +364,7 @@ Choix :
 - Pour le remercier et sortir, va au **7**.
 - Pour lui demander s'il connaît la comptine de Mère Aïna, va au **13**.
 
-### 12
+### 12 {lieu: Brumeval — Chez Lyse}
 
 Tu passes devant la maison de Lyse, ta meilleure amie d'avant. Elle est sur le pas de la porte, en chaussons, les cheveux mal coiffés. Quand elle te voit, elle pousse un long soupir.
 
@@ -376,7 +383,8 @@ Choix :
 - Si tu insistes pour que Lyse vienne avec toi, va au **14**.
 - Si tu lui demandes ce qu'elle, elle a vu, va au **13**.
 
-### 13
+### 13 {lieu: Brumeval — Chez Lyse}
+{grants-object: éclat de verre tiède}
 
 Lyse hésite. Elle regarde le bout de ses chaussons, comme si la réponse était écrite dessus.
 
@@ -392,7 +400,9 @@ Choix :
 - Si tu pars en direction du Verger pâle pour rattraper Nilo, va au **18**.
 - Si tu fais d'abord un crochet par la chapelle où vit Mémorine, va au **14**.
 
-### 14
+### 14 {lieu: Brumeval — Chapelle}
+{grants-keyword: SIGNE DE MÉMORINE}
+{grants-object: Treizième Caillou}
 
 La chapelle de Brumeval n'a plus de cloche depuis bien avant ta naissance. Elle sert surtout d'abri pour les pots de fleurs du tailleur, qui est aussi le père de Mémorine. La porte est entrouverte. Tu pousses.
 
@@ -409,7 +419,7 @@ Mémorine te tend le treizième caillou. Tu le mets dans ta poche.
 Choix :
 - Pour sortir et filer vers le Verger pâle, va au **30**.
 
-### 15
+### 15 {lieu: Brumeval — Rue}
 
 Tu dévales l'escalier sans même mettre tes chaussures. Quand tu débouches dans la rue, Mémorine est déjà partie. À la place où elle se tenait, un dessin frais a été tracé à la craie blanche sur la pierre : un cercle, une ligne droite vers le bas, et un petit oiseau qui s'envole.
 
@@ -419,7 +429,8 @@ Choix :
 - Pour entrer dans la chapelle, va au **14**.
 - Pour passer d'abord chez Mère Aïna et lui dire au revoir, va au **2**.
 
-### 16
+### 16 {lieu: Brumeval — Rue}
+{grants-keyword: PETITE GENTILLESSE}
 
 À la sortie de la rue, tu tombes sur un attroupement d'enfants. Trois petits, plus jeunes que toi, sont là, l'air pâle. L'un d'eux pleure sans bruit.
 
@@ -431,13 +442,13 @@ Si tu possèdes la compétence **Soin des animaux**, tu sais quoi faire : tu pos
 
 — « Ramène-le doucement, » dis-tu au petit. « Donne-lui un peu de pain, et reste avec lui. »
 
-**Note le mot-clé PETITE GENTILLESSE sur ta fiche. Tu n'en auras pas grand chose à faire, mais elle servira peut-être un jour.**
+**Note le mot-clé PETITE GENTILLESSE sur ta fiche.**
 
 Choix :
 - Si tu pars maintenant vers le Verger pâle, va au **30**.
 - Si tu décides d'abord d'aller chercher Nilo, va au **18**.
 
-### 17
+### 17 {lieu: Brumeval — Sortie du village}
 
 Tu trottes le long de la rue principale. Au coin de la dernière maison, là où la rue se transforme en chemin de terre, quelque chose bouge derrière une charrette. C'est un renard. Mais un renard pas comme les autres : son pelage est argenté, presque blanc, et ses yeux sont d'un vert très pâle. Il ne fuit pas. Il te regarde.
 
@@ -449,7 +460,7 @@ Choix :
 - Si tu suis la direction indiquée par le renard, va au **30**.
 - Si tu rebrousses chemin pour aller chez Nilo, va au **18**.
 
-### 18
+### 18 {lieu: Brumeval — Chez Nilo}
 
 La maison de Nilo est à l'orée du village, accolée à la cabane de son père, le gardien des sentiers. Quand tu arrives, la porte est ouverte mais personne ne répond. Sur la table de bois, une miche de pain a été à peine entamée, comme si on avait quitté la table en plein repas.
 
@@ -466,7 +477,7 @@ Choix :
 - Si tu lui dis directement de venir avec toi, va au **20**.
 - Si tu te moques gentiment pour qu'il se détende, va au **21**.
 
-### 19
+### 19 {lieu: Brumeval — Chez Nilo}
 
 — « Je ne sais rien, » dit Nilo trop vite. Puis il baisse les épaules. « Bon, d'accord. Hier soir, mon père est rentré tard. Il a dit à ma mère que les sentiers de la Forêt étaient — il a dit "déplacés". »
 
@@ -484,7 +495,9 @@ Choix :
 - Si tu lui proposes de venir avec toi pour qu'il prouve à son père qu'il est capable, va au **20**.
 - Si tu préfères partir seul et lui dire qu'il sera plus utile au village, va au **22**.
 
-### 20
+### 20 {lieu: Brumeval — Chez Nilo}
+{grants-keyword: AMITIÉ DE NILO}
+{state+: ACCOMPAGNÉ}
 
 Tu lui tends la main.
 
@@ -508,7 +521,9 @@ Il sourit pour la première fois de la matinée.
 Choix :
 - Pour vous mettre en route vers le Verger pâle, va au **30**.
 
-### 21
+### 21 {lieu: Brumeval — Chez Nilo}
+{grants-keyword: AMITIÉ DE NILO}
+{state+: ACCOMPAGNÉ}
 
 Tu pinces les lèvres pour ne pas rire et tu hoches gravement la tête.
 
@@ -532,7 +547,7 @@ Il essuie ses joues du revers du poignet.
 Choix :
 - Pour partir tous les deux vers le Verger pâle, va au **30**.
 
-### 22
+### 22 {lieu: Brumeval — Chez Nilo}
 
 Tu hésites. Tu sais que Nilo a peur, et tu sais aussi que la peur, quand on l'emmène en voyage, ça finit par se voir. Tu poses ta main sur son épaule.
 
@@ -547,7 +562,7 @@ Tu lui ébouriffes les cheveux et tu tournes les talons. Tu pars seul. C'est peu
 Choix :
 - Pour rejoindre le Verger pâle sans accompagnant, va au **30**.
 
-### 23
+### 23 {lieu: Brumeval — Place du village}
 
 Tu te glisses derrière la grande charrette du laitier. De là, on entend bien sans être vu.
 
@@ -568,7 +583,7 @@ Choix :
 - Si tu files discrètement vers le Verger pâle, va au **30**.
 - Si tu vas d'abord chercher Nilo, va au **18**.
 
-### 24
+### 24 {lieu: Brumeval — Place du village}
 
 Tu te plantes devant le maire Bertin. Il est grand, large, et il a un nez rouge. Il te regarde de haut.
 
@@ -586,7 +601,7 @@ Choix :
 - Pour aller à la chapelle voir Mémorine, va au **14**.
 - Pour quand même partir directement au Verger pâle, va au **30**.
 
-### 25
+### 25 {lieu: Brumeval — Fontaine}
 
 La fontaine de Brumeval, c'est le cœur du village. Mais ce matin, c'est un cœur arrêté. L'eau qui devrait jaillir du bec de bronze ne jaillit plus. Le bassin de pierre est plein d'une eau qui ne bouge pas et qui ne reflète pas le ciel comme avant : elle reflète seulement, vaguement, une lueur grise.
 
@@ -600,7 +615,7 @@ Choix :
 - Pour suivre cette direction, va au **30**.
 - Pour parler de cette apparition à Mère Aïna, va au **2**.
 
-### 26
+### 26 {lieu: Brumeval — Toit de la grange}
 
 Tu décides de monter sur le toit de la grange de Maître Orven, là où on voit tout Brumeval. Tu te hisses par la gouttière (ce qui demande un peu d'audace, mais tu le fais souvent).
 
@@ -612,7 +627,8 @@ Choix :
 - Pour redescendre et te diriger droit vers cette trace, va au **30**.
 - Pour aller d'abord vérifier l'étrange lueur dans le buisson, va au **34**.
 
-### 27
+### 27 {lieu: Brumeval — Place du village}
+{grants-object: Flûte de brume}
 
 La vieille dame s'appelle Garance Maillard. Elle est l'arrière-grand-mère de Lyse. Personne ne l'écoute jamais, mais ce matin tout le monde s'est tu. Tu attends qu'elle sorte de la place, et tu lui emboîtes le pas.
 
@@ -633,7 +649,7 @@ Elle hoche la tête. Puis elle plonge la main dans la grande poche de son tablie
 Choix :
 - Pour la remercier et filer vers le Verger pâle, va au **30**.
 
-### 28
+### 28 {lieu: Brumeval — Mairie}
 
 Tu te diriges discrètement vers le grand tableau d'affichage du village, devant la mairie. Il y a là un vieux plan de Brumeval que personne ne regarde plus. Mais aujourd'hui, dessous, quelqu'un a punaisé une feuille fraîche. C'est une écriture que tu ne reconnais pas — celle de quelqu'un qui sait écrire, mais lentement. Tu lis :
 
@@ -652,7 +668,7 @@ Choix :
 - Pour réfléchir à tout ça en chemin et partir vers le Verger pâle, va au **30**.
 - Pour montrer le message à Mère Aïna avant de partir, va au **2**.
 
-### 29
+### 29 {lieu: Brumeval — Mercerie}
 
 Tu te tapis derrière l'auvent de la mercerie. De là, tu peux voir, sans être vue ou vu, le petit groupe d'adultes qui parle bas. Le maire et le tailleur, surtout. Le tailleur parle vite.
 

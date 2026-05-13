@@ -48,20 +48,21 @@ But : passer du manuscrit Markdown à une app statique jouable.
 | 3.9 | Reformulation des 2 choix observationnels (Si la canopée / Si un vent) | ⏳ |
 | 3.10 | Audit chaînes d'aventure : toute fin est atteignable depuis §1 | ⏳ |
 
-## Epic 4 — Distribution iOS (PWA)
+## Epic 4 — Distribution iOS (PWA) — **back-burner**
 
-But : « Ajouter à l'écran d'accueil » sur iPhone, plein écran, hors-ligne.
+> Déprioritisé le 2026-05-13. À reprendre uniquement si quelqu'un sur iPhone le réclame.
+> Pas d'urgence : Android couvre le besoin courant, le code est prêt à recevoir cette couche sans refactor.
 
 | # | Story | Effort | Statut |
 |---|---|---|---|
-| 4.1 | `manifest.json` (nom, theme-color, icônes) | 30 min | ⏳ |
-| 4.2 | `service-worker.js` (cache offline ~360 fichiers) | 1 h | ⏳ |
-| 4.3 | Icônes apple-touch + maskable (5 tailles depuis `cover.jpg`) | 30 min | ⏳ |
-| 4.4 | Meta tags `apple-mobile-web-app-*` + theme-color | 15 min | ⏳ |
-| 4.5 | Activer GitHub Pages, racine `livre/xhtml/` | 15 min | ⏳ |
-| 4.6 | Test « Add to Home Screen » sur iPhone | 15 min | ⏳ |
+| 4.1 | `manifest.json` (nom, theme-color, icônes) | 30 min | ⏳ later |
+| 4.2 | `service-worker.js` (cache offline ~360 fichiers) | 1 h | ⏳ later |
+| 4.3 | Icônes apple-touch + maskable (5 tailles depuis `cover.jpg`) | 30 min | ⏳ later |
+| 4.4 | Meta tags `apple-mobile-web-app-*` + theme-color | 15 min | ⏳ later |
+| 4.5 | Activer GitHub Pages, racine `livre/xhtml/` | 15 min | ⏳ later |
+| 4.6 | Test « Add to Home Screen » sur iPhone | 15 min | ⏳ later |
 
-**Sortie sprint** : URL HTTPS, icône, plein écran, fonctionne hors-ligne dès la 2e ouverture.
+**Sortie sprint quand on y reviendra** : URL HTTPS, icône, plein écran, fonctionne hors-ligne dès la 2e ouverture.
 
 ## Epic 5 — Internationalisation
 
@@ -119,15 +120,16 @@ But : versions EN + ES sans toucher au moteur français.
 
 | Sprint | Objectif | Epics |
 |---|---|---|
-| **S0 (en cours)** | Stabilisation FR + retour utilisatrice | 3.8 → 3.10 |
-| **S1** | PWA iPhone livrée et installée chez la fille | 4.* |
+| **S0 (en cours)** | Tests par la fille sur l'Android — on attend les retours | 3.8 |
+| **S1** | Polish éditorial sur retours utilisatrice (choix observationnels, audit chaînes) | 3.9, 3.10 |
 | **S2** | Refactor i18n du générateur | 5.1 |
 | **S3** | Version anglaise livrée et relue | 5.2 |
 | **S4** | Version espagnole livrée et relue | 5.3 |
 | **S5** | Polish Android + signature release | 6.* |
+| **— LATER —** | PWA iPhone (Epic 4) | 4.* |
 | **S6 (NICE)** | Métriques replay et fins découvertes | 7.* |
 
-**Critère de fin de sprint** : un push sur `main` correspondant à l'objectif, validé sur device réel (téléphone Android au minimum ; iPhone à partir de S1).
+**Critère de fin de sprint** : un push sur `main` correspondant à l'objectif, validé sur device réel (Android pour le moment).
 
 ---
 

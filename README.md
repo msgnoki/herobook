@@ -25,6 +25,7 @@ Builds générés via Gradle dans `android/`. Voir [`AGENTS.md`](AGENTS.md) pour
 - `livre/xhtml/` — sortie générée (servie par GitHub Pages)
 - `android/` — wrapper Android (WebView qui charge les XHTML embarqués)
 - `BACKLOG.md` — roadmap : epics, sprints, hors-scope
+- `HANDOVER.md` — brief pour reprendre la refonte éditoriale (Epic 9)
 - `AGENTS.md` — guide technique du repo
 
 ## ⚖️ Crédits

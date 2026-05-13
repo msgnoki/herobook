@@ -64,6 +64,48 @@ But : passer du manuscrit Markdown à une app statique jouable.
 
 **Sortie sprint quand on y reviendra** : URL HTTPS, icône, plein écran, fonctionne hors-ligne dès la 2e ouverture.
 
+## Epic 9 — Refonte éditoriale + balises (🚧, **priorité 1**)
+
+> **Trigger 2026-05-13** : l'auteur constate que les 7 fins sont mal orchestrées, que beaucoup de « Si tu… » de la prose n'ont aucune conséquence mécanique, et que la qualité narrative + mécanique se dégrade dans la 2e moitié du livre. Décision : sortir la mécanique de la prose via un système de balises explicites, puis retagger + relire l'ensemble.
+>
+> **Bloque** : Epic 5 (i18n). Inutile de traduire un manuscrit instable.
+>
+> Voir [`HANDOVER.md`](HANDOVER.md) pour le brief complet à un nouvel·le contributeur·rice (humain·e ou IA).
+
+### Phase 9.1 — Schema lock
+| # | Story |
+|---|---|
+| 9.1.1 | Valider la syntaxe finale des balises (`{clé: valeur}` inline vs YAML front-matter vs sidecar) |
+| 9.1.2 | Définir le vocabulaire : `lieu`, `grants-object`, `grants-keyword`, `state+`, `state-`, `requires-skill`, `requires-object`, `requires-keyword`, `ending`, `branch`, `requires-alliances-min`, etc. |
+| 9.1.3 | Documenter la spec dans `AGENTS.md` |
+| 9.1.4 | Écrire un linter dédié à la spec (`livre/lint_tags.py`) qui vérifie la syntaxe et la cohérence des balises |
+
+### Phase 9.2 — Parser hybride et migration
+| # | Story |
+|---|---|
+| 9.2.1 | `build_xhtml.py` : extraire les balises avant le parsing prose. Tags ont priorité ; la prose reste fallback pendant la migration. |
+| 9.2.2 | Retagger section par section (350 sections). Sens forward + back, en deux passes. |
+| 9.2.3 | Une fois 100% balisé : retirer le parsing prose-based (regex `Tu es FATIGUÉ`, etc.) du moteur. |
+
+### Phase 9.3 — Audit + correctifs
+| # | Story |
+|---|---|
+| 9.3.1 | Cartographier les 7 fins : conditions, sections-source, atteignabilité depuis §1 |
+| 9.3.2 | Linter complet : sections orphelines, compétences/objets/mots-clés jamais utilisés, fins inatteignables, fins-piège |
+| 9.3.3 | Corriger les chaînes cassées identifiées par 9.3.2 |
+
+### Phase 9.4 — Pass éditorial
+| # | Story |
+|---|---|
+| 9.4.1 | Relecture forward (§1 → §350) avec mécanique verrouillée par les balises — fluidité de prose |
+| 9.4.2 | Relecture back-to-forward (§350 → §1) — cohérence terminale → causale |
+| 9.4.3 | Régulariser le ton (la qualité se dégrade dans la 2e moitié, à rééquilibrer) |
+| 9.4.4 | Éliminer les « Si tu… » décoratifs qui ne sont pas des conditions de jeu |
+
+**Effort total estimé** : 5-7 jours de travail technique + relecture éditoriale.
+
+---
+
 ## Epic 5 — Internationalisation
 
 But : versions EN + ES sans toucher au moteur français.
@@ -128,16 +170,21 @@ But : versions EN + ES sans toucher au moteur français.
 
 | Sprint | Objectif | Epics |
 |---|---|---|
-| **S0 (en cours)** | Tests par la fille sur l'Android — on attend les retours | 3.8 |
-| **S1** | Polish éditorial sur retours utilisatrice (choix observationnels, audit chaînes) | 3.9, 3.10 |
-| **S2** | Refactor i18n du générateur | 5.1 |
-| **S3** | Version anglaise livrée et relue | 5.2 |
-| **S4** | Version espagnole livrée et relue | 5.3 |
-| **S5** | Polish Android + signature release | 6.* |
+| **S0 (clos)** | Stabilisation FR + distribution v1.0.0 (APK release + GitHub Pages) | 1.*, 2.*, 3.*, 6.2 |
+| **S1 (en cours)** | Schema balises validé + parser hybride | 9.1, 9.2.1 |
+| **S2** | Manuscrit 100% retaggé | 9.2.2, 9.2.3 |
+| **S3** | Audit fins + correctifs | 9.3 |
+| **S4** | Pass éditorial forward + back | 9.4 |
+| **S5** | Refactor i18n du générateur | 5.1 |
+| **S6** | Version anglaise livrée et relue | 5.2 |
+| **S7** | Version espagnole livrée et relue | 5.3 |
+| **S8** | Polish Android release + icône launcher | 6.1, 6.3, 6.4 |
 | **— LATER —** | PWA iPhone (Epic 4) | 4.* |
-| **S6 (NICE)** | Métriques replay et fins découvertes | 7.* |
+| **— LATER —** | Métriques replay et fins découvertes | 7.* |
 
 **Critère de fin de sprint** : un push sur `main` correspondant à l'objectif, validé sur device réel (Android pour le moment).
+
+**Note 2026-05-13** : la session technique avec l'IA est en pause après v1.0.0. La suite éditoriale (Epic 9) est reprise avec une autre IA / un humain. Voir [`HANDOVER.md`](HANDOVER.md) pour le brief.
 
 ---
 

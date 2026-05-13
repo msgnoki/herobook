@@ -4534,18 +4534,18 @@ Choix :
 - Si tu te tournes vers Mère Aïna, va au **308**.
 - Si tu fais le tour des quatre et mémorises leurs visages, va au **309**.
 
-### 304
+### 304 {lieu: Chambre de Verre-Lune}
+{grants-keyword: QUATRE PRÉSENCES}
 
 Tu te relèves doucement.
 
-Tu saluerais Anya, mais Anya secoue la tête. — « Tu es venu(e) à temps. C'est tout ce qui compte. »
+Tu voudrais saluer Anya, mais Anya secoue la tête. — « Tu es venu(e) à temps. C'est tout ce qui compte. »
 
-Tu saluerais le Veilleur, mais le Veilleur sourit. — « Quoi que tu décides, ce sera bien. »
+Tu voudrais saluer le Veilleur, mais le Veilleur sourit. — « Quoi que tu décides, ce sera bien. »
 
-Tu saluerais Mémorine, mais Mémorine te fait un signe : ses deux mains qui s'ouvrent comme un livre. *Tu peux écrire la suite.*
+Tu voudrais saluer Mémorine, mais Mémorine te fait un signe : ses deux mains qui s'ouvrent comme un livre. *Tu peux écrire la suite.*
 
-Tu te tournes vers Mère Aïna. Elle hoche la tête lentement. Elle te dit, sans parler :
-*Je suis fière de toi. Quoi que tu décides. Je serai là quand tu reviendras.*
+Tu te tournes vers Mère Aïna. Elle hoche la tête lentement. Elle te dit, sans parler : *Je suis fière de toi. Quoi que tu décides. Je serai là quand tu reviendras.*
 
 Tu sens, dans ta poitrine, un éclair de tendresse.
 
@@ -4554,7 +4554,8 @@ Tu sens, dans ta poitrine, un éclair de tendresse.
 Choix :
 - Pour revenir à la sphère, va au **310**.
 
-### 305
+### 305 {lieu: Chambre de Verre-Lune}
+{grants-keyword: ANYA PARDONNÉE}
 
 Tu fais face à Anya. Tu trouves le courage de lui parler.
 
@@ -4564,7 +4565,7 @@ Anya hoche la tête. Elle a les yeux brillants.
 
 — « Je le sais, maintenant. À l'époque, je croyais qu'il fallait *garder*. Personne ne m'avait dit qu'il fallait aussi *partager*. C'est moi qui ai inventé le silence. Pardonne-moi. »
 
-Tu t'approches. Tu poses ta main là où, normalement, serait son épaule. Tu ne sens rien — elle n'est pas vraiment chair. Mais elle sent ta main, tu le vois.
+Tu t'approches. Tu poses ta main là où, normalement, serait son épaule. Tu ne sens rien — elle n'est pas tout à fait chair. Mais elle sent la tienne, tu le vois.
 
 — « Je te pardonne, » dis-tu, parce qu'elle attend ces mots depuis quatre-vingts ans.
 
@@ -4573,28 +4574,30 @@ Tu t'approches. Tu poses ta main là où, normalement, serait son épaule. Tu ne
 Choix :
 - Pour revenir à la sphère, va au **310**.
 
-### 306
+### 306 {lieu: Chambre de Verre-Lune}
+{grants-keyword: VEILLEUR REMERCIÉ} {grants-keyword: VEILLEUR APAISÉ}
 
 Tu fais face au Veilleur. Tu inclines la tête.
 
 — « Quoi que je décide, » dis-tu, « je voulais te dire merci. Tu as monté la garde longtemps. »
 
-Le Veilleur sourit. Il a l'air, tout d'un coup, plus jeune.
+Le Veilleur sourit. Il a l'air, d'un coup, plus jeune.
 
 — « Tu es la première personne qui me dit *merci* en quatre-vingts ans. Tu n'imagines pas ce que ça fait. »
 
 Il s'approche. Il pose sa main sur ton épaule. Sa main est tiède. *Réelle*.
 
-— « Si tu choisis la première voie, je m'allongerai dans l'herbe. Si tu choisis la deuxième, je redeviendrai homme. Si tu choisis la troisième, je continuerai un peu. Toutes ces trois fins sont acceptables. »
+— « Si tu choisis la première voie, je m'allongerai dans l'herbe. Si tu choisis la deuxième, je redeviendrai homme. Si tu choisis la troisième, je continuerai un peu. Toutes ces fins sont acceptables. »
 
 **Note le mot-clé VEILLEUR REMERCIÉ sur ta fiche. Note le mot-clé VEILLEUR APAISÉ sur ta fiche.**
 
 Choix :
 - Pour revenir à la sphère, va au **310**.
 
-### 307
+### 307 {lieu: Chambre de Verre-Lune}
+{grants-keyword: MÉMORINE PARLE}
 
-Tu te tournes vers Mémorine. Elle fait son signe : cercle, ligne droite vers le bas, oiseau qui s'envole. Tu comprends, maintenant tout à fait, ce qu'il veut dire. Il veut dire *fin d'un cycle, début d'un autre*.
+Tu te tournes vers Mémorine. Elle fait son signe : cercle, ligne droite vers le bas, oiseau qui s'envole. Tu comprends, maintenant, ce qu'il veut dire. Il veut dire *fin d'un cycle, début d'un autre*.
 
 Tu lui réponds par un signe à toi : tu poses ta main sur ton cœur, puis tu la tends vers elle.
 
@@ -4602,20 +4605,21 @@ Mémorine sourit. Pour la première fois depuis que tu la connais, elle ouvre la
 
 — « Je n'ai jamais eu peur de ton choix. Quel qu'il soit, je le partagerai au village. Je serai ta voix là-bas. »
 
-Tu réalises que Mémorine, dans ta génération, est l'équivalent de ce que Mère Aïna était pour celle d'avant. Elle sera la veilleuse qui suit.
+Tu comprends, à ce moment-là, que Mémorine, dans ta génération, est ce que Mère Aïna était pour celle d'avant. Elle sera la veilleuse qui suit.
 
 **Note le mot-clé MÉMORINE PARLE sur ta fiche.**
 
 Choix :
 - Pour revenir à la sphère, va au **310**.
 
-### 308
+### 308 {lieu: Chambre de Verre-Lune}
+{grants-keyword: AÏNA REMERCIÉE}
 
-Tu te tournes vers Mère Aïna. Tu ne sais pas quoi lui dire. Tout vient en même temps : la colère d'avoir été préparée toute ta vie sans le savoir, l'amour pour cette femme qui a tenu cinquante ans une charge sans jamais te l'imposer, la peur de ne pas être à la hauteur.
+Tu te tournes vers Mère Aïna. Tu ne sais pas quoi lui dire. Tout vient en même temps : la colère d'avoir été préparé(e) toute ta vie sans le savoir, l'amour pour cette femme qui a tenu cinquante ans une charge sans jamais te l'imposer, la peur de ne pas être à la hauteur.
 
 Mère Aïna te regarde.
 
-— « Tu n'es pas obligée de me dire quoi que ce soit. »
+— « Tu n'es pas obligé(e) de me dire quoi que ce soit. »
 
 Mais tu as une chose, une seule, à dire.
 
@@ -4630,16 +4634,18 @@ Mère Aïna sourit. Ses yeux brillent. Elle hoche la tête lentement.
 Choix :
 - Pour revenir à la sphère, va au **310**.
 
-### 309
-
-(Réservé.)
+### 309 {lieu: Chambre de Verre-Lune}
 
 Tu fais le tour des quatre. Tu mémorises leurs visages. Tu te dis que tu auras besoin, après, de te rappeler très précisément qui était là.
 
 Choix :
 - Pour revenir à la sphère, va au **310**.
 
-### 310
+### 310 {lieu: Chambre de Verre-Lune}
+{branch: 311}
+{branch: 312, requires-object: Pierre de mémoire}
+{branch: 313}
+{branch: 314, requires-keyword: CONFIANCE DES LUCIOLES}
 
 Tu reviens devant le piédestal. La sphère bat doucement. L'étoile, à l'intérieur, semble *t'attendre*.
 
@@ -4649,15 +4655,16 @@ Tu sais ce que tu vas faire. Tu hésites peut-être encore une seconde. Mais tu 
 
 Choix :
 - Si tu décides de **prendre la sphère** et de devenir gardien(ne) à la place du Veilleur, va au **311**.
-- Si tu décides de **toucher la sphère avec ta Pierre de mémoire** pour transformer la promesse, va au **312**.
+- Si tu décides de **toucher la sphère avec ta Pierre de mémoire** pour transformer la promesse, va au **312**. {requires-object: Pierre de mémoire}
 - Si tu décides de **t'incliner** et de laisser la sphère en place pour aujourd'hui, va au **313**.
-- Si tu portes la **Boussole d'argent**, la **Pierre de mémoire** *et* le mot-clé **CONFIANCE DES LUCIOLES**, tu peux choisir une quatrième voie, va au **314**.
+- Si tu portes la **Boussole d'argent**, la **Pierre de mémoire** *et* le mot-clé **CONFIANCE DES LUCIOLES**, tu peux choisir une quatrième voie, va au **314**. {requires-object: Boussole d'argent} {requires-object: Pierre de mémoire} {requires-keyword: CONFIANCE DES LUCIOLES}
 
-### 311
+### 311 {lieu: Chambre de Verre-Lune}
+{grants-keyword: GARDIEN DEVENU}
 
 Tu prends la sphère dans tes mains.
 
-Elle pèse exactement le poids d'une promesse : ni trop, ni trop peu. Tu la portes à ta poitrine. Elle s'enfonce, comme dans un creux fait pour elle. Pas dans ton corps : dans ton attention. Tu la sens, comme un battement supplémentaire à côté du tien.
+Elle pèse exactement le poids d'une promesse : ni trop, ni trop peu. Tu la portes à ta poitrine. Elle s'enfonce, comme dans un creux fait pour elle. Pas dans ton corps : dans ton attention. Tu la sens, comme un battement de plus à côté du tien.
 
 L'étoile, à l'intérieur, bat plus calmement.
 
@@ -4665,7 +4672,7 @@ Tu lèves les yeux. Le Veilleur, à l'est, fait un pas en avant. Il défait la c
 
 Tu sais qu'il dort. Pour de vrai, cette fois. Pour toujours.
 
-Tu te tournes vers Anya. Anya pleure et sourit.
+Tu te tournes vers Anya. Anya pleure et sourit en même temps.
 
 — « Tu es la suivante, » dit-elle simplement.
 
@@ -4677,18 +4684,17 @@ Choix :
 - Pour sortir doucement et rentrer à Brumeval, va au **321**.
 - Si tu prends d'abord un instant pour respirer, va au **315**.
 - Si tu salues une dernière fois les présences, va au **316**.
-- Si tu poses sur le piédestal une fleur de cœur-de-neige, va au **317**.
+- Si tu poses sur le piédestal une fleur de cœur-de-neige, va au **317**. {requires-object: trois fleurs de cœur-de-neige}
 - Si tu sors lentement en refermant la porte derrière toi, va au **318**.
 - Si tu retraverses la Galerie qui te salue, va au **319**.
 - Si tu sors par la fente d'entrée et lèves les yeux, va au **320**.
 
-### 312
+### 312 {lieu: Chambre de Verre-Lune}
+{grants-keyword: PROMESSE TRANSFORMÉE}
 
 Tu sors la Pierre de mémoire de ta poche.
 
-(Si tu n'as pas la Pierre de mémoire, tu ne peux pas faire ce choix. Reviens au **310**.)
-
-Tu poses la Pierre contre le verre de la sphère. Tu fermes les yeux.
+Tu la poses contre le verre de la sphère. Tu fermes les yeux.
 
 Tu sens, dans la Pierre, qu'elle *boit* lentement. Elle absorbe l'étoile. Mais pas comme on absorbe pour garder : comme on absorbe pour *partager*.
 
@@ -4705,7 +4711,8 @@ Tu te tournes vers le Veilleur. Il *bouge*. Il devient, sous tes yeux, un *homme
 Choix :
 - Pour sortir doucement et rentrer à Brumeval, va au **321**.
 
-### 313
+### 313 {lieu: Chambre de Verre-Lune}
+{grants-keyword: INCLINAISON RESPECTUEUSE}
 
 Tu fais un pas en arrière. Tu t'inclines profondément devant la sphère.
 
@@ -4726,7 +4733,8 @@ Tu te tournes vers la porte. Tu sors par où tu es entré(e).
 Choix :
 - Pour rentrer à Brumeval, va au **321**.
 
-### 314
+### 314 {lieu: Chambre de Verre-Lune}
+{grants-keyword: QUATRIÈME VOIE}
 
 Tu prends la Boussole d'argent dans une main, la Pierre de mémoire dans l'autre. Tu lèves la tête. Tu murmures :
 
@@ -4738,9 +4746,9 @@ Par les jointures invisibles de la Chambre, par les espaces entre les étoiles p
 
 Tu poses la Pierre contre le verre. Tu poses la Boussole de l'autre côté. Et tu fermes les yeux.
 
-L'étoile, à l'intérieur, *éclate doucement*. Pas en mille morceaux. En autant de morceaux qu'il y a de lucioles. Chaque luciole, soudain, brille un tout petit peu plus. Elles deviennent ensemble la grande étoile, à elles toutes. Pas une seule lumière : une lumière partagée.
+L'étoile, à l'intérieur, *éclate doucement*. Pas en mille morceaux : en autant de morceaux qu'il y a de lucioles. Chaque luciole, soudain, brille un tout petit peu plus. Elles deviennent ensemble la grande étoile, à elles toutes. Pas une seule lumière : une lumière partagée.
 
-Le ciel, au-dessus du dôme, retrouve sa pleine couverture. Le Veilleur, à l'est, redevient enfant un instant, puis homme, puis disparaît, paisible. Anya pose ta main sur ton front.
+Le ciel, au-dessus du dôme, retrouve sa pleine couverture. Le Veilleur, à l'est, redevient enfant un instant, puis homme, puis disparaît, paisible. Anya pose sa main sur ton front.
 
 — « Tu as réinventé la Promesse, » te chuchote-t-elle.
 
@@ -4751,18 +4759,14 @@ Tu ouvres les yeux.
 Choix :
 - Pour sortir et rentrer à Brumeval, va au **321**.
 
-### 315
+### 315 {lieu: Chambre de Verre-Lune}
 
-(Réservé.)
-
-Tu prends un instant pour respirer. Tu te demandes si tu es bien la même personne qu'à ton arrivée. Tu ne sais pas. Tu sors.
+Tu prends un instant pour respirer. Tu te demandes si tu es la même personne qu'à ton arrivée. Tu ne sais pas. Tu sors.
 
 Choix :
 - Pour rentrer à Brumeval, va au **321**.
 
-### 316
-
-(Réservé.)
+### 316 {lieu: Chambre de Verre-Lune}
 
 Tu salues une dernière fois les présences. Tu vois Anya s'effacer doucement, en un sourire. Tu vois Mère Aïna se fondre dans le mur de gauche. Tu vois Mémorine te faire un dernier signe. Tu vois le Veilleur — ou ce qu'il en reste — qui te tend la main, vide, en signe d'au revoir.
 
@@ -4771,53 +4775,43 @@ Tu inclines la tête.
 Choix :
 - Pour sortir, va au **321**.
 
-### 317
+### 317 {lieu: Chambre de Verre-Lune}
 
-(Réservé.)
-
-Tu poses, sur le piédestal, la fleur de cœur-de-neige que tu portais (si tu en as encore une). Tu te dis : *Pour ceux qui passeront après moi.*
-
-Si tu ne portes pas la fleur, tu te dis quand même : *Je laisse, pour ceux qui suivront, un peu de ce que j'ai été ici.*
+Tu poses, sur le piédestal, une de tes trois fleurs de cœur-de-neige. Tu te dis : *Pour celles et ceux qui passeront après moi. Je leur laisse un peu de ce que j'ai été ici.*
 
 Choix :
 - Pour sortir, va au **321**.
 
-### 318
-
-(Réservé.)
+### 318 {lieu: Serre — Sortie}
 
 Tu sors lentement. Tu refermes la porte de verre derrière toi. Tu sens, en marchant, que tu vas plus droit qu'à l'aller.
 
 Choix :
 - Pour rentrer à Brumeval, va au **321**.
 
-### 319
-
-(Réservé.)
+### 319 {lieu: Galerie des Promesses}
 
 Tu retraverses la Galerie des Promesses. Cette fois-ci, les fresques *te saluent* en s'éclairant légèrement à ton passage. C'est presque drôle. Tu te dis que la Serre a de l'humour, à sa manière.
 
 Choix :
 - Pour continuer, va au **321**.
 
-### 320
-
-(Réservé.)
+### 320 {lieu: Serre — Sortie}
 
 Tu ressors par la fente d'entrée. Tu te baisses encore une fois. Tu sors dans la lumière du jour.
 
-L'air, dehors, est plus net. Tu lèves les yeux : le ciel est complet. *Tu vois les étoiles, même en plein jour, au-dessus du dôme.* Elles sont toutes là. Pas une ne manque.
+L'air, dehors, est plus net. Tu lèves les yeux : selon ce que tu as fait, le ciel te répond. Tu vois les étoiles, même en plein jour, au-dessus du dôme.
 
 Tu pleures un peu, sans savoir pourquoi.
 
 Choix :
 - Pour rentrer à Brumeval, va au **321**.
 
-### 321
+### 321 {lieu: Chemin du retour vers Brumeval}
 
 Tu reprends le sentier vers Brumeval.
 
-Le chemin est étrangement plus court que tu ne l'aurais cru. La forêt te laisse passer sans détour. Les bouleaux argentés se penchent légèrement à ton passage, comme une haie d'honneur silencieuse. Les lucioles bleues — si tu les as gagnées — t'accompagnent un moment. Puis elles restent, comme si elles savaient qu'elles ne quittent pas leur lieu.
+Le chemin est étrangement plus court que tu ne l'aurais cru. La forêt te laisse passer sans détour. Les bouleaux argentés se penchent légèrement à ton passage, comme une haie d'honneur silencieuse. Si tu portes le mot-clé **CONFIANCE DES LUCIOLES**, les lucioles bleues t'accompagnent un moment. Puis elles restent, comme si elles savaient qu'elles ne quittent pas leur lieu.
 
 Au bord du Verger pâle, tu te retournes une fois. Tu vois, au-dessus de la canopée, le dôme de la Serre, paisible.
 
@@ -4835,11 +4829,11 @@ Choix :
 - Si tu remarques un nouveau panneau cloué, encore vide, sur le tableau d'affichage, va au **331**.
 - Si tu sens, à ton poignet, qu'il manque le ruban rouge, va au **332**.
 
-### 322
+### 322 {lieu: Verger pâle}
 
 Tu traverses le Verger pâle.
 
-Les pommes de verre ont changé. Certaines ont retrouvé une couleur — pas un vrai rouge, mais une teinte plus tendre. La transparence s'estompe. Les abeilles, que tu n'avais pas vues à l'aller, sont revenues. Elles vont d'une fleur à l'autre, sans presque te regarder. Le monde, ici, reprend.
+Les pommes de verre ont changé. Certaines ont retrouvé une couleur — pas un vrai rouge, mais une teinte plus tendre. La transparence s'estompe. Les abeilles, que tu n'avais pas vues à l'aller, sont revenues. Elles passent d'une fleur à l'autre, sans presque te regarder. Le monde, ici, reprend.
 
 Au bord du verger, une silhouette familière. C'est Mémorine. Cette fois, dans la chair. Elle ne fait pas son signe : elle te fait un sourire, comme à une amie d'enfance.
 
@@ -4848,7 +4842,7 @@ Tu lui rends son sourire.
 Choix :
 - Pour entrer dans Brumeval, va au **323**.
 
-### 323
+### 323 {lieu: Brumeval — Place du village}
 
 Tu débouches sur la place de Brumeval.
 
@@ -4861,7 +4855,7 @@ Au coin de la rue, Lyse est en train de remonter de la rivière avec un seau d'e
 Choix :
 - Pour la serrer dans tes bras, va au **324**.
 
-### 324
+### 324 {lieu: Brumeval — Place du village}
 
 Lyse te serre fort. Elle ne pose pas de questions. Elle te serre.
 
@@ -4878,7 +4872,14 @@ Tu hoches la tête. Tu ne sais pas quoi dire. Elle te prend la main et te tire v
 Choix :
 - Pour rentrer chez Mère Aïna, va au **325**.
 
-### 325
+### 325 {lieu: Brumeval — Maison de Mère Aïna}
+{branch: 350, requires-keywords: [GARDIEN DEVENU, AMITIÉ DE NILO, FAON SAUVÉ, CONFIANCE DES LUCIOLES, VEILLEUR APAISÉ, COMPTINE COMPLÈTE]}
+{branch: 348, requires-keyword: QUATRIÈME VOIE}
+{branch: 345, requires-keyword: PROMESSE TRANSFORMÉE, requires-alliances-min: 2}
+{branch: 342, requires-keyword: PROMESSE TRANSFORMÉE}
+{branch: 339, requires-keyword: GARDIEN DEVENU}
+{branch: 336, requires-keyword: INCLINAISON RESPECTUEUSE}
+{branch: 333, requires-keyword: HONTE TRANSITOIRE}
 
 Tu pousses la porte de la maison de Mère Aïna. Elle est dans la cuisine. Elle ne se retourne pas. Comme le matin du départ.
 
@@ -4886,7 +4887,7 @@ Tu pousses la porte de la maison de Mère Aïna. Elle est dans la cuisine. Elle 
 
 — « Je suis revenu(e). »
 
-Elle se tourne, lentement. Elle ne te demande rien. Elle te regarde longuement. Tu vois ses yeux remplir.
+Elle se tourne, lentement. Elle ne te demande rien — elle te regarde longuement. Tu vois ses yeux se remplir.
 
 Elle ouvre les bras. Tu y vas.
 
@@ -4902,22 +4903,16 @@ Quand tu finis, elle hoche la tête.
 
 — « Tu as fait ce qu'il fallait. Quoi que tu aies choisi. »
 
+Cette nuit, dans ta chambre, tu choisiras la fin qui te ressemble.
+
 Choix :
-- Pour atteindre la fin de ton aventure, va au numéro qui correspond à ton choix.
-
-**RÉCAPITULATIF DES FINS :**
-
-- Si tu as pris la sphère (mot-clé **GARDIEN DEVENU**) avec tous les arcs résolus (AMITIÉ DE NILO + FAON SAUVÉ + CONFIANCE DES LUCIOLES + VEILLEUR APAISÉ + COMPTINE COMPLÈTE), va au **350**.
-- Si tu portes le mot-clé **QUATRIÈME VOIE**, va au **348**.
-- Si tu portes le mot-clé **PROMESSE TRANSFORMÉE** avec un ou plusieurs arcs résolus (au moins deux mots-clés d'alliance), va au **345**.
-- Si tu portes le mot-clé **PROMESSE TRANSFORMÉE** mais peu d'alliances, va au **342**.
-- Si tu portes le mot-clé **GARDIEN DEVENU** sans la majorité des arcs résolus, va au **339**.
-- Si tu portes le mot-clé **INCLINAISON RESPECTUEUSE**, va au **336**.
-- Si tu portes le mot-clé **HONTE TRANSITOIRE** (tu as fui le Veilleur sans jamais le revoir), va au **333**.
-- Si aucune des conditions ne s'applique clairement, choisis la fin qui te paraît la plus juste pour la décision que tu as prise.
-
-Avant d'atteindre ta fin, tu peux choisir l'un de ces moments calmes pour souffler :
-
+- Si tu as pris la sphère et résolu tous les arcs (amitié de Nilo, faon, lucioles, Veilleur, comptine), va au **350**. {requires-keyword: GARDIEN DEVENU}
+- Si tu as inventé la quatrième voie, va au **348**. {requires-keyword: QUATRIÈME VOIE}
+- Si tu as transformé la promesse, avec assez d'alliances autour de toi, va au **345**. {requires-keyword: PROMESSE TRANSFORMÉE}
+- Si tu as transformé la promesse, va au **342**. {requires-keyword: PROMESSE TRANSFORMÉE}
+- Si tu as pris la sphère, va au **339**. {requires-keyword: GARDIEN DEVENU}
+- Si tu t'es incliné(e) respectueusement, va au **336**. {requires-keyword: INCLINAISON RESPECTUEUSE}
+- Si tu es revenu(e) sans avoir agi, va au **333**. {requires-keyword: HONTE TRANSITOIRE}
 - Si tu regardes par la fenêtre les étoiles avant de dormir, va au **334**.
 - Si tu serres dans ta poche tous tes objets et que tu te les rappelles un à un, va au **335**.
 - Si tu repenses à toutes les personnes que tu as croisées, va au **337**.
@@ -4928,65 +4923,51 @@ Avant d'atteindre ta fin, tu peux choisir l'un de ces moments calmes pour souffl
 - Si tu sens, à ta poitrine, un cadeau invisible de la Serre, va au **344**.
 - Si tu poses la Boussole et la Pierre côte à côte sur ta table de nuit, va au **346**.
 - Si tu sens, à travers la fenêtre, les lucioles s'approcher de ta chambre, va au **347**.
-- Si tu sens à ta poitrine que la sphère est aimée par ceux qui en ont rêvé avant toi, va au **349**.
+- Si tu sens à ta poitrine que la sphère est aimée par celles et ceux qui en ont rêvé avant toi, va au **349**.
 
-### 326
+### 326 {lieu: Brumeval — Rue principale}
 
-(Réservé : transition de retour pour une variante.)
-
-Tu marches dans la rue principale de Brumeval. Tu remarques que les gens se saluent un peu plus qu'avant. Comme si, sans le savoir, ils savaient qu'on l'avait échappé belle.
+Tu marches dans la rue principale de Brumeval. Tu remarques que les gens se saluent un peu plus qu'avant — comme si, sans le savoir, ils savaient qu'on l'avait échappé belle.
 
 Choix :
 - Pour rentrer chez Mère Aïna, va au **325**.
 
-### 327
-
-(Réservé.)
+### 327 {lieu: Brumeval — Forge}
 
 Tu croises Maître Orven sur le pas de sa forge. Il te regarde longuement. Il ne dit rien. Il hoche juste la tête, comme on salue un égal.
 
 Choix :
 - Pour continuer, va au **325**.
 
-### 328
-
-(Réservé.)
+### 328 {lieu: Brumeval — Rue principale}
 
 Tu croises le maire Bertin. Il te jette un regard rapide, mécontent. Il ne sait pas pourquoi il est mécontent.
 
 Choix :
 - Pour continuer, va au **325**.
 
-### 329
-
-(Réservé.)
+### 329 {lieu: Brumeval — Rue principale}
 
 Tu vois Mémorine au coin de la rue. Elle t'envoie un dernier signe, puis disparaît dans la mercerie. Elle a sa vie à elle, maintenant.
 
 Choix :
 - Pour continuer, va au **325**.
 
-### 330
-
-(Réservé.)
+### 330 {lieu: Brumeval — Mairie}
 
 Tu poses la main sur le mur de la mairie en passant. Il est tiède de soleil. Tu te dis : *Voilà. C'est ici, ma maison.*
 
 Choix :
 - Pour continuer, va au **325**.
 
-### 331
+### 331 {lieu: Brumeval — Tableau d'affichage}
 
-(Réservé.)
-
-Tu remarques, en rentrant, qu'un nouveau panneau a été cloué sur le tableau d'affichage. Mais il est vide. Comme si quelqu'un l'avait préparé pour une annonce qui n'est pas encore prête.
+Tu remarques, en rentrant, qu'un nouveau panneau a été cloué sur le tableau d'affichage. Mais il est vide — comme si quelqu'un l'avait préparé pour une annonce qui n'est pas encore prête.
 
 Choix :
 - Pour continuer, va au **325**.
 
-### 332
-
-(Réservé.)
+### 332 {lieu: Brumeval — Rue principale}
 
 Tu sens, à ton poignet, qu'il manque le ruban rouge. Tu te rappelles que tu l'as noué à la première racine du Pont. Tu te dis que c'était la bonne décision. Mère Aïna le saura.
 

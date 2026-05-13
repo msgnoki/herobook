@@ -3869,7 +3869,7 @@ Choix :
 - Pour entrer quand même, par la porte du milieu, va au **250**.
 - Pour ressortir et chercher de l'aide en forêt, va au **205**.
 
-### 250
+### 250 {lieu: Salle ronde aux douze portes}
 
 Tu pousses la porte du milieu, sur laquelle est gravée une silhouette d'enfant. La porte est lourde mais elle s'ouvre. Derrière, un couloir long, sombre, vide.
 
@@ -3882,9 +3882,7 @@ Tu arrives au bout du couloir. Devant toi, une seconde porte, basse, ronde. Elle
 Choix :
 - Pour entrer, va au **261**.
 
-### 251
-
-(Tu reviendras peut-être par là, depuis l'extérieur.)
+### 251 {lieu: Serre — Paroi extérieure}
 
 Tu trouves, sur la paroi extérieure de la Serre, une fente plus petite encore que la première. Tu glisses ton œil. Tu vois, à l'intérieur, un couloir où passe, en flottant, une seule luciole bleue, lente.
 
@@ -3893,45 +3891,36 @@ Tu te dis que la Serre a beaucoup d'entrées. Toutes ne sont pas pour toi aujour
 Choix :
 - Pour t'éloigner et rentrer par la porte principale, va au **211**.
 
-### 252
-
-(Petit détour intérieur.)
+### 252 {lieu: Salle ronde aux douze portes}
 
 Tu remarques, dans le sol de la salle ronde aux portes, une petite trappe ronde, presque invisible, faite d'un seul morceau de verre laiteux. Elle ne sert pas aujourd'hui. Mais elle existe, et tu la notes dans ta tête.
 
 Choix :
 - Pour rejoindre les portes, va au **242**.
 
-### 253
-
-(Réservé.)
+### 253 {lieu: Salle ronde aux douze portes}
 
 Tu trouves, dans une niche, un petit chiffon. Tu te dis qu'il sert à essuyer ce qui salit. Tu ne salis rien. Tu remets le chiffon en place.
 
 Choix :
 - Pour continuer, va au **242**.
 
-### 254
-
-(Réservé.)
+### 254 {lieu: Salle ronde aux douze portes}
 
 Tu poses la main sur le mur. Tu sens, à travers la paroi végétale, une chaleur très lointaine — comme une grand-mère qui dort dans une pièce voisine, et dont tu sens la présence sans la voir.
 
 Choix :
 - Pour reprendre le tour des portes, va au **242**.
 
-### 255
-
-(Réservé.)
+### 255 {lieu: Salle ronde aux douze portes}
 
 Tu écoutes attentivement. Tu n'entends rien. Mais ton silence à toi est *en accord* avec celui de la Serre. Tu sens, sans pouvoir l'expliquer, qu'on s'est mis à respirer ensemble.
 
 Choix :
 - Pour continuer, va au **242**.
 
-### 256
-
-(Réservé.)
+### 256 {lieu: Salle ronde aux douze portes}
+{grants-object: Caillou poli}
 
 Tu trouves, posé contre une porte, un petit caillou plat. Il est si lisse qu'on dirait qu'il a été poli longtemps dans une poche. Tu le prends. Tu le poses dans la tienne.
 
@@ -3940,18 +3929,15 @@ Tu trouves, posé contre une porte, un petit caillou plat. Il est si lisse qu'on
 Choix :
 - Pour continuer, va au **242**.
 
-### 257
-
-(Réservé.)
+### 257 {lieu: Salle ronde aux douze portes}
 
 Tu remarques, en hauteur, une corniche très étroite, qui fait le tour de la salle. Tu te dis qu'on pourrait y marcher si on était petit. Tu te dis aussi que tu ne devrais pas. Tu repars.
 
 Choix :
 - Pour continuer, va au **242**.
 
-### 258
-
-(Réservé.)
+### 258 {lieu: Salle ronde aux douze portes}
+{grants-object: Feuille vide}
 
 Tu trouves, glissée sous une porte, une petite feuille de papier. Tu la prends. Elle est vierge, mais elle sent encore l'encre fraîche. Quelqu'un a écrit dessus puis effacé tout.
 
@@ -3960,18 +3946,14 @@ Tu trouves, glissée sous une porte, une petite feuille de papier. Tu la prends.
 Choix :
 - Pour continuer, va au **242**.
 
-### 259
-
-(Réservé.)
+### 259 {lieu: Salle ronde aux douze portes}
 
 Tu trouves, dans un coin, un nid d'hirondelle vide. Tu te dis : *La Serre, malgré tout, est un endroit où on a habité.* C'est rassurant.
 
 Choix :
 - Pour continuer, va au **242**.
 
-### 260
-
-(Réservé.)
+### 260 {lieu: Salle ronde aux douze portes}
 
 Tu fais une dernière fois le tour des portes. Tu remarques que les figures gravées sont rangées dans un certain ordre. Le poisson, la grue, le papillon — ce sont les figures liées à l'eau, à l'air. Le faon, le lièvre — les figures liées à la terre. Le loup, l'ours, le cheval — les figures liées au courage. La luciole — la figure liée à la lumière. Le renard, la chouette — les figures liées à la ruse.
 
@@ -3980,7 +3962,7 @@ Tu te dis que la Serre n'est pas seulement un monument : c'est un *langage*.
 Choix :
 - Pour ouvrir une porte (selon tes mots-clés), va au **242**.
 
-### 261
+### 261 {lieu: Hall des Jardins}
 
 Tu pousses la porte basse, ronde. De l'autre côté, tu débouches dans une salle plus haute encore que les précédentes. Le sol est en verre laiteux. Au-dessus de toi, c'est encore le ciel d'autrefois, criblé d'étoiles. Au centre de la salle, sur un grand socle de pierre, est posée une **carte** : une carte gravée du domaine intérieur de la Serre.
 
@@ -4004,34 +3986,28 @@ Choix :
 - Si tu poses ta main au centre de la carte, là où il y a l'étoile, va au **263**.
 - Si tu sors ton carnet pour recopier le motif de la carte, va au **264**.
 
-### 262
-
-(Réservé.)
+### 262 {lieu: Hall des Jardins}
 
 Tu remarques, sur la carte, un petit symbole supplémentaire : une larme. Tu te demandes ce que ça veut dire. Tu le notes dans ta tête.
 
 Choix :
 - Pour entrer dans un des trois Jardins, va au **261**.
 
-### 263
-
-(Réservé.)
+### 263 {lieu: Hall des Jardins}
 
 Tu poses ta main au centre de la carte, là où il y a l'étoile. Tu sens, sous ta paume, une pulsation lente. La Serre attend.
 
 Choix :
 - Pour entrer dans un Jardin, va au **261**.
 
-### 264
+### 264 {lieu: Hall des Jardins}
 
-(Réservé.)
-
-Tu sors un instant ton carnet. Tu recopies, dans la mesure où tu peux, le motif de la carte. Tu sais que c'est utile : la mémoire d'une carte, ça aide.
+Tu sors un instant ton carnet. Tu recopies, autant que tu peux, le motif de la carte. Tu sais que c'est utile : la mémoire d'une carte, ça aide.
 
 Choix :
 - Pour entrer dans un Jardin, va au **261**.
 
-### 265
+### 265 {lieu: Jardin de la Mémoire}
 
 Tu pousses la première porte. Tu entres dans le **Jardin de la Mémoire**.
 
@@ -4049,7 +4025,8 @@ Choix :
 - Pour graver ton nom sur la plaque, va au **266**.
 - Pour la laisser vide et continuer, va au **267**.
 
-### 266
+### 266 {lieu: Jardin de la Mémoire}
+{grants-keyword: NOM DANS LE JARDIN}
 
 Tu prends ton petit couteau. Tu graves doucement ton nom — celui que tu as choisi pour cette aventure — dans la plaque de cuivre du cinquième arbre.
 
@@ -4062,7 +4039,8 @@ Tu sens, dans la poitrine, comme un poids. Un poids accepté. Le poids de contin
 Choix :
 - Pour avancer dans le Jardin de la Mémoire, va au **268**.
 
-### 267
+### 267 {lieu: Jardin de la Mémoire}
+{grants-keyword: PLAQUE LAISSÉE BLANCHE}
 
 Tu poses la main sur la plaque vide. Tu la caresses, comme on caresse une joue. Mais tu ne graves rien. Tu te dis : *Pas encore. Pas comme ça.*
 
@@ -4073,13 +4051,14 @@ Tu te recules. La plaque reste vide. Aucun reproche ne monte autour de toi. Le J
 Choix :
 - Pour avancer dans le Jardin, va au **268**.
 
-### 268
+### 268 {lieu: Jardin de la Mémoire}
+{grants-keyword: LIGNÉE VUE}
 
-L'allée continue. Plus loin, tu vois un grand miroir vertical, encadré de branches vivantes. Tu approches. Mais ce n'est pas un miroir : c'est un cadre vide, dans lequel défilent, lentement, des images.
+L'allée continue. Plus loin, tu vois un grand miroir vertical, encadré de branches vivantes. Tu approches. Ce n'est pas un miroir : c'est un cadre vide, dans lequel défilent, lentement, des images.
 
-Tu reconnais : Mère Aïna, jeune femme, en train de cueillir des cerises. Tu reconnais : ta mère, plus jeune, en train de te tenir dans ses bras quand tu étais bébé. Tu reconnais : ton grand-père, que tu n'as connu que vieux, ici en train de pêcher dans une rivière que tu n'as jamais vue.
+Tu reconnais Mère Aïna, jeune femme, en train de cueillir des cerises. Tu reconnais ta mère, plus jeune, en train de te tenir dans ses bras quand tu étais bébé. Tu reconnais ton grand-père, que tu n'as connu que vieux, ici en train de pêcher dans une rivière que tu n'as jamais vue.
 
-Tu pleures. Tu ne pleures pas comme on pleure pour de la peine. Tu pleures parce que tu vois, d'un coup, tout ce que tu n'as pas su.
+Tu pleures. Pas comme on pleure pour de la peine. Tu pleures parce que tu vois, d'un coup, tout ce que tu n'as pas su.
 
 Tu te recules. Le cadre se vide.
 
@@ -4088,7 +4067,7 @@ Tu te recules. Le cadre se vide.
 Choix :
 - Pour continuer, va au **269**.
 
-### 269
+### 269 {lieu: Jardin de la Mémoire}
 
 Au bout de l'allée, une petite porte. Sur la porte, une seule phrase :
 
@@ -4101,7 +4080,7 @@ La porte s'ouvre.
 Choix :
 - Pour ressortir vers la salle centrale, va au **270**.
 
-### 270
+### 270 {lieu: Hall des Jardins}
 
 Tu sors du Jardin de la Mémoire. Tu te retrouves dans la salle centrale. Tu n'as pas marché si longtemps que ça. Et pourtant tu as l'impression d'être plus vieux(vieille) qu'en entrant.
 
@@ -4116,43 +4095,35 @@ Choix :
 - Si tu te vois dans le sol de verre, va au **273**.
 - Si tu remarques, sur un mur, une petite phrase à hauteur d'enfant, va au **274**.
 
-### 271
-
-(Réservé : petit moment.)
+### 271 {lieu: Hall des Jardins}
 
 Tu t'arrêtes au centre de la salle. Tu prends une grande respiration. Tu te dis : *Une chose à la fois.*
 
 Choix :
 - Pour reprendre la carte, va au **261**.
 
-### 272
+### 272 {lieu: Hall des Jardins}
 
-(Réservé.)
-
-Tu trouves, sur le bord du socle, une petite coupelle d'eau claire. À côté, une note : *Pour celui ou celle qui a soif, c'est ici.* Tu bois une gorgée. Tu te sens plus net.
+Tu trouves, sur le bord du socle, une petite coupelle d'eau claire. À côté, une note : *Pour celle ou celui qui a soif, c'est ici.* Tu bois une gorgée. Tu te sens plus net(te).
 
 Choix :
 - Pour continuer, va au **261**.
 
-### 273
-
-(Réservé.)
+### 273 {lieu: Hall des Jardins}
 
 Tu vois ton reflet dans le sol de verre. Tu te trouves plus calme qu'avant.
 
 Choix :
 - Pour continuer, va au **261**.
 
-### 274
-
-(Réservé.)
+### 274 {lieu: Hall des Jardins}
 
 Tu remarques, sur un mur, une petite phrase écrite à hauteur d'enfant : *Tu peux faire une pause.* Tu fais une pause. Tu repars.
 
 Choix :
 - Pour continuer, va au **261**.
 
-### 275
+### 275 {lieu: Jardin de la Patience}
 
 Tu pousses la deuxième porte. Tu entres dans le **Jardin de la Patience**.
 
@@ -4172,7 +4143,7 @@ Choix :
 - Pour t'impatienter et sortir tout de suite, va au **276**.
 - Pour attendre tranquillement, va au **277**.
 
-### 276
+### 276 {lieu: Hall des Jardins}
 
 Tu te relèves. Tu sors par où tu es venu(e). Tu te retrouves dans la salle centrale, irrité(e).
 
@@ -4185,11 +4156,12 @@ Tu ne te retournes pas. Tu reviendras peut-être. Tu ne reviendras peut-être pa
 Choix :
 - Pour entrer dans un autre Jardin, va au **261**.
 
-### 277
+### 277 {lieu: Jardin de la Patience}
+{grants-keyword: PATIENCE MÉRITÉE}
 
 Tu attends. Tu écoutes ton souffle. Tu comptes mentalement, par habitude. Tu t'arrêtes de compter. Tu laisses faire.
 
-Au bout d'un long moment qui n'est plus mesurable, quelque chose change. La pièce blanche ne change pas, mais toi, tu changes. Tu sens, dans tes épaules, un poids qui tombe. Tu sens, derrière tes yeux, une sorte de pluie tiède.
+Au bout d'un long moment qui n'est plus mesurable, quelque chose change. La pièce blanche ne change pas — mais toi, tu changes. Tu sens, dans tes épaules, un poids qui tombe. Tu sens, derrière tes yeux, une sorte de pluie tiède.
 
 Quand tu ouvres enfin les yeux, la pièce n'est plus vide. Au centre, posé sur le sol, il y a un petit pot de fleur. Dans le pot, une plante minuscule. Une seule feuille.
 
@@ -4201,20 +4173,22 @@ Choix :
 - Pour prendre la plante avec toi, va au **278**.
 - Pour la laisser là, va au **279**.
 
-### 278
+### 278 {lieu: Jardin de la Patience}
+{grants-object: Joubarbe verte}
 
 Tu te baisses. Tu prends le petit pot. Il est léger. Tu le glisses dans une poche extérieure de ton sac, à l'abri.
 
 **Ajoute la Joubarbe verte à tes objets.**
 
-Tu n'as jamais vu, dans cette aventure, quelque chose d'aussi normalement vivant. C'est ce qui te touche le plus.
+Tu n'as jamais vu, dans cette aventure, quelque chose d'aussi simplement vivant. C'est ce qui te touche le plus.
 
 Choix :
 - Pour ressortir, va au **280**.
 
-### 279
+### 279 {lieu: Jardin de la Patience}
+{grants-keyword: JOUBARBE LAISSÉE}
 
-Tu décides de laisser la joubarbe verte ici. Tu te dis : *Pour ceux qui passeront après moi.* C'est une décision simple. Elle te plaît.
+Tu décides de laisser la joubarbe verte ici. Tu te dis : *Pour celles et ceux qui passeront après moi.* C'est une décision simple. Elle te plaît.
 
 Tu te lèves. Tu sors. En passant le seuil, tu te retournes une dernière fois. La joubarbe verte semble, à distance, te faire un petit signe.
 
@@ -4223,7 +4197,7 @@ Tu te lèves. Tu sors. En passant le seuil, tu te retournes une dernière fois. 
 Choix :
 - Pour rejoindre la salle centrale, va au **280**.
 
-### 280
+### 280 {lieu: Hall des Jardins}
 
 Tu retrouves la salle centrale. La carte porte maintenant un second point lumineux. Tu as fait deux chemins sur trois.
 
@@ -4235,43 +4209,35 @@ Choix :
 - Si tu sors ton carnet pour écrire une phrase courte, va au **283**.
 - Si tu te dis que la patience est plus difficile que le courage, va au **284**.
 
-### 281
-
-(Réservé.)
+### 281 {lieu: Hall des Jardins}
 
 Tu regardes encore une fois la carte. Tu te sens plus stable.
 
 Choix :
 - Pour continuer, va au **280**.
 
-### 282
-
-(Réservé.)
+### 282 {lieu: Hall des Jardins}
 
 Tu marches autour du socle. Tu sens, sous le verre, des petites racines qui pulsent.
 
 Choix :
 - Pour continuer, va au **280**.
 
-### 283
-
-(Réservé.)
+### 283 {lieu: Hall des Jardins}
 
 Tu sors ton carnet. Tu écris une phrase courte : *Je vais bien. Je suis ici. Je suis en train.* Tu refermes le carnet.
 
 Choix :
 - Pour continuer, va au **280**.
 
-### 284
-
-(Réservé.)
+### 284 {lieu: Hall des Jardins}
 
 Tu te dis que la patience est plus difficile que le courage. Tu n'avais jamais pensé ça avant.
 
 Choix :
 - Pour continuer, va au **280**.
 
-### 285
+### 285 {lieu: Jardin de la Promesse}
 
 Tu pousses la troisième porte. Tu entres dans le **Jardin de la Promesse**.
 
@@ -4292,7 +4258,8 @@ Choix :
 - Pour poser dans le berceau un objet de ta poche, va au **287**.
 - Pour reculer et réfléchir encore, va au **288**.
 
-### 286
+### 286 {lieu: Jardin de la Promesse}
+{grants-keyword: MESSAGE DE L'ÉTOILE}
 
 Tu t'assieds. Tu poses tes mains sur tes genoux. Tu lèves les yeux.
 
@@ -4307,24 +4274,24 @@ Tu fermes les yeux.
 Choix :
 - Pour continuer, va au **289**.
 
-### 287
+### 287 {lieu: Jardin de la Promesse}
 
-Tu choisis un objet de ta poche. Lequel ? Tu hésites.
+Tu choisis un objet de ta poche. Tu hésites.
 
-(Cette section ne te demande pas de te séparer définitivement de quelque chose. Tu poses simplement, comme une offrande symbolique. Tu pourras reprendre l'objet en sortant si tu le souhaites.)
+Tu n'es pas obligé(e) de te séparer définitivement de quelque chose. Tu poses simplement, comme une offrande symbolique. Tu pourras reprendre l'objet en sortant.
 
-Si tu poses la **Pierre de mémoire**, tu remarques que la pierre, dans le berceau, se met à *briller*. Elle se charge encore plus. Quand tu la reprendras, elle aura emmagasiné de la lumière. **Note le mot-clé PIERRE PLEINE sur ta fiche.**
+Si tu poses la **Pierre de mémoire**, elle se met à *briller* dans le berceau. Elle se charge encore plus. Quand tu la reprendras, elle aura emmagasiné de la lumière. **Note le mot-clé PIERRE PLEINE sur ta fiche.**
 
-Si tu poses la **Boussole d'argent**, l'aiguille se met à tourner sans s'arrêter, comme si elle indiquait *partout*. **Note le mot-clé BOUSSOLE LIBÉRÉE sur ta fiche.**
+Si tu poses la **Boussole d'argent**, l'aiguille tourne sans s'arrêter, comme si elle indiquait *partout*. **Note le mot-clé BOUSSOLE LIBÉRÉE sur ta fiche.**
 
-Si tu poses la **Clé d'Ambre**, elle reste tranquille — la clé a déjà fait son travail.
+Si tu poses la **Clé d'Ambre**, elle reste tranquille — elle a déjà fait son travail.
 
 Si tu poses la **Graine lumineuse**, elle disparaît dans le berceau, et tu la retrouveras un peu plus tard, *différente.*
 
 Choix :
 - Pour reprendre tes objets et continuer, va au **289**.
 
-### 288
+### 288 {lieu: Jardin de la Promesse}
 
 Tu recules. Tu ne veux pas faire un geste que tu ne ferais que par politesse. Tu te dis : *Je ne sais pas encore. Je dois réfléchir.*
 
@@ -4333,7 +4300,7 @@ Tu sors du Jardin. Tu retournes dans la salle centrale.
 Choix :
 - Pour revenir plus tard, va au **290**.
 
-### 289
+### 289 {lieu: Jardin de la Promesse}
 
 Tu te tiens près du berceau. Tu lèves les yeux vers l'étoile. Tu sais ce que tu vas faire.
 
@@ -4341,14 +4308,14 @@ Sauf que tu ne le sais pas encore tout à fait. Tu sens, dans ta poitrine, *troi
 
 - L'envie de la *prendre* — de reprendre la promesse comme l'a fait Anya.
 - L'envie de la *transformer* — de l'aider à devenir autre chose, plus partageable.
-- L'envie de *partir*, de laisser le Veilleur tenir encore un peu, et de revenir un jour, plus prête, plus prêt.
+- L'envie de *partir*, de laisser le Veilleur tenir encore un peu, et de revenir un jour, plus prêt(e).
 
 Tu sors du Jardin sans avoir choisi. Tu te dis : *Je vais d'abord aller voir ce qu'il y a derrière la dernière porte.*
 
 Choix :
 - Pour rejoindre la salle centrale, va au **290**.
 
-### 290
+### 290 {lieu: Hall des Jardins}
 
 Tu retrouves la salle centrale. Sur la carte, le troisième point lumineux est apparu. Les trois Jardins, tu les as visités.
 
@@ -4365,7 +4332,9 @@ Choix :
 - Si tu regardes longuement la chaise de pierre, va au **293**.
 - Si tu poses ta main, une dernière fois, sur le socle de la carte, va au **294**.
 
-### 291
+### 291 {lieu: Hall des Jardins}
+{grants-keyword: GRATITUDE}
+{state-: FATIGUÉ} {state-: BLESSÉ LÉGER}
 
 Tu t'assieds. Tu repenses à tout ce qui t'a amené(e) ici. Tu repenses à Mère Aïna, à Lyse, à Mémorine, à Nilo (s'il est avec toi), au Veilleur, à Vellan, à Anya. Tu repenses à la fleur en verre du matin. Tu repenses au coq de fer tombé dans la fontaine. Tu repenses à toutes les petites choses, sans lesquelles tu ne serais pas là.
 
@@ -4376,9 +4345,7 @@ Tu te dis que tu as eu de la chance d'avoir tout ça.
 Choix :
 - Pour te lever et avancer vers le couloir final, va au **295**.
 
-### 292
-
-(Réservé.)
+### 292 {lieu: Hall des Jardins}
 
 Tu sors ton carnet. Tu y écris une dernière note :
 
@@ -4387,25 +4354,21 @@ Tu sors ton carnet. Tu y écris une dernière note :
 Choix :
 - Pour continuer, va au **290**.
 
-### 293
-
-(Réservé.)
+### 293 {lieu: Hall des Jardins}
 
 Tu regardes longuement la chaise de pierre. Elle est vide. Tu te dis : *Le Veilleur s'asseyait dessus, peut-être. Quand il était jeune.*
 
 Choix :
 - Pour continuer, va au **290**.
 
-### 294
-
-(Réservé.)
+### 294 {lieu: Hall des Jardins}
 
 Tu poses ta main, une dernière fois, sur le socle de la carte. Tu sens la pulsation. Elle est rapide. Tu te dis : *La Serre, elle aussi, attend.*
 
 Choix :
 - Pour continuer, va au **295**.
 
-### 295
+### 295 {lieu: Couloir final}
 
 Tu te diriges vers le fond de la salle. Là, un couloir s'ouvre, qui n'était pas là quand tu es entré(e) — ou que tu n'avais pas remarqué. C'est un couloir étroit, lumineux. Plus tu avances, plus la lumière devient blanche.
 
@@ -4423,7 +4386,8 @@ Choix :
 - Si tu te dis que tu as déjà gagné rien qu'en étant là, va au **299**.
 - Si tu vérifies une dernière fois ce que tu portes, va au **300**.
 
-### 296
+### 296 {lieu: Couloir final}
+{grants-keyword: SEUIL FRANCHI}
 
 Tu poses la main sur la porte sans la pousser. Le verre est tiède.
 
@@ -4436,34 +4400,28 @@ Tu ne sais pas encore quelle décision tu prendras. Mais tu sais que tu vas la p
 Choix :
 - Pour entrer dans la Chambre, va au **301**.
 
-### 297
-
-(Réservé.)
+### 297 {lieu: Couloir final}
 
 Tu remarques, sur le verre de la porte, des petites empreintes de doigts. D'autres sont passés. Tu n'es pas la première, tu n'es pas le premier. Tu te sens accompagné(e).
 
 Choix :
 - Pour entrer, va au **301**.
 
-### 298
-
-(Réservé.)
+### 298 {lieu: Couloir final}
 
 Tu murmures, à voix très basse, le nom d'Anya. Le verre, à ce nom, vibre un peu. Comme une corde qu'on aurait pincée.
 
 Choix :
 - Pour entrer, va au **301**.
 
-### 299
-
-(Réservé.)
+### 299 {lieu: Couloir final}
 
 Tu te dis : *Quoi qu'il arrive, j'ai déjà gagné, parce que je suis là.* Tu le penses pour de vrai.
 
 Choix :
 - Pour entrer, va au **301**.
 
-### 300
+### 300 {lieu: Couloir final}
 
 Tu vérifies, une dernière fois, ce que tu portes. Tes mots-clés, tes objets. Tu les comptes sur tes doigts. Tu sais ce que tu as. Tu sais ce que tu n'as pas.
 
@@ -4472,7 +4430,7 @@ Tu te dis : *C'est avec ça que je vais entrer. Pas plus, pas moins.*
 Choix :
 - Pour pousser la porte de verre, va au **301**.
 
-### 301
+### 301 {lieu: Chambre de Verre-Lune}
 
 Tu pousses la porte de verre.
 
@@ -4489,7 +4447,7 @@ Tu sens, à ta poitrine, que la sphère te reconnaît.
 Choix :
 - Pour t'approcher du piédestal, va au **302**.
 
-### 302
+### 302 {lieu: Chambre de Verre-Lune}
 
 Tu fais cinq pas. À chaque pas, tu sens les étoiles, autour de toi, te suivre du regard. C'est doux. Ce n'est pas effrayant.
 
@@ -4509,7 +4467,7 @@ Choix :
 - Pour regarder autour de toi pour voir ces présences, va au **303**.
 - Pour rester concentré(e) sur la sphère, va au **310**.
 
-### 303
+### 303 {lieu: Chambre de Verre-Lune}
 
 Tu te retournes lentement.
 

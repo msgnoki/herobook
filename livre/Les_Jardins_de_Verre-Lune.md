@@ -3203,29 +3203,31 @@ Tu n'es pas sûr(e) que ça compte. Mais tu te le dis quand même.
 Choix :
 - Pour partir vers la Serre, va au **201**.
 
-### 200
+### 200 {lieu: Bassin des Reflets — Lisière}
+{grants-keyword: AMITIÉ DE NILO}
+{state-: FATIGUÉ}
 
 Tu sors d'un coup d'un buisson de fougères. Tu te retrouves face à face avec quelqu'un. Tu pousses un cri. La personne pousse un cri.
 
-C'est **Nilo**. (Si tu portes le mot-clé **AMITIÉ DE NILO**, c'est lui qui t'a suivi(e) en cachette ; si tu ne le portes pas, c'est lui qui s'est échappé du village pour te rattraper.)
+C'est **Nilo**. Si tu portais déjà l'amitié de Nilo, c'est lui qui t'a suivi(e) en cachette ; sinon, c'est lui qui s'est échappé du village pour te rattraper.
 
 Il est essoufflé, sale, et il rit nerveusement.
 
 — « Pas mort(e) ? »
-— « Pas morte(t). »
+— « Pas mort(e). »
 
 Il te tend une petite boule serrée dans son poing. Il l'ouvre. À l'intérieur, il y a un quignon de fromage et une petite pomme — d'une vraie pomme, pas en verre.
 
 — « Mère Aïna m'a dit de te donner ça. »
 
-Tu manges, lentement. Tu n'avais pas réalisé à quel point tu avais faim.
+Tu manges, lentement. Tu n'avais pas mesuré à quel point tu avais faim.
 
 **Tu n'es plus FATIGUÉ. Note le mot-clé AMITIÉ DE NILO sur ta fiche.**
 
 Choix :
 - Pour repartir avec Nilo vers la Serre, va au **201**.
 
-### 201
+### 201 {lieu: Bois aux colonnes}
 
 Le sentier qui sort du Bassin grimpe en pente très douce. Au début, tu marches sans trop t'en apercevoir. Tu réfléchis. Tu repenses au Veilleur. Tu repenses aux trois choix qu'il t'a donnés. Tu ne sais pas encore lequel tu vas faire. Mais tu sens, dans ta poitrine, que ce sera bientôt nécessaire.
 
@@ -3242,7 +3244,7 @@ Choix :
 - Si tu trouves, dans la mousse, une seule chaussure d'enfant oubliée, va au **208**.
 - Si tu vois, près d'un tronc, une petite plaque de bronze fichée dans l'écorce, va au **209**.
 
-### 202
+### 202 {lieu: Bois aux colonnes}
 
 Tu avances seul(e) — ou tu te crois seul(e) — dans le bois aux colonnes.
 
@@ -3255,7 +3257,7 @@ Tu sens, contre ta poitrine, que la Pierre de mémoire (si tu l'as) est étonnam
 Choix :
 - Pour continuer, va au **204**.
 
-### 203
+### 203 {lieu: Bois aux colonnes}
 
 Nilo marche à côté de toi. Il a la bouche ouverte, comme un petit garçon devant un feu d'artifice.
 
@@ -3274,9 +3276,9 @@ Tu te dis que Nilo, parfois, a des mots tout à fait justes. Il ne se rendra jam
 Choix :
 - Pour continuer dans le bois, va au **204**.
 
-### 204
+### 204 {lieu: Clairière de la Serre}
 
-Vous (ou tu, si tu es seul(e)) débouchez dans une clairière en pente. À votre droite, la pente plonge vers une étendue d'herbe pâle. Au fond, à plus de cent pas, se dresse une grande paroi de verre vivant.
+Vous débouchez (ou tu débouches, si tu es seul(e)) dans une clairière en pente. À votre droite, la pente plonge vers une étendue d'herbe pâle. Au fond, à plus de cent pas, se dresse une grande paroi de verre vivant.
 
 C'est le dôme végétal de la **Serre Ancienne**.
 
@@ -3287,9 +3289,8 @@ Tu te tiens immobile. Tu sais que tu y es. Tu sais que ce que tu vas faire dans 
 Choix :
 - Pour descendre lentement vers la Serre, va au **210**.
 
-### 205
-
-(Tu reviendras peut-être par là.)
+### 205 {lieu: Bois aux colonnes — Source}
+{state-: FATIGUÉ} {state-: BLESSÉ LÉGER}
 
 Tu trouves, à côté du sentier, une petite source qui coule entre deux racines. L'eau est claire. Tu en bois trois gorgées. Tu te sens un peu plus lavé(e), comme si la source emportait avec elle un peu de la fatigue des Ruines.
 
@@ -3298,7 +3299,8 @@ Tu trouves, à côté du sentier, une petite source qui coule entre deux racines
 Choix :
 - Pour reprendre ta route, va au **204**.
 
-### 206
+### 206 {lieu: Bois aux colonnes}
+{grants-keyword: VISAGE NOUVEAU}
 
 Tu trouves, accroché à un tronc, un petit miroir rond, à peine plus grand qu'une pièce. Il est fixé là par une cordelette neuve. Sur son cadre est gravé un mot : *N'OUBLIE PAS.*
 
@@ -3311,7 +3313,8 @@ Tu te dis que c'est ce que veut dire *grandir*.
 Choix :
 - Pour reprendre ta route, va au **204**.
 
-### 207
+### 207 {lieu: Bois aux colonnes}
+{grants-object: Paille en huit}
 
 Tu repères, dans un buisson, un petit lapin tout blanc. Il ne court pas. Il te regarde tranquillement. À côté de lui, dans la mousse, posé soigneusement, il y a un brin de paille noué en huit.
 
@@ -3324,18 +3327,18 @@ Tu te dis que la forêt te donne, à intervalles réguliers, de tout petits cade
 Choix :
 - Pour repartir, va au **204**.
 
-### 208
+### 208 {lieu: Bois aux colonnes}
 
 Tu trouves, dans la mousse, une seule chaussure. Pas grande. Une chaussure d'enfant. Le cuir est noir, durci par les années. Quelqu'un, quelqu'une, a perdu cette chaussure il y a très longtemps.
 
-Tu la prends. Elle est légère. Tu la poses délicatement à plat dans la mousse. Tu te dis : *J'espère que celui ou celle qui l'a perdue a trouvé l'autre.*
+Tu la prends. Elle est légère. Tu la poses délicatement à plat dans la mousse. Tu te dis : *J'espère que celle ou celui qui l'a perdue a trouvé l'autre.*
 
 Tu repars.
 
 Choix :
 - Pour continuer, va au **204**.
 
-### 209
+### 209 {lieu: Bois aux colonnes}
 
 Tu remarques, près d'un tronc, une petite plaque de bronze fichée dans l'écorce.
 
@@ -3346,7 +3349,7 @@ C'est une consigne, pas un ordre. Tu la prends au sérieux. Tu ralentis le pas.
 Choix :
 - Pour continuer, va au **204**.
 
-### 210
+### 210 {lieu: Serre — Paroi extérieure}
 
 Tu descends la pente. Au pied de la grande paroi végétale, il n'y a pas de grande porte. Il y a, à hauteur de ta poitrine, une fente irrégulière, comme une bouche entrouverte de feuilles.
 
@@ -3366,7 +3369,8 @@ Choix :
 - Si tu possèdes la **Flûte de brume** et que tu joues une note devant la paroi, va au **219**.
 - Si tu prends une grande inspiration et te répètes que tu es prêt(e), va au **220**.
 
-### 211
+### 211 {lieu: Serre — Salle d'entrée}
+{grants-keyword: ENTRÉE DANS LA SERRE}
 
 Tu poses un genou en terre. Tu te penches en avant. Tu glisses la tête dans la fente. Les feuilles cèdent sans résistance, mais elles te frôlent partout — sur les joues, sur la nuque, sur les mains.
 
@@ -3378,12 +3382,12 @@ Ta première sensation, c'est que tu es dans une grande pièce ronde, *à l'enve
 
 Tu ouvres la bouche. Tu n'as pas de mot.
 
-**Ajoute le mot-clé ENTRÉE DANS LA SERRE sur ta fiche.**
+**Note le mot-clé ENTRÉE DANS LA SERRE sur ta fiche.**
 
 Choix :
 - Pour avancer au centre, va au **221**.
 
-### 212
+### 212 {lieu: Serre — Paroi extérieure}
 
 Tu décides de faire le tour. Tu marches sur la mousse, le long de la paroi végétale, et tu observes. La paroi, vue de près, est étonnamment vivante : tu vois passer dedans, comme des poissons sous la glace, des reflets bleus.
 
@@ -3399,16 +3403,14 @@ Choix :
 - Pour t'agenouiller et entrer, va au **211**.
 - Si tu remarques, plus loin sur la paroi, une fente plus petite encore, va au **251**.
 
-### 213
-
-(Réservé pour une option de retour vers la Serre.)
+### 213 {lieu: Serre — Paroi extérieure}
 
 Tu fais demi-tour, tu rebrousses chemin. Tu n'arrives pas à entrer. Tu te ressaisis. Tu reviens. Tu te baisses.
 
 Choix :
 - Pour entrer dans la fente, va au **211**.
 
-### 214
+### 214 {lieu: Serre — Paroi extérieure}
 
 Tu cherches, à la base de la paroi, des fissures plus petites. Tu en trouves une. Tu glisses ton œil. À l'intérieur, tu vois un couloir de mousse, et au bout, ce qui ressemble à une grande salle ronde aux étoiles.
 
@@ -3417,45 +3419,36 @@ Tu retires ton œil. Tu te recules. Tu sais où tu vas, maintenant.
 Choix :
 - Pour entrer par la fente principale, va au **211**.
 
-### 215
-
-(Réservé.)
+### 215 {lieu: Serre — Paroi extérieure}
 
 Tu trouves, près de la Serre, un petit autel : trois pierres empilées, sur lesquelles est posé un bouquet de fleurs séchées. Quelqu'un, ou quelqu'une, vient ici régulièrement. Tu n'es pas la seule personne au courant.
 
 Choix :
 - Pour entrer, va au **211**.
 
-### 216
-
-(Réservé.)
+### 216 {lieu: Serre — Paroi extérieure}
 
 Tu remarques, au pied de la paroi, des traces fraîches de pas. Petits. D'enfant. Quelqu'un est entré tout récemment. Tu te demandes si c'est Mémorine. Tu te demandes si c'est ton propre futur.
 
 Choix :
 - Pour entrer, va au **211**.
 
-### 217
-
-(Réservé.)
+### 217 {lieu: Serre — Paroi extérieure}
 
 Tu ramasses, au pied de la Serre, une feuille tombée. Elle est étrangement froide, presque givrée. Tu la glisses dans ton carnet, comme un signet.
 
 Choix :
 - Pour entrer, va au **211**.
 
-### 218
-
-(Réservé.)
+### 218 {lieu: Serre — Paroi extérieure}
 
 Tu poses ta main contre la paroi. Tu sens, sous ta paume, une pulsation lente. La Serre respire. Pas vite. Mais elle respire.
 
 Choix :
 - Pour entrer, va au **211**.
 
-### 219
-
-(Réservé.)
+### 219 {lieu: Serre — Paroi extérieure}
+{grants-keyword: SERRE SALUÉE}
 
 Tu reprends la flûte de brume, et tu joues une seule note, douce, devant la paroi. La paroi répond : les feuilles tressaillent légèrement, comme une caresse rendue.
 
@@ -3464,16 +3457,16 @@ Tu reprends la flûte de brume, et tu joues une seule note, douce, devant la par
 Choix :
 - Pour entrer, va au **211**.
 
-### 220
+### 220 {lieu: Serre — Paroi extérieure}
 
 Tu fais une grande inspiration. Tu te dis que tu es prêt(e). Tu n'es peut-être pas prêt(e) du tout. Mais tu as fait tout ce que tu pouvais pour le devenir.
 
 Choix :
 - Pour entrer dans la Serre, va au **211**.
 
-### 221
+### 221 {lieu: Serre — Salle d'entrée}
 
-Tu marches au centre de la salle ronde. Le sol est moelleux. À chaque pas, l'herbe semble se rappeler de tes pas précédents : tes empreintes restent fines, comme imprimées dans le velours, mais en cinq secondes elles se referment doucement.
+Tu marches au centre de la salle ronde. Le sol est moelleux. À chaque pas, l'herbe semble se rappeler de tes pas précédents : tes empreintes restent fines, comme imprimées dans le velours, puis, en cinq secondes, elles se referment doucement.
 
 Au centre exact de la salle, à la place où tu t'arrêtes, le sol porte un cercle de petites pierres blanches. Au milieu du cercle, posée à plat, il y a une grande feuille de chêne d'or — pas de l'or-métal : de l'or-couleur-de-feuille-d'automne, comme si l'arbre avait gardé son automne pour cette feuille seulement.
 
@@ -3485,7 +3478,8 @@ Choix :
 - Pour ramasser la feuille d'or et la garder, va au **222**.
 - Pour la laisser et continuer, va au **223**.
 
-### 222
+### 222 {lieu: Serre — Salle d'entrée}
+{grants-object: Feuille d'or}
 
 Tu cueilles la feuille d'or entre deux doigts. Elle est légère. Elle pèse à peu près le poids d'une plume de moineau.
 
@@ -3498,7 +3492,7 @@ Tu reprends ta marche.
 Choix :
 - Pour continuer, va au **223**.
 
-### 223
+### 223 {lieu: Galerie des Promesses}
 
 À l'arrière de la salle ronde, une ouverture en forme d'arche. Tu passes dessous. Tu entres dans un long couloir.
 
@@ -3519,23 +3513,22 @@ Choix :
 - Si tu suis du doigt une fresque représentant une route bordée de fleurs, va au **229**.
 - Si tu trouves, plus récente, une fresque qui te ressemble étrangement, va au **230**.
 
-### 224
-
-(Réservé : passage parallèle.)
+### 224 {lieu: Galerie des Promesses}
 
 Tu remarques, à mi-couloir, qu'un petit escalier discret descend, comme un raccourci. Tu te dis que ce n'est pas pour toi. Tu continues.
 
 Choix :
 - Pour continuer la Galerie, va au **231**.
 
-### 225
+### 225 {lieu: Galerie des Promesses}
 
 Tu trouves, sur le sol, un dessin tracé à la craie. Un cercle, une ligne droite vers le bas. *Mémorine est passée par ici.* Tu te dis qu'elle est, d'une certaine manière, partout où tu vas.
 
 Choix :
 - Pour continuer, va au **231**.
 
-### 226
+### 226 {lieu: Galerie des Promesses}
+{grants-keyword: BOULE FUMÉE BLEUE}
 
 Tu vois, dans une niche du couloir, un petit objet posé : une boule de cristal grosse comme un œuf. À l'intérieur de la boule, une fumée bleue tourne lentement.
 
@@ -3546,36 +3539,29 @@ Tu ne la prends pas. Mais tu la regardes longuement.
 Choix :
 - Pour continuer, va au **231**.
 
-### 227
-
-(Réservé.)
+### 227 {lieu: Galerie des Promesses}
 
 Tu trouves, à hauteur d'enfant, une petite inscription : *Si tu as peur, tu peux t'asseoir.* Tu lèves les yeux. Au pied du mur, une petite banquette de mousse t'attend. Tu t'assieds une minute. Tu respires. Tu repars.
 
 Choix :
 - Pour continuer, va au **231**.
 
-### 228
-
-(Réservé.)
+### 228 {lieu: Galerie des Promesses}
 
 Tu remarques que la lumière, dans la Galerie, ne vient de nulle part. Pas de fenêtre, pas de lampe. Et pourtant tu vois clair. Tu te dis que la lumière, ici, est une *mémoire* de lumière.
 
 Choix :
 - Pour continuer, va au **231**.
 
-### 229
-
-(Réservé.)
+### 229 {lieu: Galerie des Promesses}
 
 Tu suis du doigt une fresque qui montre une route bordée de fleurs. La route mène à un cercle de pierres dressées. Tu reconnais, parmi les pierres, la stèle de Vellan que tu as vue au Bassin.
 
 Choix :
 - Pour continuer, va au **231**.
 
-### 230
-
-(Réservé.)
+### 230 {lieu: Galerie des Promesses}
+{grants-keyword: PORTRAIT DANS LA SERRE}
 
 Tu trouves, dans la Galerie, une fresque récente — plus récente que les autres. Elle te montre, *toi*. Pas un enfant générique : *toi*, avec ton visage, ton sac, ton ruban rouge (ou pas, selon ce que tu as encore). Tu te recules. Tu ne savais pas qu'on pouvait peindre ici quelqu'un qui n'est pas encore peint nulle part.
 
@@ -3584,7 +3570,8 @@ Tu trouves, dans la Galerie, une fresque récente — plus récente que les autr
 Choix :
 - Pour continuer, va au **231**.
 
-### 231
+### 231 {lieu: Galerie des Promesses}
+{grants-keyword: HISTOIRE D'ANYA}
 
 La première fresque que tu prends le temps de regarder montre une femme jeune, en robe blanche. Tu reconnais Anya. Elle est à la lisière d'un bois. Devant elle, dans le ciel, une étoile énorme — plus grande que les autres — est en train de s'éteindre lentement. Tu vois bien que c'est une vraie étoile, pas une décoration.
 
@@ -3603,7 +3590,8 @@ Tu te recules d'un pas.
 Choix :
 - Pour continuer, va au **233**.
 
-### 232
+### 232 {lieu: Galerie des Promesses}
+{grants-keyword: LIGNÉE DE LA BOUSSOLE}
 
 La fresque de droite, plus tardive, montre une scène que tu connais. Mère Aïna, jeune femme, debout dans la cuisine de la maison. Devant elle, une fillette de douze ans. La fillette tient la boussole d'argent dans sa main.
 
@@ -3628,7 +3616,7 @@ Tu sens un picotement.
 Choix :
 - Pour continuer, va au **233**.
 
-### 233
+### 233 {lieu: Galerie des Promesses}
 
 Plus loin, une fresque montre Anya, plus âgée, debout au seuil d'une grande pièce ronde. Devant elle, sur un berceau de pierre, est posé un grand cristal lumineux. Anya pose sur le cristal la branche d'or que tu as vue dans la main du Veilleur. À côté d'elle, un homme jeune, debout, qu'on reconnaît : c'est le Veilleur, jeune. Il est beau. Il a l'air sérieux.
 
@@ -3643,7 +3631,8 @@ Tu sens quelque chose se serrer dans ta poitrine. Tu connaissais déjà l'histoi
 Choix :
 - Pour continuer, va au **234**.
 
-### 234
+### 234 {lieu: Galerie des Promesses}
+{grants-keyword: DOUZE GARDIENS}
 
 Une fresque immense couvre presque tout le mur de gauche. Elle est divisée en douze cases.
 
@@ -3660,7 +3649,8 @@ Tu as compris.
 Choix :
 - Pour continuer, va au **235**.
 
-### 235
+### 235 {lieu: Galerie des Promesses}
+{grants-keyword: VELLAN RESTÉ}
 
 Tu trouves une fresque plus récente, plus simple, plus brute. Elle montre Vellan. Le cartographe, plus jeune, debout devant la grande porte de bronze des Ruines. Il a son carnet à la main. Il a peur — ça se voit dans la fresque. Il pousse la porte.
 
@@ -3668,14 +3658,15 @@ Sous la fresque :
 
 > *Vellan crut comprendre. Il vint pour relever le Veilleur. Il rencontra la promesse. Il ne sut pas la prendre. Il ne sut pas la refuser non plus. Il resta.*
 
-Tu sens un grand triste. Vellan n'a pas trahi. Il a juste eu peur. Il est resté coincé entre les deux.
+Tu sens, en regardant la fresque, une grande tristesse. Vellan n'a pas trahi. Il a juste eu peur. Il est resté coincé entre les deux.
 
 **Note le mot-clé VELLAN RESTÉ sur ta fiche.**
 
 Choix :
 - Pour continuer, va au **236**.
 
-### 236
+### 236 {lieu: Galerie des Promesses}
+{grants-keyword: AÏNA SAVAIT}
 
 Une fresque te montre quelque chose d'inattendu : Mère Aïna, jeune femme, dans la forêt. Elle marche. Elle tient à la main un petit paquet. Elle ne regarde pas autour d'elle. Elle a l'air pressée.
 
@@ -3692,7 +3683,7 @@ Tu sens monter quelque chose entre la colère et l'amour. C'est un mélange neuf
 Choix :
 - Pour continuer, va au **237**.
 
-### 237
+### 237 {lieu: Galerie des Promesses}
 
 La dernière fresque que tu rencontres est différente. Elle n'est pas peinte. Elle est *blanche*. Une grande surface blanche, dans laquelle est laissé un cadre vide, à hauteur de tes yeux. Sous le cadre, écrit en lettres simples :
 
@@ -3706,7 +3697,8 @@ Choix :
 - Pour peindre quelque chose dans le cadre, va au **238**.
 - Pour laisser le cadre vide et continuer, va au **239**.
 
-### 238
+### 238 {lieu: Galerie des Promesses}
+{grants-keyword: FLEUR DE MÉMOIRE}
 
 Tu prends le pinceau. Tu trempes dans le bleu. Tu peins, simplement, une petite fleur, comme celles que tu aimes dessiner sur ton carnet. Une fleur à six pétales, sur une tige légère.
 
@@ -3721,7 +3713,8 @@ Tu n'as pas écrit ça. La Serre a écrit pour toi.
 Choix :
 - Pour continuer, va au **240**.
 
-### 239
+### 239 {lieu: Galerie des Promesses}
+{grants-keyword: CADRE LAISSÉ BLANC}
 
 Tu repousses doucement le pinceau. Tu te dis : *Je n'ai pas encore peint, parce que je ne sais pas encore quoi peindre.* Tu ne triches pas. Tu n'inventes pas un dessin pour faire joli.
 
@@ -3732,7 +3725,7 @@ Tu te recules. Le cadre reste blanc. Et tu sens, dans la pièce, que la Serre te
 Choix :
 - Pour continuer, va au **240**.
 
-### 240
+### 240 {lieu: Salle ronde aux douze portes}
 
 Tu sors de la Galerie des Promesses par une seconde arche. De l'autre côté, l'air est différent. Plus frais. Plus net. Tu sens, sous tes pieds, que le sol n'est plus de l'herbe : c'est, à présent, du verre — du verre épais, opaque, légèrement bleuté.
 
@@ -3745,7 +3738,7 @@ Choix :
 - Pour faire le tour des douze portes, va au **242**.
 - Si tu portes le mot-clé **JARDINS NOMMÉS**, tu peux appeler doucement : *Jardins de Verre-Lune.* Va au **244**.
 
-### 241
+### 241 {lieu: Salle ronde aux douze portes}
 
 Tu poses la main sur la chaise de pierre. Elle est tiède. Tu t'assieds.
 
@@ -3761,7 +3754,10 @@ Choix :
 - Pour rester assis(e) et écouter, va au **245**.
 - Pour te lever et faire le tour des portes, va au **242**.
 
-### 242
+### 242 {lieu: Salle ronde aux douze portes}
+{branch: 246, requires-keyword: CONFIANCE DES LUCIOLES}
+{branch: 247, requires-keyword: FAON SAUVÉ}
+{branch: 248, requires-keyword: RENARD GUIDE}
 
 Tu fais lentement le tour des douze portes. Chacune est différente. L'une est en bois ancien, l'autre en bronze, l'autre en pierre noire. Sur chacune, gravée, une figure : la chouette, le renard, la luciole, le faon, le lièvre, le poisson, la grue, le papillon, l'ours, la chèvre, le loup, le cheval. Les douze figures du cercle des Ruines.
 
@@ -3770,9 +3766,9 @@ Tu fais lentement le tour des douze portes. Chacune est différente. L'une est e
 Tu te recules. Tu sens que tu vas devoir choisir une porte.
 
 Choix :
-- Si tu portes le mot-clé **CONFIANCE DES LUCIOLES**, tu peux ouvrir la porte de la luciole, va au **246**.
-- Si tu portes le mot-clé **FAON SAUVÉ**, tu peux ouvrir la porte du faon, va au **247**.
-- Si tu portes le mot-clé **RENARD GUIDE**, tu peux ouvrir la porte du renard, va au **248**.
+- Si tu portes le mot-clé **CONFIANCE DES LUCIOLES**, tu peux ouvrir la porte de la luciole, va au **246**. {requires-keyword: CONFIANCE DES LUCIOLES}
+- Si tu portes le mot-clé **FAON SAUVÉ**, tu peux ouvrir la porte du faon, va au **247**. {requires-keyword: FAON SAUVÉ}
+- Si tu portes le mot-clé **RENARD GUIDE**, tu peux ouvrir la porte du renard, va au **248**. {requires-keyword: RENARD GUIDE}
 - Si tu ne portes aucun de ces trois mots-clés, va au **249**.
 - Pour t'asseoir d'abord sur la chaise de pierre, va au **241**.
 - Si tu remarques, au pied du socle, une petite phrase gravée discrètement, va au **243**.
@@ -3786,9 +3782,7 @@ Choix :
 - Si tu trouves, dans un coin, un nid d'hirondelle vide, va au **259**.
 - Si tu fais une dernière fois le tour des portes pour étudier les figures, va au **260**.
 
-### 243
-
-(Réservé.)
+### 243 {lieu: Salle ronde aux douze portes}
 
 Tu remarques, au pied du socle, gravée discrètement, une petite phrase : *Ne te presse pas. Tu as déjà fait le plus dur, qui était de venir.*
 
@@ -3797,7 +3791,8 @@ Tu souris malgré toi. Tu te dis que les Jardins sont gentils.
 Choix :
 - Pour continuer, va au **242**.
 
-### 244
+### 244 {lieu: Salle ronde aux douze portes}
+{branch: 261, requires-keyword: JARDINS NOMMÉS}
 
 Tu prononces, à voix calme :
 
@@ -3811,7 +3806,8 @@ Choix :
 - Pour descendre l'escalier secret, va au **261**.
 - Pour remonter d'abord et faire le tour des portes, va au **242**.
 
-### 245
+### 245 {lieu: Salle ronde aux douze portes}
+{state-: FATIGUÉ}
 
 Tu restes assis(e). L'étoile au-dessus de toi bat — très lentement. À chaque battement, tu sens, dans tout ton corps, un courant de chaleur très douce.
 
@@ -3828,7 +3824,7 @@ Tu te dis que le temps, dans cette pièce, ne marche pas pareil. Tu n'as pas bes
 Choix :
 - Pour te relever et faire le tour des portes, va au **242**.
 
-### 246
+### 246 {lieu: Couloir de la luciole}
 
 Tu poses la main sur la porte de la luciole. Elle est faite de bois clair gravé d'une spirale. Elle s'ouvre toute seule. Derrière, un long couloir de mousse bleue. Au bout, une chambre où l'air *brille*.
 
@@ -3837,7 +3833,7 @@ Tu sens, en marchant, qu'un millier de lucioles, à l'intérieur du couloir, son
 Choix :
 - Pour entrer dans la chambre brillante, va au **261**.
 
-### 247
+### 247 {lieu: Couloir du faon}
 
 Tu poses la main sur la porte du faon. Elle est faite de bois roux, gravée d'une empreinte de sabot. Elle s'ouvre.
 
@@ -3848,7 +3844,7 @@ Il te précède dans le couloir, comme un petit guide.
 Choix :
 - Pour le suivre, va au **261**.
 
-### 248
+### 248 {lieu: Couloir du renard}
 
 Tu poses la main sur la porte du renard. Elle est faite d'écorce argentée. Elle s'ouvre.
 
@@ -3857,9 +3853,9 @@ Derrière, un long couloir où le sol est jonché de feuilles d'automne. Au bout
 Choix :
 - Pour le suivre, va au **261**.
 
-### 249
+### 249 {lieu: Salle ronde aux douze portes}
 
-Si tu n'as aucun mot-clé d'allié animal, la voix douce que tu entends t'avertit doucement :
+Tu n'as aucun mot-clé d'allié animal. La voix douce que tu entends t'avertit, sans dureté :
 
 — « Tu peux quand même entrer. Mais sans alliés, le voyage sera plus solitaire. »
 

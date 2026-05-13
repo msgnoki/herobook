@@ -1433,7 +1433,7 @@ Si tu possèdes la compétence **Agilité**, tu redescends sans une éraflure. S
 Choix :
 - Pour rejoindre le Pont des Racines, va au **88**.
 
-### 80
+### 80 {lieu: Cathédrale de bois}
 
 Tu pénètres dans une zone où les troncs sont plus hauts encore. C'est la cathédrale de bois. La lumière n'arrive presque plus jusqu'au sol. Tu marches dans une demi-pénombre verte, presque un crépuscule.
 
@@ -1447,7 +1447,8 @@ Choix :
 - Pour saluer la pierre et continuer, va au **88**.
 - Pour t'agenouiller et toucher le front à la pierre, va au **83**.
 
-### 81
+### 81 {lieu: Cathédrale de bois}
+{grants-object: Corde tressée}
 
 Tu trouves, suspendue à une branche basse, une corde tressée d'une main savante, déjà nouée en boucles, comme prête à servir. Elle a l'air toute neuve. Pourtant personne ne passe par ici.
 
@@ -1460,7 +1461,7 @@ Au pied de la branche, sur l'écorce, est gravé un V. Le même V qu'à l'entré
 Choix :
 - Pour rejoindre le Pont des Racines, va au **88**.
 
-### 82
+### 82 {lieu: Cathédrale de bois}
 
 D'un seul coup, le vent se lève. Les feuilles des frênes s'envolent par milliers. Mais ce ne sont pas des feuilles vertes : ce sont des feuilles argentées, légères comme des copeaux. Elles tombent sur toi en pluie. Elles ne mouillent pas. Elles tintent.
 
@@ -1471,7 +1472,8 @@ Quand tout est passé, tu remarques quelque chose qui n'y était pas avant : un 
 Choix :
 - Pour suivre le sentier neuf, va au **88**.
 
-### 83
+### 83 {lieu: Cathédrale de bois}
+{grants-keyword: SOUFFLE LENT}
 
 Tu t'agenouilles. Tu poses ton front contre la pierre. Elle est froide, mais pas vraiment froide : c'est la fraîcheur d'une eau au repos.
 
@@ -1486,7 +1488,7 @@ Tu te relèves. Tu te sens un peu plus calme. Comme si tu avais reçu un message
 Choix :
 - Pour reprendre ton chemin vers le Pont, va au **88**.
 
-### 84
+### 84 {lieu: Cathédrale de bois}
 
 Tu marches longtemps. Tu commences à perdre ton sens du temps. À un moment, sans que tu saches comment, tu te retrouves sur la même petite clairière où, te semble-t-il, tu étais déjà passé(e) plus tôt. La forêt te fait tourner en rond.
 
@@ -1499,7 +1501,7 @@ Sinon, tu cours un peu au hasard, et tu déchires ta manche à une ronce. **Tu e
 Choix :
 - Pour rejoindre quand même le Pont des Racines, va au **88**.
 
-### 85
+### 85 {lieu: Cathédrale de bois}
 
 Tu sens, derrière toi, qu'on te suit. Pas Nilo : tu sais reconnaître son pas. Quelqu'un d'autre. Quelqu'un qui sait marcher sans bruit.
 
@@ -1516,7 +1518,7 @@ Tu reprends ta route. Tu n'oses plus regarder en arrière. Mais tu sens, jusqu'a
 Choix :
 - Pour continuer, va au **88**.
 
-### 86
+### 86 {lieu: Cathédrale de bois}
 
 Les lucioles se réunissent autour de toi. Elles forment une longue traînée bleue qui s'enfonce dans la forêt, droit devant. Tu comprends : elles t'ouvrent un chemin sûr.
 
@@ -1531,7 +1533,8 @@ Si tu portes le mot-clé **CONFIANCE DES LUCIOLES**, l'une d'elles se pose un in
 Choix :
 - Pour aller au Pont, va au **88**.
 
-### 87
+### 87 {lieu: Étang noir}
+{grants-keyword: SAULE SUR L'ÎLE}
 
 Tu débouches sur une petite étendue d'eau noire, juste avant le ravin. C'est plus qu'une mare et moins qu'un lac. Au centre, un îlot tout rond, sur lequel pousse un seul saule.
 
@@ -1546,7 +1549,7 @@ Tu te dis que tu reviendras peut-être, plus tard, quand tu auras un moyen de tr
 Choix :
 - Pour reprendre ta route vers le Pont, va au **88**.
 
-### 88
+### 88 {lieu: Pont des Racines — Approche}
 
 Tu approches du Pont des Racines.
 
@@ -1575,7 +1578,7 @@ Choix :
 - Si tu n'es pas sûr(e) du chemin et regardes ta boussole à l'aube, va au **98**.
 - Si tu te perds en cercles dans les fougères, va au **84**.
 
-### 89
+### 89 {lieu: Pont des Racines — Approche}
 
 Tu t'arrêtes net. Tu n'as pas envie. Ce n'est pas la peur de tomber — c'est la peur, plus grande, d'aller plus loin que tu ne pourras revenir. Tu t'assieds sur une racine, à l'écart du pont.
 
@@ -1591,7 +1594,7 @@ Choix :
 - Pour traverser le Pont, va au **100**.
 - Pour chercher un autre passage, va au **90**.
 
-### 90
+### 90 {lieu: Pont des Racines — Approche}
 
 Tu descends le long du ravin sur quelques centaines de pas, à la recherche d'un passage plus bas, plus large, moins haut.
 
@@ -1607,7 +1610,7 @@ Choix :
 - Si tu possèdes la compétence **Agilité**, tu peux tenter la corde basse au-dessus du torrent, va au **97**.
 - Pour revenir au Pont, va au **88**.
 
-### 91
+### 91 {lieu: Pont des Racines — Approche}
 
 Tu entends un son léger, dans l'air, à intervalles réguliers. Un *ding*. Puis un autre *ding*. Comme une cloche très lointaine.
 
@@ -1620,7 +1623,7 @@ Tu te demandes qui peut s'occuper de carillons de verre dans une forêt comme ce
 Choix :
 - Pour reprendre ta route et atteindre le Pont, va au **88**.
 
-### 92
+### 92 {lieu: Pont des Racines — Approche}
 
 Tu lèves les yeux. Sur une grosse branche, une chouette est posée. Pas la chouette de la flûte. Une autre. Plus grande. Et elle a — tu cilles, tu ouvres les yeux en grand, tu cilles encore — trois yeux. Le troisième est posé au milieu de son front, plus petit, plus humide.
 
@@ -1633,7 +1636,8 @@ Tu salues la chouette d'un signe de la main. Elle cligne lentement le troisième
 Choix :
 - Pour reprendre ta route, va au **88**.
 
-### 93
+### 93 {lieu: Pont des Racines — Approche}
+{grants-keyword: TROIS LAMPES VUES}
 
 Tu lèves les yeux. Au-dessus de toi, la canopée des frênes s'écarte un instant, comme un rideau qui se déchire au vent. Tu vois — en plein jour — trois petites étoiles. Pas le soleil. De vraies étoiles, blanches et nettes, dans le ciel diurne.
 
@@ -1648,7 +1652,7 @@ Le rideau de canopée se referme. Les étoiles disparaissent.
 Choix :
 - Pour rejoindre le Pont des Racines, va au **88**.
 
-### 94
+### 94 {lieu: Pont des Racines — Approche}
 
 Tu marches le long du ravin, à la lisière du précipice, en faisant très attention où tu poses les pieds. À un endroit, tu remarques que la mousse, en bordure, a la forme parfaite d'un soulier. Quelqu'un s'est tenu là, peut-être longtemps, à regarder le ravin.
 
@@ -1659,7 +1663,8 @@ Tu te recules. La forêt est ainsi : elle te montre toujours, par petits signes,
 Choix :
 - Pour rejoindre le Pont, va au **88**.
 
-### 95
+### 95 {lieu: Pont des Racines — Approche}
+{grants-object: page de carte de Vellan}
 
 Tu trouves, accroché à une branche, un petit lambeau d'étoffe couleur d'écorce. Tu le décroches. Il y a, fixé dessus par une épingle de bois, un bout de papier plié en quatre, fait du même papier que la page de croquis de Vellan.
 
@@ -1672,7 +1677,8 @@ Quelqu'un a essayé de laisser un conseil à un futur voyageur. Ce conseil, c'es
 Choix :
 - Pour rejoindre le Pont, va au **88**.
 
-### 96
+### 96 {lieu: Pont des Racines — Approche}
+{grants-keyword: RÊVE D'ANYA}
 
 Tu décides de bivouaquer là. Tu ramasses un peu de bois sec. Tu prépares un petit feu, modeste, à l'abri d'un rocher pour qu'on ne te voie pas trop. Tu manges la moitié de ton pain. Tu te roules dans ta cape.
 
@@ -1693,7 +1699,7 @@ Tu te réveilles à l'aube.
 Choix :
 - Pour t'élancer sur le Pont, va au **100**.
 
-### 97
+### 97 {lieu: Pont des Racines — Approche}
 
 Tu te suspends à la corde basse, les jambes balançant au-dessus du torrent. C'est plus haut que tu ne pensais. Tu avances main après main, sans regarder en bas.
 
@@ -1706,7 +1712,7 @@ Mais tu n'as pas pris le Pont des Racines. Tu as perdu la possibilité de voir c
 Choix :
 - Pour reprendre ta route, va au **103**.
 
-### 98
+### 98 {lieu: Pont des Racines — Approche}
 
 À l'aube, tu te lèves. Tu as froid. Le brouillard est descendu pendant la nuit, et le ravin entier est rempli d'une mousse blanche dans laquelle on ne voit pas le torrent : on l'entend seulement, en dessous.
 
@@ -1722,7 +1728,7 @@ Tu te sens un peu plus brave.
 Choix :
 - Pour t'engager sur le Pont, va au **100**.
 
-### 99
+### 99 {lieu: Pont des Racines — Approche}
 
 Tu t'arrêtes au seuil du Pont. Tu mets un genou en terre. Tu sors le ruban rouge de ton poignet — celui que t'a noué Mère Aïna, si tu l'as encore — et tu le noues à la première racine.
 
@@ -1735,7 +1741,7 @@ Tu te relèves. Tu te sens plus léger(e). Tu sais que ce n'est qu'un petit ruba
 Choix :
 - Pour t'engager sur le Pont, va au **100**.
 
-### 100
+### 100 {lieu: Pont des Racines — Traversée}
 
 Tu poses ton premier pied sur la première racine.
 
@@ -1752,7 +1758,7 @@ Choix :
 - Si tu portes le mot-clé **RÊVE D'ANYA** ou si tu as la page de carte de Vellan, pour suivre la racine du milieu comme on te l'a dit, va au **102**.
 - Si tu portes le mot-clé **CONFIANCE DES LUCIOLES**, tu peux appeler les lucioles à venir te guider. Va au **104**.
 
-### 101
+### 101 {lieu: Pont des Racines — Traversée}
 
 Tu suis la racine la plus large. C'est la décision raisonnable. Mais à mi-pont, la racine que tu pensais large devient très étroite, et sous ton pied droit, tu sens qu'elle plie d'une drôle de manière.
 
@@ -1766,7 +1772,7 @@ Choix :
 - Pour ramasser, en passant, l'objet brillant au creux de la racine du milieu, va au **105**.
 - Pour fuir le pont sans rien prendre d'autre, va au **106**.
 
-### 102
+### 102 {lieu: Pont des Racines — Traversée}
 
 Tu te concentres. Tu sais quelle racine prendre. Tu poses le pied sur la racine du milieu, plus mince mais plus ferme. Sous tes pieds, le bois vivant prend ton appui sans se dérober. Tu avances calmement.
 
@@ -1781,7 +1787,7 @@ Tu reprends ta marche. Tu arrives à l'autre rive sans avoir failli. Tu te dis q
 Choix :
 - Pour aborder les Ruines du Cartographe, va au **106**.
 
-### 103
+### 103 {lieu: Pont des Racines — Traversée}
 
 De l'autre côté du ravin, tu te tiens un instant pour reprendre ton souffle. Tu n'as pas pris le Pont des Racines : tu as choisi un autre chemin, plus brutal. Tu n'as pas vu l'objet qui brillait au milieu.
 
@@ -1792,7 +1798,7 @@ Devant toi, la paroi de roche s'élève, couverte de lierre. Une faille noire s'
 Choix :
 - Pour t'approcher de la faille, va au **106**.
 
-### 104
+### 104 {lieu: Pont des Racines — Traversée}
 
 Tu lèves la main et tu murmures : *Lucioles, à moi.* Les bourdonnements répondent. Une dizaine d'entre elles, venues de derrière toi, se posent en cercle au-dessus du pont, comme un anneau lumineux. Elles t'indiquent, mètre par mètre, où poser le pied.
 
@@ -1807,7 +1813,7 @@ Quand tu poses le pied de l'autre côté, les lucioles s'éparpillent doucement 
 Choix :
 - Pour aborder les Ruines, va au **106**.
 
-### 105
+### 105 {lieu: Pont des Racines — Traversée}
 
 Tu te penches sur le creux. Au fond, il y a une médaille ronde, en bronze, gravée d'un astre à six branches. Elle a glissé là il y a longtemps. Tu glisses tes doigts dans le nœud de racines pour l'attraper. Elle est froide. Tu la tires. Elle vient.
 
@@ -1820,7 +1826,7 @@ Tu te redresses. Tu finis la traversée à quatre pattes, prudemment. À chaque 
 Choix :
 - Pour t'approcher des Ruines, va au **106**.
 
-### 106
+### 106 {lieu: Ruines du Cartographe — Entrée}
 
 Tu te trouves devant les Ruines du Cartographe.
 
@@ -1836,7 +1842,7 @@ Choix :
 - Si tu repères, près du seuil, une colonne renversée et gravée, va au **112**.
 - Si tu sens, dès l'entrée, une ombre te suivre, va au **115**.
 
-### 107
+### 107 {lieu: Ruines du Cartographe — Entrée}
 
 Tu hésites sur le seuil. Tu te baisses. Au sol, dans le sable, il y a des empreintes. Pas humaines. Quatre doigts, longs, avec une griffe au bout. Elles vont vers l'intérieur. Elles ne ressortent pas.
 
@@ -1850,7 +1856,7 @@ Choix :
 - Pour entrer maintenant, va au **108**.
 - Pour faire le tour à gauche par prudence, va au **109**.
 
-### 108
+### 108 {lieu: Ruines du Cartographe — Entrée}
 
 Tu pousses la grande faille. Tu entres dans une pièce ronde. La pièce sent la pierre froide et la cendre vieille. Sur les murs, des fresques très pâles montrent des cartographes en train de dessiner des cartes — sauf que les cartes qu'ils dessinent ne sont pas du sol : ce sont des cartes du ciel.
 
@@ -1865,7 +1871,7 @@ Choix :
 - Pour t'asseoir un instant et lire calmement, va au **117**.
 - Pour examiner un grand mécanisme contre le mur, va au **118**.
 
-### 109
+### 109 {lieu: Ruines du Cartographe — Entrée}
 
 Tu contournes la tour à gauche, par les ronces. Tu trouves un escalier extérieur, à demi écroulé, qui mène à un palier au premier étage. L'escalier a perdu trois marches au milieu. Il faudrait sauter.
 
@@ -1878,7 +1884,7 @@ Sur le palier, une porte basse s'ouvre. Tu te baisses pour passer.
 Choix :
 - Pour entrer dans la pièce qui s'ouvre, va au **143**.
 
-### 110
+### 110 {lieu: Ruines du Cartographe — Entrée}
 
 Tu descends sur la droite. La bouche d'égout est en réalité un passage taillé dans la roche, à hauteur d'enfant. Tu te baisses. Tu allumes ta lampe-tempête. Le passage descend en pente douce sur une dizaine de mètres, puis débouche dans une cave humide.
 
@@ -1892,7 +1898,8 @@ Choix :
 - Pour rejoindre la grande pièce ronde, va au **108**.
 - Pour t'engager dans le couloir qui prolonge la cave, va au **114**.
 
-### 111
+### 111 {lieu: Ruines du Cartographe — Entrée}
+{grants-object: Bille du ciel}
 
 Tu te penches sous la table de pierre. Il fait sombre. Tu touches du bout des doigts une petite chose dure, sphérique, et froide. Tu sors la main pleine d'une poussière noire et tenant entre tes doigts une bille de verre. Pas une bille d'enfant : une vraie sphère de verre travaillé, dans laquelle on voit, en creux, ce qui ressemble à une carte d'étoiles.
 
@@ -1906,7 +1913,7 @@ Choix :
 - Pour revenir à la table, va au **108**.
 - Pour suivre, derrière toi, un courant d'air frais, va au **113**.
 
-### 112
+### 112 {lieu: Ruines du Cartographe — Entrée}
 
 Tu remarques, près du seuil, une colonne renversée. Sur le fût, des inscriptions à demi rongées. Tu te penches.
 
@@ -1923,7 +1930,7 @@ Si tu portes le mot-clé **PROMESSE ENTENDUE**, l'inscription vibre légèrement
 Choix :
 - Pour entrer dans la pièce ronde, va au **108**.
 
-### 113
+### 113 {lieu: Ruines du Cartographe — Entrée}
 
 Tu suis le courant d'air. Il vient d'une fente, au pied du mur de la cave. Tu la pousses avec ton épaule. La pierre branle, puis cède.
 
@@ -1936,7 +1943,7 @@ Sinon, tu te perds un peu dans les tournants. Tu reviendras peut-être un cran p
 Choix :
 - Pour atteindre le bas, va au **114**.
 
-### 114
+### 114 {lieu: Ruines du Cartographe — Entrée}
 
 Le couloir débouche dans une salle plus grande. Le plafond est plus haut. Au centre, posé sur un socle, il y a une boule de pierre noire — non, pas de pierre : de fer. Elle est posée sur un socle qui dépasse, et elle paraît instable. Tu n'oses pas la toucher.
 
@@ -1948,7 +1955,7 @@ Choix :
 - Pour ouvrir la porte basse marquée du V, va au **130**.
 - Pour remonter par l'escalier de droite, va au **121**.
 
-### 115
+### 115 {lieu: Ruines du Cartographe — Entrée}
 
 Tu sens, derrière toi, une ombre. Pas une bête. Pas une personne. Une ombre qui n'appartient à personne. Quand tu te retournes, elle s'écarte. Mais elle reste.
 
@@ -1961,7 +1968,7 @@ Si tu ne l'as pas, l'ombre se rapproche. Tu sens un froid sur ta nuque. Tu sais 
 Choix :
 - Pour atteindre la salle d'à côté, va au **114**.
 
-### 116
+### 116 {lieu: Ruines du Cartographe}
 
 Tu ouvres le carnet de toile noire.
 
@@ -1978,7 +1985,8 @@ Choix :
 - Pour examiner les fresques sur les murs, va au **122**.
 - Pour ouvrir la porte au fond de la pièce ronde, va au **120**.
 
-### 117
+### 117 {lieu: Ruines du Cartographe}
+{grants-keyword: BERCEAU DE LA SERRE}
 
 Tu t'assieds par terre, le carnet ouvert sur tes genoux. Tu lis. Vellan raconte ses expéditions. Il décrit la forêt comme une *amie qui oublie*. Il décrit la Serre comme un *cœur fragile*. Il dit, à plusieurs endroits :
 
@@ -1991,7 +1999,7 @@ Tu refermes le carnet, le souffle court. La Serre est un *berceau*. Pas un pièg
 Choix :
 - Pour continuer ton exploration, va au **120**.
 
-### 118
+### 118 {lieu: Ruines du Cartographe}
 
 Tu remarques, contre un mur, un grand mécanisme. Un cadran de bronze, des engrenages dépareillés, une roue à manivelle. Du temps a passé : le bronze est vert.
 
@@ -2005,7 +2013,7 @@ Choix :
 - Pour glisser la médaille (si tu l'as) à l'emplacement vide, va au **119**.
 - Pour laisser le mécanisme tranquille et continuer, va au **120**.
 
-### 119
+### 119 {lieu: Ruines du Cartographe}
 
 Tu glisses la Médaille d'astre dans le creux du cadran. Elle s'emboîte parfaitement. Tu tournes la manivelle.
 
@@ -2022,7 +2030,7 @@ C'est la **Pierre de mémoire**.
 Choix :
 - Pour continuer, va au **120**.
 
-### 120
+### 120 {lieu: Ruines du Cartographe}
 
 Tu te diriges vers le fond de la pièce ronde. Là, une porte. Pas une porte de bois — une porte de bronze, basse, ouvragée. Au centre, un trou de serrure parfaitement rond. Le trou est de la taille exacte de la Clé d'Ambre.
 
@@ -2034,7 +2042,7 @@ Choix :
 - Si tu as la Clé d'Ambre et la glisses dans la serrure, va au **131**.
 - Pour suivre le couloir descendant qui contourne la porte, va au **123**.
 
-### 121
+### 121 {lieu: Ruines du Cartographe}
 
 Tu remontes l'escalier de droite. Tu débouches sur une mezzanine, faite de planches branlantes. De là, tu domines la grande pièce ronde du dessous. Tu vois le mécanisme. Tu vois la table de pierre. Tu vois, dans la pénombre, des choses que tu n'as pas vues d'en bas.
 
@@ -2048,7 +2056,7 @@ Choix :
 - Pour redescendre, va au **108**.
 - Pour examiner les choses que tu n'avais pas vues d'en bas, va au **136**.
 
-### 122
+### 122 {lieu: Ruines du Cartographe}
 
 Tu approches des fresques. Elles sont si pâles qu'il faut presque les toucher pour les voir. Tu en distingues trois grandes : 
 
@@ -2065,7 +2073,8 @@ Si tu possèdes la compétence **Mémoire des légendes**, tu reconnais qu'il s'
 Choix :
 - Pour t'éloigner des fresques, va au **120**.
 
-### 123
+### 123 {lieu: Ruines du Cartographe}
+{grants-keyword: PIERRE CHARGÉE}
 
 Tu suis le couloir étroit qui descend. Le sol est en pente, glissant. Les murs sont plus humides. Au bout, le couloir s'ouvre dans une grotte. Une vraie grotte de roche, pas une salle taillée.
 
@@ -2080,7 +2089,7 @@ Si tu portes la **Pierre de mémoire**, elle chauffe contre ton ventre. Tu peux 
 Choix :
 - Pour remonter et continuer, va au **140**.
 
-### 124
+### 124 {lieu: Ruines du Cartographe}
 
 Tu pousses une porte basse que tu n'avais pas vue. Tu débouches dans une petite pièce sans plafond — non, pas sans plafond, mais avec un plafond qui est un grand miroir. Si tu lèves la tête, tu te vois.
 
@@ -2091,7 +2100,8 @@ Tu fais demi-tour. Tu ne veux pas savoir ce qui arrive si tu le réveilles.
 Choix :
 - Pour quitter cette pièce, va au **140**.
 
-### 125
+### 125 {lieu: Ruines du Cartographe}
+{grants-object: Couteau d'os}
 
 Tu trébuches sur une pierre branlante. Tu tombes. Tu te relèves. Mais tu remarques que la pierre qui a bougé sous ton pied n'est pas une pierre — c'est une plaque de bronze, plus ou moins ronde, posée dans le sol comme une trappe d'égout.
 
@@ -2104,7 +2114,8 @@ Tu remets la plaque en place.
 Choix :
 - Pour continuer, va au **140**.
 
-### 126
+### 126 {lieu: Ruines du Cartographe}
+{grants-keyword: PORTE RESPECTÉE}
 
 Tu entends, derrière une porte, une voix d'enfant. Très claire. Très calme.
 
@@ -2122,7 +2133,8 @@ Tu t'éloignes, plus doucement que tu n'es arrivé(e).
 Choix :
 - Pour continuer ton exploration, va au **140**.
 
-### 127
+### 127 {lieu: Ruines du Cartographe}
+{grants-keyword: OMBRES ANCIENNES}
 
 Tu vois, dans un coin, des silhouettes adultes en train de discuter. Mais ce ne sont pas des silhouettes réelles : ce sont des ombres projetées sur le mur sans personne pour les projeter. Tu reconnais une silhouette de robe de cartographe, et un autre, plus petit, qui pourrait être une grand-mère.
 
@@ -2137,7 +2149,8 @@ Tu sens, dans ta poitrine, que tu viens d'assister à une discussion qui s'est t
 Choix :
 - Pour continuer, va au **140**.
 
-### 128
+### 128 {lieu: Ruines du Cartographe}
+{grants-keyword: FAUSSE PORTE CONNUE}
 
 Tu ouvres le carnet à l'une des pages entourées de rouge.
 
@@ -2154,7 +2167,7 @@ Tu refermes le carnet. Tu sens que tu approches.
 Choix :
 - Pour suivre ce nouveau renseignement, va au **140**.
 
-### 129
+### 129 {lieu: Ruines du Cartographe}
 
 Tu pousses, par curiosité, une petite porte. Tu te trouves dans un cul-de-sac. Une chambre vide. Au sol, écrit à la craie, est tracé un seul mot : *Retourne.*
 
@@ -2163,7 +2176,8 @@ Tu obéis sans discuter.
 Choix :
 - Pour reprendre l'exploration, va au **140**.
 
-### 130
+### 130 {lieu: Ruines du Cartographe}
+{grants-keyword: CHAMBRE DE VELLAN}
 
 Tu pousses la porte marquée du V.
 
@@ -2180,9 +2194,9 @@ Tu refermes le livre. Tu poses la main sur le lit, par respect. La poussière fo
 Choix :
 - Pour ressortir de la chambre, va au **140**.
 
-### 131
+### 131 {lieu: Ruines du Cartographe}
 
-Tu glisses la Clé d'Ambre dans la serrure. Tu ne tournes pas tout de suite : tu écoutes. Tu sens un petit *clic* d'eux-mêmes, à l'intérieur de la serrure, comme si la clé reconnaissait la chambre.
+Tu glisses la Clé d'Ambre dans la serrure. Tu ne tournes pas tout de suite : tu écoutes. Tu sens un petit *clic*, à l'intérieur de la serrure, comme si la clé reconnaissait la chambre.
 
 Tu tournes. La porte de bronze pivote sans bruit.
 
@@ -2193,7 +2207,8 @@ Tu enlèves la Clé. Elle est devenue tiède. Tu la remets dans ta poche.
 Choix :
 - Pour descendre, va au **140**.
 
-### 132
+### 132 {lieu: Ruines du Cartographe}
+{grants-keyword: PRÉSENCE DOUCE}
 
 Tu entends, dans un couloir voisin, un sanglot. Discret. Étouffé. C'est une voix d'adulte qui pleure en cachant ses pleurs.
 
@@ -2211,7 +2226,7 @@ Tu pars sur la pointe des pieds.
 Choix :
 - Pour continuer, va au **140**.
 
-### 133
+### 133 {lieu: Ruines du Cartographe}
 
 Tu trouves, accroché à un porte-manteau de fer rouillé, un manteau gris. Le manteau du cartographe. Tu le décroches. Dans la poche, tu trouves un petit caillou. Tu le retournes.
 
@@ -2222,7 +2237,7 @@ Tu le remets dans la poche, et tu raccroches le manteau. Tu te dis que les carto
 Choix :
 - Pour reprendre ta route, va au **140**.
 
-### 134
+### 134 {lieu: Ruines du Cartographe}
 
 Tu pousses une dernière porte. Elle s'ouvre sur un mur. Juste un mur. Une fausse porte, ou une porte murée. Quelqu'un a écrit au charbon dessus :
 
@@ -2235,7 +2250,8 @@ Tu souris. Vellan était un cartographe rusé.
 Choix :
 - Pour reprendre ton exploration, va au **140**.
 
-### 135
+### 135 {lieu: Ruines du Cartographe}
+{grants-object: Graine sombre}
 
 Tu débouches dans une petite chambre sèche. Au centre, une statue de fer noire, qui représente un homme debout, sans visage. Sa main tendue tient quelque chose.
 
@@ -2246,7 +2262,7 @@ Si tu prends cette graine, **ajoute la Graine sombre à tes objets secondaires.*
 Choix :
 - Pour quitter la chambre, va au **140**.
 
-### 136
+### 136 {lieu: Ruines du Cartographe}
 
 Tu fais attention aux détails que tu n'avais pas vus d'en bas.
 
@@ -2259,7 +2275,8 @@ Si tu portes le mot-clé **SIGNE DE MÉMORINE**, tu reconnais la disposition : c
 Choix :
 - Pour redescendre, va au **108**.
 
-### 137
+### 137 {lieu: Ruines du Cartographe}
+{grants-keyword: POIDS PARTAGÉ}
 
 Tu sens, sans pouvoir le décrire, un poids sur ta poitrine. Pas un vrai poids : une sensation. Comme quand on a très envie de pleurer mais qu'on est devant trop de monde.
 
@@ -2272,7 +2289,7 @@ Tu te promets d'en parler à Mère Aïna en rentrant.
 Choix :
 - Pour reprendre l'exploration, va au **140**.
 
-### 138
+### 138 {lieu: Ruines du Cartographe}
 
 Tu entends, en surimpression à tes propres pensées, une autre voix très très basse — sans mots — qui te guide. Pas en parlant : en chantant. Une seule note tenue, longue, qui module à peine.
 
@@ -2285,7 +2302,7 @@ La note s'arrête. Elle a fait son travail.
 Choix :
 - Pour descendre cet escalier, va au **150**.
 
-### 139
+### 139 {lieu: Ruines du Cartographe}
 
 Tu trouves, gravé dans une pierre du sol, un signe : un cercle, une ligne droite vers le bas. Le signe de Mémorine.
 
@@ -2298,7 +2315,7 @@ Tu suis la rainure du regard. Elle aboutit à un panneau du mur, à hauteur de t
 Choix :
 - Pour pousser le panneau, va au **150**.
 
-### 140
+### 140 {lieu: Ruines du Cartographe}
 
 Tu marches dans les couloirs depuis longtemps. Tu commences à les connaître. Tu sais quels passages mènent où.
 
@@ -2330,7 +2347,8 @@ Choix :
 - Si tu trouves, derrière un rideau pourri, une autre fresque, va au **147**.
 - Si tu t'arrêtes un instant sur un palier de pierre et regardes les marches du dessous, va au **149**.
 
-### 141
+### 141 {lieu: Ruines du Cartographe}
+{grants-keyword: VEILLEUR RENCONTRÉ}
 
 Tu sens, en levant les yeux vers la salle à ciel ouvert, qu'on te regarde. Pas du ciel : depuis l'intérieur du mur. Une silhouette se tient là, immobile, à demi-mangée par l'ombre, contre un pilier.
 
@@ -2346,7 +2364,7 @@ Choix :
 - Pour répondre franchement, va au **142**.
 - Pour reculer doucement, va au **140**.
 
-### 142
+### 142 {lieu: Ruines du Cartographe}
 
 Tu prends une grande inspiration. Tu te tiens droit(e).
 
@@ -2369,7 +2387,7 @@ Il se tait. Sa silhouette s'efface lentement, en se diluant dans l'ombre du pili
 Choix :
 - Pour t'approcher du cercle gravé, va au **148**.
 
-### 143
+### 143 {lieu: Ruines du Cartographe}
 
 Tu te baisses pour passer la porte basse. Tu entres dans une pièce étroite, sous les combles. Le toit, troué par endroits, laisse passer des rais de lumière qui éclairent un véritable atelier : tables, bocaux poussiéreux, un nid d'hirondelle dans un coin, et au mur, des cartes punaisées.
 
@@ -2381,7 +2399,7 @@ Choix :
 - Pour redescendre par l'escalier extérieur, va au **108**.
 - Si tu pousses une porte qui s'ouvre sur un balcon de pierre, va au **144**.
 
-### 144
+### 144 {lieu: Ruines du Cartographe}
 
 Tu pousses encore une porte. Tu débouches sur un balcon, à peu près à mi-hauteur de la tour. Le balcon est en pierre, dégradé, mais sûr.
 
@@ -2393,7 +2411,7 @@ Choix :
 - Pour redescendre, va au **143**.
 - Pour profiter une dernière minute de la vue, va au **145**.
 
-### 145
+### 145 {lieu: Ruines du Cartographe}
 
 Tu restes là, à respirer. Tu ne sais plus si tu es fatigué(e) ou très éveillé(e). Tu te sens grand(e), comme jamais auparavant. Tu te sens petit(e), aussi, plus petit(e) que jamais.
 
@@ -2406,7 +2424,8 @@ Tu refermes ton carnet.
 Choix :
 - Pour redescendre, va au **143**.
 
-### 146
+### 146 {lieu: Bassin des Reflets}
+{grants-keyword: OBJET CACHÉ DE LA FRESQUE}
 
 Tu trouves, en redescendant, une fresque que tu n'avais pas vue. Elle est dans un couloir étroit, à hauteur d'enfant. Elle montre une femme qui pose un petit objet rond dans le creux d'un grand rocher. Sous la fresque, écrit en lettres ténues :
 
@@ -2423,7 +2442,8 @@ Tu remets un peu de poussière sur la fresque, pour cacher ta trace.
 Choix :
 - Pour continuer ton exploration, va au **140**.
 
-### 147
+### 147 {lieu: Bassin des Reflets}
+{grants-keyword: VEILLEUR ATTEND}
 
 Tu cherches une autre fresque. Tu la trouves derrière un rideau de toile pourrie. Elle montre un homme assis seul, le dos voûté. Devant lui, à terre, sa cape. Plus loin, une porte ouverte sur une lumière.
 
@@ -2438,7 +2458,7 @@ Tu sens un petit serrement. Tu te dis que le Veilleur, peut-être, n'est pas un 
 Choix :
 - Pour repartir, va au **140**.
 
-### 148
+### 148 {lieu: Bassin des Reflets}
 
 Tu t'approches du cercle gravé. Il est large d'environ trois pas. Sur chacune des douze parts, une figure : une chouette, un renard, une luciole, un faon, un lièvre, un poisson, une grue, un papillon, un ours, une chèvre, un loup, un cheval. Une treizième case, à l'écart, montre une silhouette humaine : une enfant.
 
@@ -2450,16 +2470,14 @@ Choix :
 - Pour quitter la salle à ciel ouvert, va au **140**.
 - Pour descendre vers le miroir d'eau par l'escalier secret, va au **150**.
 
-### 149
-
-(Réservé pour un détour. Tu te tiens, pour l'instant, sur un palier de pierre qui ne te demande rien.)
+### 149 {lieu: Bassin des Reflets}
 
 Tu te tiens un instant sur un palier de pierre. Tu remarques, sur la marche du dessous, une éraflure fraîche, comme celle d'une botte. Tu te rends compte que quelqu'un, peut-être Mémorine, peut-être un autre, est venu(e) ici très récemment. Tu n'es pas seul(e). Et tu n'es pas le premier ou la première.
 
 Choix :
 - Pour reprendre la descente, va au **150**.
 
-### 150
+### 150 {lieu: Bassin des Reflets}
 
 Tu descends, par l'escalier secret de Mémorine, jusqu'à une grosse porte basse en bois clair. Tu pousses.
 
@@ -2470,7 +2488,7 @@ Le miroir d'eau t'attend.
 Choix :
 - Pour t'engager vers le miroir d'eau, va au **151**.
 
-### 151
+### 151 {lieu: Bassin des Reflets}
 
 Le sentier descend doucement entre des bouleaux à l'écorce noire. Tu ne les connaissais pas, ceux-là. Ce sont des bouleaux plus vieux que tous les autres. À leurs pieds, le sol est tapissé d'aiguilles de pin couleur cuivre, alors qu'il n'y a aucun pin en vue.
 
@@ -2484,7 +2502,8 @@ Choix :
 - Pour t'avancer prudemment au bord, va au **152**.
 - Pour faire d'abord le tour de la clairière, va au **153**.
 
-### 152
+### 152 {lieu: Bassin des Reflets}
+{grants-keyword: REFLET DU PRÉSENT}
 
 Tu t'avances vers la berge. Le sol devient mou. Tu poses les pieds sur des coussins de mousse, et tu t'arrêtes à un mètre de l'eau.
 
@@ -2500,7 +2519,7 @@ Choix :
 - Pour t'avancer plus loin et te pencher davantage, va au **157**.
 - Pour reculer et faire le tour, va au **153**.
 
-### 153
+### 153 {lieu: Bassin des Reflets}
 
 Tu fais le tour de la clairière. La berge est large, herbeuse. Tu repères, au nord, une petite passerelle de bois qui enjambe l'angle de l'étang, comme un pont pour qui voudrait traverser. Au sud, un vieux rocher plat, qui pourrait servir de banc.
 
@@ -2521,7 +2540,8 @@ Choix :
 - Si tu marches en levant les yeux vers les arbres, va au **169**.
 - Si tu rejoins la lisière sud où un sentier reprend, va au **170**.
 
-### 154
+### 154 {lieu: Bassin des Reflets}
+{grants-object: Treizième Caillou}
 
 Tu prends la passerelle au nord. Elle est étroite, mais solide. Sous tes pieds, l'eau est sombre.
 
@@ -2539,7 +2559,8 @@ Choix :
 - Pour t'enfoncer dans la clairière vers le rocher plat, va au **155**.
 - Pour aller boire trois gorgées à l'étang, va au **156**.
 
-### 155
+### 155 {lieu: Bassin des Reflets}
+{grants-keyword: MÉMORINE GUIDE}
 
 Tu t'assieds sur le rocher plat. Il est tiède.
 
@@ -2556,7 +2577,7 @@ C'est le signe de Mémorine. Tu commences à comprendre : elle est ici, en quelq
 Choix :
 - Pour aller boire trois gorgées à l'étang, va au **156**.
 
-### 156
+### 156 {lieu: Bassin des Reflets}
 
 Tu t'agenouilles au bord de l'eau. Tu trempes tes mains. Tu bois trois gorgées, comme te l'a dit le mouchoir.
 
@@ -2577,7 +2598,8 @@ Tu ouvres les yeux. Tu es de nouveau au bord du Bassin.
 Choix :
 - Pour rester encore un instant et écouter la voix, va au **161**.
 
-### 157
+### 157 {lieu: Bassin des Reflets}
+{grants-keyword: REFLET DU FUTUR}
 
 Tu te penches plus avant. Le reflet bouge. Cette fois-ci, ce n'est plus la cuisine de Mère Aïna. C'est une route. Une route qui va vers le village. Sur cette route, tu te vois marcher. Mais plus vieux. Beaucoup plus vieux. Tu es adulte. Tu portes un manteau gris, comme Vellan. Tu portes aussi un carnet de toile noire.
 
@@ -2591,7 +2613,8 @@ Choix :
 - Pour t'éloigner du bord, va au **155**.
 - Pour rester encore, va au **159**.
 
-### 158
+### 158 {lieu: Bassin des Reflets}
+{grants-keyword: REFLET D'ANYA}
 
 Tu glisses ta main sur l'eau, doucement, juste pour la déranger. L'eau s'ondule. Le reflet change.
 
@@ -2609,7 +2632,8 @@ Le reflet s'efface.
 Choix :
 - Pour t'éloigner du bord, va au **155**.
 
-### 159
+### 159 {lieu: Bassin des Reflets}
+{grants-keyword: VEILLEUR ATTEND DEPUIS 80 ANS}
 
 Tu fixes l'eau. Une troisième scène apparaît. Cette fois, c'est sombre. C'est l'intérieur de la Serre, mais comme abandonnée. Pas de fenêtre — du moins, pas de ce côté-ci. Au centre, un berceau de pierre, *vide*. Et debout, à côté du berceau, immobile, une silhouette en cape. Le **Veilleur**.
 
@@ -2624,7 +2648,7 @@ Tu sens dans la poitrine un nœud serré. Ce n'est pas un méchant. C'est un gar
 Choix :
 - Pour t'éloigner du bord, va au **155**.
 
-### 160
+### 160 {lieu: Bassin des Reflets}
 
 Tu remarques, sur la rive opposée, une silhouette. Elle est petite, voûtée. C'est un vieillard. Ou ce qui ressemble à un vieillard. Il porte une cape, mais une cape de couleur claire. Il se tient debout, immobile, comme s'il attendait quelque chose de toi.
 
@@ -2636,7 +2660,8 @@ Choix :
 - Pour faire le tour de l'étang et l'aborder, va au **181**.
 - Pour le saluer de loin et continuer ton chemin sans le déranger, va au **155**.
 
-### 161
+### 161 {lieu: Bassin des Reflets}
+{grants-keyword: VOIX D'ANYA}
 
 Tu restes agenouillé(e) à la berge. Tu attends.
 
@@ -2656,7 +2681,7 @@ Choix :
 - Pour t'avancer vers la silhouette de l'autre côté, va au **160**.
 - Pour rester près de l'eau et écouter encore, va au **162**.
 
-### 162
+### 162 {lieu: Bassin des Reflets}
 
 Tu ne bouges pas. Tu attends que la voix revienne. Elle ne revient pas. Mais quelque chose dans l'air revient à sa place. La lumière du Bassin change un peu. Tu te sens, sans pouvoir l'expliquer, plus calme, comme si tu venais d'apprendre quelque chose d'important et de doux à la fois.
 
@@ -2666,7 +2691,8 @@ Choix :
 - Pour aller vers la silhouette à la cape claire, va au **160**.
 - Pour faire un dernier tour de la clairière, va au **163**.
 
-### 163
+### 163 {lieu: Bassin des Reflets}
+{grants-object: trois fleurs de cœur-de-neige}
 
 Tu traverses la clairière en faisant attention à ne déranger personne. Tu remarques, dans l'herbe, des petites fleurs blanches qu'on appelle *cœur-de-neige* à Brumeval. Tu en cueilles trois. Tu les glisses dans la poche poitrine.
 
@@ -2677,7 +2703,7 @@ Tu te dis que si tu rencontres quelqu'un de très triste, tu auras au moins troi
 Choix :
 - Pour rejoindre la silhouette de l'autre côté de l'étang, va au **160**.
 
-### 164
+### 164 {lieu: Bassin des Reflets}
 
 Tu trouves, dans l'herbe, une vieille pierre dressée. Pas une borne. Pas un menhir. Plutôt une stèle. Elle est plate, et dessus est gravé un nom : **V. M.**, avec, dessous, une date que tu ne sais pas lire — mais qui ressemble à *80 ans avant aujourd'hui*.
 
@@ -2690,7 +2716,8 @@ Tu poses la main sur la stèle. Tu murmures :
 Choix :
 - Pour reprendre ta marche, va au **160**.
 
-### 165
+### 165 {lieu: Bassin des Reflets}
+{grants-keyword: OISEAUX DE VERRE}
 
 Tu repères, dans un buisson de saule, un nid très étrange. À l'intérieur, à la place des œufs habituels, il y a trois petites sphères de verre, tièdes. L'oiseau qui couve, plus loin sur la branche, te regarde fixement.
 
@@ -2703,7 +2730,7 @@ L'oiseau te suit du regard quand tu t'éloignes. Tu sens, dans ton dos, qu'il te
 Choix :
 - Pour t'éloigner, va au **160**.
 
-### 166
+### 166 {lieu: Bassin des Reflets}
 
 Tu remarques que l'herbe est piétinée à un endroit précis, comme si quelqu'un y revenait souvent. Tu suis le chemin d'herbe écrasée. Il te mène à un trou dans la rive, sous une racine. Le trou est étroit, mais on pourrait s'y glisser.
 
@@ -2713,7 +2740,7 @@ Choix :
 - Si tu possèdes la compétence **Agilité**, tu peux te tortiller dans le trou et ressortir de l'autre côté du Bassin, va au **181**.
 - Pour faire le tour normal de l'étang, va au **160**.
 
-### 167
+### 167 {lieu: Bassin des Reflets}
 
 Tu repères, dans la mousse, une petite plaque de métal terni. Tu la nettoies du pouce. C'est une plaque gravée :
 
@@ -2724,7 +2751,7 @@ Tu ne sais pas trop quoi penser. Tu remets la plaque comme tu l'as trouvée.
 Choix :
 - Pour continuer ta route, va au **160**.
 
-### 168
+### 168 {lieu: Bassin des Reflets}
 
 Tu trouves, à mi-chemin du tour, une trace fraîche : des bouts de cordes coupés. Quelqu'un est descendu en rappel ici, récemment, depuis le haut de la falaise.
 
@@ -2735,7 +2762,7 @@ Tu sens que tu vas la croiser un jour.
 Choix :
 - Pour continuer ton tour, va au **160**.
 
-### 169
+### 169 {lieu: Bassin des Reflets}
 
 Tu marches en regardant en l'air. Les arbres, autour du Bassin, ne sont pas des bouleaux comme ceux de la forêt. Ce sont des charmes, hauts, lisses. Et au sommet de chaque charme, dans une fourche, il y a un petit objet blanc, rond, accroché à une cordelette.
 
@@ -2746,7 +2773,8 @@ Tu te dis que la réponse à cette question est l'une des plus belles de cette a
 Choix :
 - Pour reprendre ta route, va au **160**.
 
-### 170
+### 170 {lieu: Bassin des Reflets}
+{grants-keyword: POTEAU CONNU}
 
 Tu rejoins la lisière sud de la clairière, là où un sentier reprend dans les arbres. Au pied d'un noisetier, il y a un poteau. Sur le poteau, gravée à la pointe d'un couteau, une flèche, et au-dessus, en lettres maladroites : *VRAIE PORTE — par le rocher tortueux — pas par le ruisseau.*
 
@@ -2760,7 +2788,7 @@ Choix :
 - Pour suivre l'indication du poteau et prendre par le rocher tortueux, va au **180**.
 - Pour ignorer le poteau et descendre par le ruisseau, va au **171**.
 
-### 171
+### 171 {lieu: Bassin des Reflets — Tunnel}
 
 Tu descends par le ruisseau. Le sentier est plus facile. Tu te dis que les poteaux maladroits ne sont pas toujours fiables.
 
@@ -2779,7 +2807,7 @@ Choix :
 - Si tu trouves, à un coude, une niche fermée d'une plaque, va au **178**.
 - Si tu sens, soudain, une bouffée d'air frais signalant la sortie, va au **179**.
 
-### 172
+### 172 {lieu: Bassin des Reflets — Tunnel}
 
 L'escalier descend sous l'eau, puis sous la berge. Au bout de quelques marches, tu débouches dans un tunnel. Tu sors la lampe-tempête. Tu allumes.
 
@@ -2794,7 +2822,7 @@ Tu te recules. Tu comprends, un peu tard : le poteau disait vrai. Tu as pris le 
 Choix :
 - Pour remonter par le tunnel et reprendre l'autre route, va au **180**.
 
-### 173
+### 173 {lieu: Bassin des Reflets — Tunnel}
 
 Tu remarques, en remontant, que tes propres traces dans le sable du tunnel ne sont pas les bonnes. Comme si ce n'étaient pas tes pieds qui les avaient faites. Tu te baisses. Les traces ressemblent aux tiennes, mais elles sont plus profondes : la personne qui les a laissées portait quelque chose de lourd.
 
@@ -2805,7 +2833,8 @@ Tu n'oses pas penser à qui. Tu accélères.
 Choix :
 - Pour atteindre la sortie, va au **180**.
 
-### 174
+### 174 {lieu: Bassin des Reflets — Tunnel}
+{grants-object: Plume de chouette}
 
 Tu trouves, dans une niche du tunnel, une petite plume. Une plume de chouette. Probablement laissée par la chouette de la Flûte, ou par sa cousine.
 
@@ -2818,7 +2847,7 @@ Tu te dis que les animaux non plus n'oublient pas. Ils laissent juste de plus pe
 Choix :
 - Pour continuer la remontée, va au **180**.
 
-### 175
+### 175 {lieu: Bassin des Reflets — Tunnel}
 
 Tu remarques que la flamme de ta lampe-tempête tremble alors qu'il n'y a pas de vent. La lampe sent quelque chose que toi tu ne sens pas.
 
@@ -2833,7 +2862,8 @@ Tu sens un picotement dans les yeux.
 Choix :
 - Pour continuer, va au **180**.
 
-### 176
+### 176 {lieu: Bassin des Reflets — Tunnel}
+{grants-keyword: MESSAGE D'ANYA}
 
 Tu trouves, sur la marche d'un escalier coupé court, une vieille lanterne brisée. Le verre est en miettes. Le métal est intact. À l'intérieur, à la place de la mèche, il y a un petit tube d'écorce roulée. Tu le déroules.
 
@@ -2848,7 +2878,7 @@ Anya. Elle est revenue ici. Petite. Et elle a eu peur. Tu te sens un peu moins s
 Choix :
 - Pour continuer, va au **180**.
 
-### 177
+### 177 {lieu: Bassin des Reflets — Tunnel}
 
 Tu trouves, gravé sur un mur, un petit calendrier. Quelqu'un a compté les jours. Cent vingt encoches. À la cent vingt et unième, l'encoche est rayée d'un grand trait.
 
@@ -2859,7 +2889,8 @@ Tu te demandes ce qui s'est passé ce jour-là. Tu ne le sauras peut-être pas.
 Choix :
 - Pour reprendre, va au **180**.
 
-### 178
+### 178 {lieu: Bassin des Reflets — Tunnel}
+{grants-object: Mouchoir des passants}
 
 Tu trouves, à un coude du tunnel, une petite niche fermée par une plaque de schiste. Tu la pousses. Elle bascule. Derrière, à hauteur de visage, un petit autel privé : une bougie consumée jusqu'à la mèche, et, posé à côté, un mouchoir brodé qui dit, à la manière du Bassin : *Pour ceux qui passeront.*
 
@@ -2872,7 +2903,7 @@ Tu refermes la plaque.
 Choix :
 - Pour continuer, va au **180**.
 
-### 179
+### 179 {lieu: Bassin des Reflets — Tunnel}
 
 Tu sens, soudain, une bouffée d'air frais. Le tunnel se termine. Tu sors. Tu cilles. Tu es dehors. Tu te retrouves à la lisière du Bassin, du côté nord, à dix pas seulement du grand rocher tortueux qui marque la *vraie* porte.
 
@@ -2881,7 +2912,7 @@ Tu as fait un long détour. Mais tu as appris des choses. Et tu n'es pas mort(e)
 Choix :
 - Pour rejoindre le rocher tortueux et la vraie porte, va au **180**.
 
-### 180
+### 180 {lieu: Bassin des Reflets — Rocher tortueux}
 
 Tu te tiens devant le **rocher tortueux**.
 
@@ -2894,7 +2925,7 @@ Si tu possèdes la **Clé d'Ambre**, tu sens que la pierre te reconnaît. Si tu 
 Choix :
 - Pour entrer dans la fente, va au **181**.
 
-### 181
+### 181 {lieu: Salle du Veilleur}
 
 Tu te baisses. Tu te glisses dans la fente.
 
@@ -2913,7 +2944,7 @@ Choix :
 - Pour tomber à genoux devant lui par respect, va au **183**.
 - Pour reculer et ne plus oser bouger, va au **184**.
 
-### 182
+### 182 {lieu: Salle du Veilleur}
 
 Tu inclines la tête. Tu attends.
 
@@ -2932,7 +2963,7 @@ Choix :
 - Pour lui demander ce qu'il fait là, va au **186**.
 - Pour lui demander ce qu'il porte dans la main, va au **187**.
 
-### 183
+### 183 {lieu: Salle du Veilleur}
 
 Tu plies un genou. Tu poses la main à plat sur le sol. Tu ne dis rien.
 
@@ -2951,7 +2982,7 @@ Tu ouvres la bouche. Tu ne sais pas quoi répondre.
 Choix :
 - Pour écouter ce qu'il a à dire, va au **185**.
 
-### 184
+### 184 {lieu: Salle du Veilleur}
 
 Tu fais un pas en arrière. Tu ne peux pas t'en empêcher. Tes mains tremblent.
 
@@ -2969,7 +3000,7 @@ Choix :
 - Pour rester, va au **182**.
 - Pour t'enfuir par la fente, va au **188**.
 
-### 185
+### 185 {lieu: Salle du Veilleur}
 
 Le Veilleur s'assied sur une pierre plate. Il te fait signe de t'asseoir aussi. Tu obéis.
 
@@ -2983,7 +3014,7 @@ Choix :
 - Pour lui demander ce qui s'est passé ensuite, va au **186**.
 - Pour lui demander ce que tu es, toi, dans tout ça, va au **189**.
 
-### 186
+### 186 {lieu: Salle du Veilleur}
 
 — « Ce qui s'est passé, » continue le Veilleur, « c'est que personne, à Brumeval, n'a pris la suite. Anya est devenue vieille. Elle est partie. Elle a transmis la promesse à sa fille — qui s'est appelée, après elle, Maillard. Mais sa fille n'y a pas cru tout à fait. Et la fille de sa fille n'y a presque plus cru. Et ainsi de suite. La promesse s'est tue. »
 
@@ -2997,7 +3028,7 @@ Choix :
 - Pour lui demander ce qui se passerait s'il s'en allait, va au **190**.
 - Pour lui demander ce qu'il faut faire, va au **189**.
 
-### 187
+### 187 {lieu: Salle du Veilleur}
 
 Le Veilleur lève sa main droite. La petite branche d'or pèse à peine.
 
@@ -3014,7 +3045,8 @@ Tu n'oses pas y toucher. Tu te recules un peu.
 Choix :
 - Pour demander où est la promesse, va au **189**.
 
-### 188
+### 188 {lieu: Salle du Veilleur}
+{grants-keyword: HONTE TRANSITOIRE} {state+: FATIGUÉ}
 
 Tu te précipites vers la fente. Tu te baisses, tu te tortilles. Tu sors.
 
@@ -3031,7 +3063,7 @@ Mais aujourd'hui, tu te sens trop petit(e).
 Choix :
 - Pour repartir et chercher un autre chemin vers la Serre, va au **201**.
 
-### 189
+### 189 {lieu: Salle du Veilleur}
 
 Tu prends une grande inspiration.
 
@@ -3052,7 +3084,7 @@ Tu te sens, d'un seul coup, tout petit(e). Et plus grand(e). Tu te sens *appelé
 Choix :
 - Pour demander ce que tu dois faire, va au **190**.
 
-### 190
+### 190 {lieu: Salle du Veilleur}
 
 Le Veilleur se tait longtemps. Il regarde le sol comme s'il y voyait une carte.
 
@@ -3070,7 +3102,7 @@ Choix :
 - Pour lui demander ce qu'il te conseille, va au **191**.
 - Pour lui demander ce qu'il fera, lui, va au **192**.
 
-### 191
+### 191 {lieu: Salle du Veilleur}
 
 — « Que me conseilles-tu, toi ? »
 
@@ -3086,7 +3118,7 @@ Choix :
 - Pour lui demander une dernière chose, va au **193**.
 - Pour partir, va au **201**.
 
-### 192
+### 192 {lieu: Salle du Veilleur}
 
 Le Veilleur baisse les yeux.
 
@@ -3104,7 +3136,8 @@ Choix :
 - Pour lui demander encore une question, va au **193**.
 - Pour partir prendre ta décision, va au **201**.
 
-### 193
+### 193 {lieu: Salle du Veilleur}
+{grants-keyword: JARDINS NOMMÉS}
 
 — « Une dernière question, » dis-tu, « avant que je ne parte. »
 
@@ -3123,7 +3156,7 @@ Tu le notes dans ta tête, comme on grave un nom sur un arbre. *Jardins de Verre
 Choix :
 - Pour le saluer et sortir, va au **194**.
 
-### 194
+### 194 {lieu: Salle du Veilleur}
 
 Tu te lèves. Tu lui fais une révérence maladroite — celle qu'on fait aux personnes qu'on respecte et qu'on n'a pas vu souvent. Le Veilleur incline la tête.
 
@@ -3146,20 +3179,19 @@ Choix :
 - Si tu fais un dernier crochet autour d'une pierre où rien ne pousse, va au **199**.
 - Si tu pousses un cri en sortant d'un buisson de fougères, va au **200**.
 
-### 195
-
-(Si tu portes le mot-clé **VEILLEUR APAISÉ**, viens lire ici.)
+### 195 {lieu: Bassin des Reflets — Lisière}
+{grants-keyword: VEILLEUR APAISÉ}
 
 Tu repenses, en t'éloignant, à la conversation. Tu te sens étrangement calme. Pour la première fois depuis ton départ de Brumeval, tu ne ressens plus la peur, mais une sorte de confiance tranquille.
 
-**Note le mot-clé VEILLEUR APAISÉ sur ta fiche** (si tu n'avais pas encore ce mot-clé : tu viens de l'obtenir en parlant au Veilleur respectueusement).
+**Note le mot-clé VEILLEUR APAISÉ sur ta fiche.**
 
 Tu reprends ta route.
 
 Choix :
 - Pour aller à la Serre, va au **201**.
 
-### 196
+### 196 {lieu: Bassin des Reflets — Lisière}
 
 Tu décides, avant de poursuivre, de faire un dernier tour du Bassin pour ranger ta tête.
 
@@ -3170,9 +3202,7 @@ Tu marches lentement. Tu ramasses, sans le faire exprès, quelques cailloux rond
 Choix :
 - Pour aller à la Serre, va au **201**.
 
-### 197
-
-(Réservé : un petit promontoire d'où l'on voit la Serre.)
+### 197 {lieu: Bassin des Reflets — Lisière}
 
 Tu grimpes sur un petit promontoire de pierre, juste au sud du Bassin. De là, tu vois, à travers les troncs, le grand dôme végétal de la Serre. Il est plus proche que tu ne le pensais. À peine deux heures de marche.
 
@@ -3181,7 +3211,7 @@ Tu redescends.
 Choix :
 - Pour repartir, va au **201**.
 
-### 198
+### 198 {lieu: Bassin des Reflets — Lisière}
 
 Tu trouves, accroché à une branche basse, un petit ruban de tissu. Pas le tien. Un autre. De couleur claire. Il est neuf. Quelqu'un est passé tout récemment.
 
@@ -3192,9 +3222,7 @@ Tu te demandes qui. Tu te promets de ne pas être surpris(e) si tu rencontres qu
 Choix :
 - Pour reprendre ta route, va au **201**.
 
-### 199
-
-(Réservé.)
+### 199 {lieu: Bassin des Reflets — Lisière}
 
 Tu fais un dernier crochet, presque par superstition, autour d'une pierre où ne pousse rien. Tu poses ta main dessus. Tu te dis : *Je promets que je ferai au mieux.*
 

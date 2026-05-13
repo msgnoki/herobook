@@ -88,16 +88,12 @@ OBJECT_INFO = {
 }
 
 # Octrois manuels pour les cas spéciaux non détectés par les regex
-MANUAL_GRANTS = {
-    # Équipement de départ : accordé à la fin de la scène avec Mère Aïna.
-    4: {"objects": ["Pain aux noix de Mère Aïna", "Ruban rouge",
-                    "Lampe-tempête", "Petit couteau"]},
-    200: {"keywords": ["AMITIÉ DE NILO"], "remove_keywords": ["FATIGUÉ"]},
-    195: {"keywords": ["VEILLEUR APAISÉ"]},
-    205: {"remove_keywords": ["FATIGUÉ", "BLESSÉ LÉGER"]},
-    291: {"remove_keywords": ["FATIGUÉ", "BLESSÉ LÉGER"]},
-    245: {"remove_keywords": ["FATIGUÉ"]},
-}
+# MANUAL_GRANTS a été retiré après que les sections §4, §195, §200, §205,
+# §245 et §291 ont reçu leurs balises Epic 9 explicites
+# (grants-object, grants-keyword, state-). Les `data-section-grants-*`
+# attendus côté JS sont produits par le parser hybride à partir des tags
+# du heading, et les tests `for n in 4, 195, 200, 205, 245, 291` du build
+# vérifient toujours les grants attendus.
 
 # Mots-clés d'état (cumulables/retirable). PERDU a été retiré : il n'était
 # jamais accordé ni testé, donc du code mort.
@@ -1563,13 +1559,6 @@ def tagged_or_legacy_grants(num, body, tags):
     tagged_objects, tagged_story, tagged_states, tagged_removed_story, tagged_removed_states = grants_from_tags(tags)
 
     legacy_objects, legacy_keywords, legacy_removed = detect_grants(body)
-    if num in MANUAL_GRANTS:
-        for obj in MANUAL_GRANTS[num].get("objects", []):
-            legacy_objects.append(obj)
-        for kw in MANUAL_GRANTS[num].get("keywords", []):
-            legacy_keywords.append(kw)
-        for kw in MANUAL_GRANTS[num].get("remove_keywords", []):
-            legacy_removed.append(kw)
 
     legacy_story, legacy_states = split_state_keywords(legacy_keywords)
     legacy_removed_story, legacy_removed_states = split_state_keywords(legacy_removed)

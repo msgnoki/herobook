@@ -4331,20 +4331,14 @@ Choix :
 
 ### 287 {lieu: Jardin de la Promesse}
 
-Tu choisis un objet de ta poche. Tu hésites.
-
-Tu n'es pas obligé(e) de te séparer définitivement de quelque chose. Tu poses simplement, comme une offrande symbolique. Tu pourras reprendre l'objet en sortant.
-
-Si tu poses la **Pierre de mémoire**, elle se met à *briller* dans le berceau. Elle se charge encore plus. Quand tu la reprendras, elle aura emmagasiné de la lumière. **Note le mot-clé PIERRE PLEINE sur ta fiche.**
-
-Si tu poses la **Boussole d'argent**, l'aiguille tourne sans s'arrêter, comme si elle indiquait *partout*. **Note le mot-clé BOUSSOLE LIBÉRÉE sur ta fiche.**
-
-Si tu poses la **Clé d'Ambre**, elle reste tranquille — elle a déjà fait son travail.
-
-Si tu poses la **Graine lumineuse**, elle disparaît dans le berceau, et tu la retrouveras un peu plus tard, *différente.*
+Tu hésites au bord du berceau. Tu n'es pas obligé(e) de te séparer définitivement de quelque chose : tu poses simplement, comme une offrande symbolique. Tu pourras reprendre l'objet en sortant.
 
 Choix :
-- Pour reprendre tes objets et continuer, va au **289**.
+- Poser la **Pierre de mémoire** dans le berceau. Elle se met à *briller* — elle se charge encore plus. Quand tu la reprendras, elle aura emmagasiné de la lumière. Va au **289**. {requires-object: Pierre de mémoire} {grants-keyword: PIERRE PLEINE}
+- Poser la **Boussole d'argent** dans le berceau. L'aiguille tourne sans s'arrêter, comme si elle indiquait *partout*. Va au **289**. {requires-object: Boussole d'argent} {grants-keyword: BOUSSOLE LIBÉRÉE}
+- Poser la **Clé d'Ambre** dans le berceau. Elle reste tranquille — elle a déjà fait son travail. Va au **289**. {requires-object: Clé d'Ambre}
+- Poser la **Graine lumineuse** dans le berceau. Elle disparaît, et tu la retrouveras plus tard, *différente*. Va au **289**. {requires-object: Graine lumineuse}
+- Ne rien poser et continuer. Va au **289**.
 
 ### 288 {lieu: Jardin de la Promesse}
 
@@ -4658,7 +4652,7 @@ Choix :
 {branch: 311}
 {branch: 312, requires-object: Pierre de mémoire}
 {branch: 313}
-{branch: 314, requires-keyword: CONFIANCE DES LUCIOLES}
+{branch: 314, requires-objects: [Boussole d'argent, Pierre de mémoire], requires-keyword: CONFIANCE DES LUCIOLES}
 
 Tu reviens devant le piédestal. La sphère bat doucement. L'étoile, à l'intérieur, semble *t'attendre*.
 
@@ -4670,7 +4664,7 @@ Choix :
 - Si tu décides de **prendre la sphère** et de devenir gardien(ne) à la place du Veilleur, va au **311**.
 - Si tu décides de **toucher la sphère avec ta Pierre de mémoire** pour transformer la promesse, va au **312**. {requires-object: Pierre de mémoire}
 - Si tu décides de **t'incliner** et de laisser la sphère en place pour aujourd'hui, va au **313**.
-- Si tu portes la **Boussole d'argent**, la **Pierre de mémoire** *et* le mot-clé **CONFIANCE DES LUCIOLES**, tu peux choisir une quatrième voie, va au **314**. {requires-object: Boussole d'argent} {requires-object: Pierre de mémoire} {requires-keyword: CONFIANCE DES LUCIOLES}
+- Si tu portes la **Boussole d'argent**, la **Pierre de mémoire** *et* le mot-clé **CONFIANCE DES LUCIOLES**, tu peux choisir une quatrième voie, va au **314**. {requires-objects: [Boussole d'argent, Pierre de mémoire]} {requires-keyword: CONFIANCE DES LUCIOLES}
 
 ### 311 {lieu: Chambre de Verre-Lune}
 {grants-keyword: GARDIEN DEVENU}

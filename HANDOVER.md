@@ -55,7 +55,7 @@ L'app et le site sont en production v1.0.0 (release GitHub : `v1.0.0`).
 **Pistes de fixes déjà appliquées partiellement (n'y revenir que si problème persistant) :**
 - §90 et §166 avaient des branches gatées narratives jamais offertes en `Choix :` — corrigé.
 - §200 et §306 avaient des grants conditionnels invisibles au parser (« si tu n'avais pas X, tu obtiens X ») — convertis en grants explicites.
-- §4 ne traçait pas l'équipement de départ — ajouté via `MANUAL_GRANTS`.
+- §4 ne traçait pas l'équipement de départ — d'abord ajouté via `MANUAL_GRANTS`, puis converti en balises `{grants-object: …}` Epic 9 et `MANUAL_GRANTS` retirée.
 - §101 grant `FATIGUÉ et BLESSÉ LÉGER` ne capturait que le premier — parser corrigé.
 - État `PERDU` déclaré mais jamais utilisé — retiré du code.
 
@@ -124,7 +124,7 @@ Le générateur est désormais hybride : les balises ont priorité par famille d
 | Fichier | Rôle |
 |---|---|
 | `livre/Les_Jardins_de_Verre-Lune.md` | Manuscrit source — **seule source de vérité éditoriale** |
-| `livre/build_xhtml.py` | Générateur Python (~1900 lignes, tout en un). Contient SKILLS, OBJECT_INFO, GATED_OBJECTS, MANUAL_GRANTS, STATE_KEYWORDS, ENDINGS, CSS, JS embarqué, parser, rendu |
+| `livre/build_xhtml.py` | Générateur Python (~1900 lignes, tout en un). Contient SKILLS, OBJECT_INFO, GATED_OBJECTS, STATE_KEYWORDS, ENDINGS, CSS, JS embarqué, parser, rendu |
 | `livre/xhtml/` | Sortie générée — **ne jamais éditer à la main**, regénérée à chaque build |
 | `android/app/src/main/assets/book/` | Copie des `xhtml` pour l'app Android — synchronisée par la tâche Gradle `syncBookAssets` au build |
 | `AGENTS.md` | Conventions techniques du repo (à lire) |
@@ -164,14 +164,14 @@ Le déploiement web sur GitHub Pages est automatique à chaque push qui touche `
 
 ### Audits déjà disponibles (à conserver / étendre)
 
-Tous embarqués dans le générateur. Voir `detect_grants`, `detect_choice_requirements`, et la table `MANUAL_GRANTS` pour les cas spéciaux non détectables par regex.
+Embarqués dans le générateur (`detect_grants`, `detect_choice_requirements`) ou autonomes (`livre/lint_tags.py` pour la syntaxe des balises, `livre/audit_reachability.py` pour le graphe d'atteignabilité depuis §1). L'entrée commune `livre/audit_full.py` exécute tous les audits.
 
-Pour ajouter de nouveaux audits (recommandé en P3) : créer `livre/audit_*.py` à côté du générateur. Pattern existant :
+Pour ajouter un nouvel audit : créer `livre/audit_*.py` à côté du générateur, l'appeler depuis `audit_full.py`. Pattern existant :
 
 ```python
 import sys
 sys.path.insert(0, "livre")
-from build_xhtml import OBJECT_INFO, MANUAL_GRANTS, STATE_KEYWORDS, detect_grants, detect_choice_requirements
+from build_xhtml import OBJECT_INFO, STATE_KEYWORDS, detect_grants, detect_choice_requirements
 
 import re
 from pathlib import Path

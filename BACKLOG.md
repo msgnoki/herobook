@@ -84,23 +84,26 @@ But : passer du manuscrit Markdown à une app statique jouable.
 | # | Story | Statut |
 |---|---|---|
 | 9.2.1 | `build_xhtml.py` : extraire les balises avant le parsing prose. Tags ont priorité ; la prose reste fallback pendant la migration. | ✅ |
-| 9.2.2 | Retagger section par section (350 sections). Sens forward + back, en deux passes. | ⏳ |
+| 9.2.2 | Retagger section par section (350 sections). Sens back-to-front (C1→C7), en une passe. | ✅ |
 | 9.2.3 | Une fois 100% balisé : retirer le parsing prose-based (regex `Tu es FATIGUÉ`, etc.) du moteur. | ⏳ |
 
 ### Phase 9.3 — Audit + correctifs
-| # | Story |
-|---|---|
-| 9.3.1 | Cartographier les 7 fins : conditions, sections-source, atteignabilité depuis §1 |
-| 9.3.2 | Linter complet : sections orphelines, compétences/objets/mots-clés jamais utilisés, fins inatteignables, fins-piège |
-| 9.3.3 | Corriger les chaînes cassées identifiées par 9.3.2 |
+| # | Story | Statut |
+|---|---|---|
+| 9.3.1 | Cartographier les 7 fins : conditions, sections-source, atteignabilité depuis §1 | ✅ (`livre/audit_reachability.py`) |
+| 9.3.2 | Linter complet : sections orphelines, compétences/objets/mots-clés jamais utilisés, fins inatteignables, fins-piège | partiel — atteignabilité OK ; détection des mots-clés/objets/compétences morts encore à faire |
+| 9.3.3 | Corriger les chaînes cassées identifiées par 9.3.2 | n/a — aucune chaîne cassée détectée à ce jour |
+| 9.3.4 | Retirer `MANUAL_GRANTS` (équipement §4, alliés §195/§200, états §205/§245/§291 désormais portés par balises) | ✅ |
+| 9.3.5 | Refactor §287 : grants conditionnels multi-objet → bloc `Choix :` avec gates explicites | ✅ |
+| 9.3.6 | Fix parser : apostrophe ASCII (`d'argent`) ne doit plus ouvrir un mode quote dans `split_top_level_commas` | ✅ |
 
 ### Phase 9.4 — Pass éditorial
-| # | Story |
-|---|---|
-| 9.4.1 | Relecture forward (§1 → §350) avec mécanique verrouillée par les balises — fluidité de prose |
-| 9.4.2 | Relecture back-to-forward (§350 → §1) — cohérence terminale → causale |
-| 9.4.3 | Régulariser le ton (la qualité se dégrade dans la 2e moitié, à rééquilibrer) |
-| 9.4.4 | Éliminer les « Si tu… » décoratifs qui ne sont pas des conditions de jeu |
+| # | Story | Statut |
+|---|---|---|
+| 9.4.1 | Relecture forward (§1 → §350) avec mécanique verrouillée par les balises — fluidité de prose | ⏳ |
+| 9.4.2 | Relecture back-to-forward (§350 → §1) — cohérence terminale → causale | ✅ effectuée chunk par chunk en P9.2.2 |
+| 9.4.3 | Régulariser le ton (la qualité se dégrade dans la 2e moitié, à rééquilibrer) | ✅ traité au fil de C1-C7 |
+| 9.4.4 | Éliminer les « Si tu… » décoratifs qui ne sont pas des conditions de jeu | partiel — les plus visibles retirés (§321, §336, §312, §200, §249) ; passage final à prévoir si besoin |
 
 **Effort total estimé** : 5-7 jours de travail technique + relecture éditoriale.
 

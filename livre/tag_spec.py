@@ -81,7 +81,12 @@ def split_top_level_commas(text: str) -> list[str]:
             if ch == quote:
                 quote = None
             continue
-        if ch in ("'", '"'):
+        # Only `"` opens a quoted run. ASCII `'` is intentionally not treated
+        # as a quote because it appears unbalanced inside French words like
+        # `Boussole d'argent` and used to swallow commas in `[Boussole
+        # d'argent, Pierre de mémoire]`. Quote a value with `"…"` if it ever
+        # needs to contain a literal comma.
+        if ch == '"':
             quote = ch
             continue
         if ch == "[":

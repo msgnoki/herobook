@@ -1,17 +1,21 @@
 #!/usr/bin/env python3
 """Run manuscript audits required before publishing.
 
-Epic 9 starts with the tag linter. Later editorial audits can be added here
-without changing the handover validation command.
+Each audit returns 0 on success, non-zero on issues. We run them all and
+return the OR of their results so failures aren't silently masked.
 """
 
 from __future__ import annotations
 
 import lint_tags
+import audit_reachability
 
 
 def main() -> int:
-    return lint_tags.main()
+    rc = 0
+    rc |= lint_tags.main()
+    rc |= audit_reachability.main()
+    return rc
 
 
 if __name__ == "__main__":

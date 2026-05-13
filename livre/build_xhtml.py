@@ -135,9 +135,23 @@ body {
 }
 body.sheet-open { overflow: hidden; }
 button { font: inherit; }
-body > header { border-bottom: 1px solid var(--vl-rule); margin-bottom: 1.5em; padding-bottom: .8em; }
-body > header h1 { font-size: 1.8em; line-height: 1.05; margin: 0; color: var(--vl-ink); }
-body > header h2 { font-size: 1em; font-weight: normal; font-style: italic; margin: .25em 0 0; color: var(--vl-gold-soft); }
+/* Header minimal : juste le titre du livre, petit, centré. */
+body > header.minimal {
+  text-align: center;
+  padding: .55em 1em;
+  margin: 0 -1.2em 1.1em;
+  border-bottom: 1px solid var(--vl-rule);
+  background: var(--vl-paper);
+}
+body > header.minimal a {
+  font-family: var(--vl-serif);
+  font-style: italic;
+  font-size: .9em;
+  color: var(--vl-gold-soft);
+  text-decoration: none;
+  letter-spacing: .03em;
+}
+body > header.minimal a:hover { color: var(--vl-gold); }
 .reader { position: relative; }
 article h1.sectnum {
   font-size: 2.55em;
@@ -605,6 +619,40 @@ hr { border: none; border-top: 1px solid var(--vl-rule); margin: 1.5em 0; }
 /* On masque le header sur la page splash : le titre est dans la couverture. */
 body.splash-page > header { display: none; }
 body.splash-page > article { padding-top: 0; }
+
+/* Carte (page dédiée) */
+.carte-figure {
+  margin: 0;
+  text-align: center;
+}
+.carte-figure img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 6px;
+  box-shadow: 0 8px 26px rgba(58,42,20,.18);
+}
+
+/* Lien discret dans la fiche d'aventure (vers la carte par ex.) */
+.sheet-link-row {
+  display: flex;
+  justify-content: center;
+  margin: 6px 0 2px;
+}
+.sheet-link-row a {
+  display: inline-flex;
+  align-items: center;
+  gap: .4em;
+  font-family: var(--vl-serif);
+  font-style: italic;
+  font-size: .95em;
+  color: var(--vl-gold);
+  text-decoration: none;
+  padding: .35em .6em;
+  border-bottom: 1px solid transparent;
+}
+.sheet-link-row a:hover { border-bottom-color: var(--vl-gold-soft); }
 
 .splash {
   display: flex;
@@ -1218,9 +1266,8 @@ def page_wrap(title, body_html, nav_html="", extra_head="", body_class=""):
 {extra_head}
 </head>
 <body{body_class_attr}>
-<header>
-<h1><a href="index.htm" style="color:inherit; text-decoration:none;">{html.escape(TITLE)}</a></h1>
-<h2>{html.escape(SUBTITLE)}</h2>
+<header class="minimal">
+<a href="index.htm">Les Jardins de Verre-Lune</a>
 </header>
 <article>
 {body_html}
@@ -1275,6 +1322,9 @@ def make_reader_sheet():
 <h3>État</h3>
 <div class="sheet-state-list" id="sheet-states"></div>
 </section>
+<div class="sheet-link-row">
+<a href="carte.htm">🗺 Voir la carte des Jardins</a>
+</div>
 <footer class="sheet-actions">
 <button class="sheet-menu" id="sheet-menu-main" type="button">
 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -1765,6 +1815,20 @@ with open(OUT / "aide.htm", "w", encoding="utf-8") as f:
     f.write(page_wrap("Aide", aide_body, nav_html=""))
 
 
+# carte.htm — carte des Jardins
+carte_body = """
+<figure class="carte-figure">
+  <img src="map.jpg" alt="Carte des Jardins de Verre-Lune" />
+</figure>
+<div class="center" style="margin-top:1.4em;">
+<a href="#" onclick="history.back(); return false;" class="big-btn secondary">← Retour à l'aventure</a>
+</div>
+"""
+
+with open(OUT / "carte.htm", "w", encoding="utf-8") as f:
+    f.write(page_wrap("Carte", carte_body, nav_html=""))
+
+
 # setup.htm — choix des 2 compétences
 setup_body = """
 <h1 class="sectnum">Nouvelle partie</h1>
@@ -1897,9 +1961,8 @@ for num, name, body in sections:
 <link rel="stylesheet" href="main.css"/>
 </head>
 <body>
-<header>
-<h1>{html.escape(TITLE)}</h1>
-<h2>{html.escape(SUBTITLE)}</h2>
+<header class="minimal">
+<a href="index.htm">{html.escape(TITLE)}</a>
 </header>
 <main class="reader">
 {article_open}

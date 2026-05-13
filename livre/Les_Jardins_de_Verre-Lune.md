@@ -503,7 +503,7 @@ Il sourit pour la première fois de la matinée.
 
 — « On est deux qui essaient, » corriges-tu.
 
-**Note le mot-clé AMITIÉ DE NILO sur ta fiche d'aventure. Tu es désormais ACCOMPAGNÉ. Coche la case sur ta fiche.**
+**Note le mot-clé AMITIÉ DE NILO sur ta fiche d'aventure. Tu es désormais ACCOMPAGNÉ.**
 
 Choix :
 - Pour vous mettre en route vers le Verger pâle, va au **30**.
@@ -812,7 +812,7 @@ Tu te rapproches de la patte. Elle n'est pas cassée : juste tordue, prise entre
 
 Si tu possèdes la compétence **Soin des animaux**, tu sais exactement quoi faire : tu cales la patte d'une main, tu écartes les racines de l'autre, et tu libères doucement. Le faon pousse un petit cri, puis il reste tremblant, mais libre. Tu lui caresses le museau. Il pose son front contre ton genou. **Note le mot-clé FAON SAUVÉ sur ta fiche.**
 
-Si tu n'as pas cette compétence, tu essaies aussi, plus maladroitement. Le faon a peur, te griffe en se débattant, mais finit par se libérer. Tu te tiens la main : elle saigne un peu. **Tu es BLESSÉ LÉGER. Coche la case sur ta fiche.** Le faon, lui, s'enfuit en boitant entre les arbres. Il ne se retournera pas. Pas aujourd'hui.
+Si tu n'as pas cette compétence, tu essaies aussi, plus maladroitement. Le faon a peur, te griffe en se débattant, mais finit par se libérer. Tu te tiens la main : elle saigne un peu. **Tu es BLESSÉ LÉGER.** Le faon, lui, s'enfuit en boitant entre les arbres. Il ne se retournera pas. Pas aujourd'hui.
 
 Choix :
 - Pour repartir vers le cœur du verger, va au **45**.
@@ -1428,7 +1428,7 @@ Tu fixes le dôme dans ta tête, comme une étoile à atteindre.
 
 Tu redescends prudemment.
 
-Si tu possèdes la compétence **Agilité**, tu redescends sans une éraflure. Sinon, tu sautes mal le dernier mètre et tu te tords la cheville : **tu es FATIGUÉ. Coche la case.**
+Si tu possèdes la compétence **Agilité**, tu redescends sans une éraflure. Sinon, tu sautes mal le dernier mètre et tu te tords la cheville : **tu es FATIGUÉ.**
 
 Choix :
 - Pour rejoindre le Pont des Racines, va au **88**.
@@ -1494,7 +1494,7 @@ Si tu possèdes la **Boussole d'argent**, tu la regardes. L'aiguille pointe rés
 
 Si tu possèdes la compétence **Orientation**, tu repères, en regardant la mousse sur les troncs, le vrai nord, et tu corriges ta route.
 
-Sinon, tu cours un peu au hasard, et tu déchires ta manche à une ronce. **Tu es FATIGUÉ. Coche la case.**
+Sinon, tu cours un peu au hasard, et tu déchires ta manche à une ronce. **Tu es FATIGUÉ.**
 
 Choix :
 - Pour rejoindre quand même le Pont des Racines, va au **88**.
@@ -1760,7 +1760,7 @@ Tu fais un pas en arrière. Au même moment, ton pied glisse. Tu pousses un cri.
 
 Tu te hisses. Tu rampes sur le ventre. Tu ne te lèves plus. Tu finis le pont à quatre pattes, mais tu le finis.
 
-**Tu es FATIGUÉ et BLESSÉ LÉGER. Coche les deux cases.**
+**Tu es FATIGUÉ et BLESSÉ LÉGER.**
 
 Choix :
 - Pour ramasser, en passant, l'objet brillant au creux de la racine du milieu, va au **105**.
@@ -3293,7 +3293,7 @@ Choix :
 
 Tu trouves, à côté du sentier, une petite source qui coule entre deux racines. L'eau est claire. Tu en bois trois gorgées. Tu te sens un peu plus lavé(e), comme si la source emportait avec elle un peu de la fatigue des Ruines.
 
-**Tu n'es plus FATIGUÉ ni BLESSÉ LÉGER. Décoche les cases.**
+**Tu n'es plus FATIGUÉ ni BLESSÉ LÉGER.**
 
 Choix :
 - Pour reprendre ta route, va au **204**.
@@ -3823,7 +3823,7 @@ Tu fermes les yeux.
 
 Tu te dis que le temps, dans cette pièce, ne marche pas pareil. Tu n'as pas besoin de te dépêcher.
 
-**Tu n'es plus FATIGUÉ. Décoche la case.**
+**Tu n'es plus FATIGUÉ.**
 
 Choix :
 - Pour te relever et faire le tour des portes, va au **242**.
@@ -4371,7 +4371,7 @@ Tu t'assieds. Tu repenses à tout ce qui t'a amené(e) ici. Tu repenses à Mère
 
 Tu te dis que tu as eu de la chance d'avoir tout ça.
 
-**Tu n'es plus FATIGUÉ ni BLESSÉ LÉGER. Décoche les cases. Note le mot-clé GRATITUDE sur ta fiche.**
+**Tu n'es plus FATIGUÉ ni BLESSÉ LÉGER. Note le mot-clé GRATITUDE sur ta fiche.**
 
 Choix :
 - Pour te lever et avancer vers le couloir final, va au **295**.

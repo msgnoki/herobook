@@ -105,6 +105,14 @@ But : versions EN + ES sans toucher au moteur français.
 | 6.3 | APK release optimisé (R8, sans debug symbols) | ⏳ |
 | 6.4 | Publication F-Droid ou hébergement APK direct | ⏳ |
 
+## Epic 8 — Outillage pour les prochains livres (⏳, futur)
+
+| # | Story |
+|---|---|
+| 8.1 | Système de détection automatique du **lieu courant** par section (front-matter `[lieu: Brumeval]` dans la source, ou tag de zone hérité jusqu'à override) — réactive le header "Lieu seul" du proposal de Verre-Lune sans passer par un mapping manuel sur 350 sections. |
+| 8.2 | Lint pré-build : section déclarée sans lieu, lieu déclaré mais inutilisé, etc. |
+| 8.3 | Generator multi-livres (1 manuscrit = 1 ouvrage, partage le moteur) — découpler `OUT`, `TITLE`, `OBJECT_INFO` par projet. |
+
 ## Epic 7 — Métriques & vie de l'œuvre (NICE)
 
 | # | Story |

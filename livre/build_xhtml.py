@@ -634,25 +634,63 @@ body.splash-page > article { padding-top: 0; }
   box-shadow: 0 8px 26px rgba(58,42,20,.18);
 }
 
-/* Lien discret dans la fiche d'aventure (vers la carte par ex.) */
-.sheet-link-row {
+/* Bloc Carte des Jardins dans la fiche d'aventure */
+.sheet-map-card {
   display: flex;
-  justify-content: center;
-  margin: 6px 0 2px;
-}
-.sheet-link-row a {
-  display: inline-flex;
   align-items: center;
-  gap: .4em;
+  gap: 14px;
+  margin: 6px 0 2px;
+  padding: 12px 14px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, var(--vl-choice-bg) 0%, var(--vl-chip-bg) 100%);
+  border: 1px solid var(--vl-chip-border);
+  color: var(--vl-ink);
+  text-decoration: none;
+  -webkit-tap-highlight-color: rgba(90, 58, 16, .12);
+  transition: transform .08s ease, background .15s ease;
+}
+.sheet-map-card:hover { background: linear-gradient(135deg, var(--vl-chip-bg) 0%, var(--vl-choice-bg) 100%); }
+.sheet-map-card:active { transform: scale(.995); }
+.sheet-map-icon {
+  flex: 0 0 auto;
+  width: 42px;
+  height: 42px;
+  border-radius: 6px;
+  background: var(--vl-paper);
+  border: 1px solid var(--vl-chip-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--vl-gold);
+}
+.sheet-map-body {
+  flex: 1 1 auto;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.sheet-map-title {
+  font-family: var(--vl-serif);
+  font-size: 1.05em;
+  font-weight: 600;
+  color: var(--vl-ink);
+  line-height: 1.2;
+}
+.sheet-map-subtitle {
   font-family: var(--vl-serif);
   font-style: italic;
-  font-size: .95em;
-  color: var(--vl-gold);
-  text-decoration: none;
-  padding: .35em .6em;
-  border-bottom: 1px solid transparent;
+  font-size: .85em;
+  color: var(--vl-gold-soft);
+  line-height: 1.2;
 }
-.sheet-link-row a:hover { border-bottom-color: var(--vl-gold-soft); }
+.sheet-map-chevron {
+  flex: 0 0 auto;
+  font-family: var(--vl-serif);
+  font-size: 1.3em;
+  color: var(--vl-gold-soft);
+  line-height: 1;
+}
 
 .splash {
   display: flex;
@@ -1322,9 +1360,19 @@ def make_reader_sheet():
 <h3>État</h3>
 <div class="sheet-state-list" id="sheet-states"></div>
 </section>
-<div class="sheet-link-row">
-<a href="carte.htm">🗺 Voir la carte des Jardins</a>
-</div>
+<a href="carte.htm" class="sheet-map-card">
+<span class="sheet-map-icon" aria-hidden="true">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+<circle cx="12" cy="12" r="9"></circle>
+<path d="M16 8l-2 6-6 2 2-6 6-2z" fill="currentColor" fill-opacity="0.1"></path>
+</svg>
+</span>
+<span class="sheet-map-body">
+<span class="sheet-map-title">Carte des Jardins</span>
+<span class="sheet-map-subtitle">De Brumeval aux Jardins de Verre-Lune</span>
+</span>
+<span class="sheet-map-chevron" aria-hidden="true">→</span>
+</a>
 <footer class="sheet-actions">
 <button class="sheet-menu" id="sheet-menu-main" type="button">
 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">

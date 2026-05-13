@@ -4993,17 +4993,18 @@ Tu sens, à ton poignet, qu'il manque le ruban rouge. Tu te rappelles que tu l'a
 Choix :
 - Pour continuer, va au **325**.
 
-### 333 — Fin d'échec doux
+### 333 — Fin d'échec doux {lieu: Brumeval — Ta chambre} {ending: échec doux}
+{requires-keyword: HONTE TRANSITOIRE}
 
-Tu rentres à Brumeval sans avoir pris la promesse. Sans avoir transformé l'étoile. Tu as fui ou tu t'es inclinée(é) sans avoir agi.
+Tu rentres à Brumeval sans avoir pris la promesse, sans avoir transformé l'étoile. Tu as fui, ou tu t'es incliné(e) sans rien tenter.
 
-Tu n'es pas un(e) héros(héroïne) cette fois-ci. Tu es un enfant qui est allé voir une chose trop grande, et qui est revenu, vivant.
+Tu n'es pas un(e) héros(héroïne) cette fois-ci. Tu es un enfant qui est allé(e) regarder une chose trop grande, et qui en est revenu(e) vivant(e). Ce n'est pas rien.
 
-Cette nuit-là, tu regardes le ciel par la fenêtre de ta chambre. Il y manque encore des étoiles. Peut-être deux. Peut-être trois. Mais il y en a beaucoup. Et la fleur de joubarbe, sur ta table, a recommencé à devenir verte par la pointe.
+Cette nuit-là, tu regardes le ciel par la fenêtre de ta chambre. Il y manque encore des étoiles. Peut-être deux. Peut-être trois. Mais il en reste beaucoup. Et la fleur de joubarbe, sur ta table, a recommencé à verdir par la pointe.
 
 Tu te dis : *Une autre fois, j'irai plus loin.* Tu te le promets.
 
-Mère Aïna, en bas, dans la cuisine, fredonne sa comptine. Elle ne te le dit pas, mais elle pense la même chose que toi : *Tu reviendras. Et la prochaine fois, tu y arriveras.*
+Mère Aïna, en bas dans la cuisine, fredonne sa comptine. Elle ne te le dit pas, mais elle pense la même chose que toi : *Tu reviendras. Et la prochaine fois, tu y arriveras.*
 
 Tu fermes les yeux.
 
@@ -5029,11 +5030,12 @@ Tu serres dans ta poche tes objets. Ils sont tièdes. Quelques mots-clés te res
 Choix :
 - Pour atteindre ta fin, va au **336**.
 
-### 336 — Fin sombre adaptée
+### 336 — Fin sombre adaptée {lieu: Brumeval — Ta chambre} {ending: sombre adaptée}
+{requires-keyword: INCLINAISON RESPECTUEUSE}
 
-Tu as choisi de t'incliner et de laisser, pour aujourd'hui. La forêt, derrière toi, a perdu un peu de mémoire. Quelques fleurs de Brumeval restent transparentes. Quelques bêtes oublient leur chemin. Mais Brumeval continue à vivre.
+Tu as choisi de t'incliner, et de laisser, pour aujourd'hui. Derrière toi, la forêt a perdu un peu de mémoire. Quelques fleurs de Brumeval restent transparentes. Quelques bêtes oublient leur chemin. Mais Brumeval continue à vivre.
 
-Quand tu te couches, ce soir, tu sens, sous ton oreiller, la petite figurine de bois marquée d'un V (si tu la portes encore). Tu te dis : *Vellan est mort sans réussir, et il en a fait un cadeau pour moi. Moi, je n'ai pas réussi non plus. Je peux peut-être en faire un cadeau pour quelqu'un qui viendra après.*
+Quand tu te couches, ce soir-là, tu repenses à la petite figurine de bois marquée d'un V — celle de Vellan. Tu te dis : *Il est mort sans réussir, et il en a fait un cadeau pour moi. Moi non plus, je n'ai pas réussi. Je peux peut-être en faire un cadeau pour quelqu'un qui viendra après.*
 
 Tu te promets de tenir, toi aussi, la mémoire vivante pour le prochain enfant. Tu te dis que le Veilleur, au fond de la Serre, ne sera pas seul : tu vas, à ta manière, le veiller à distance, depuis Brumeval.
 
@@ -5061,7 +5063,8 @@ Tu sens, en t'endormant, que tu as gardé un peu de la grande étoile dans ta pr
 Choix :
 - Pour atteindre ta fin, va au **339**.
 
-### 339 — Fin de sagesse
+### 339 — Fin de sagesse {lieu: Brumeval — Ta chambre} {ending: sagesse}
+{requires-keyword: GARDIEN DEVENU}
 
 Tu as choisi de prendre la sphère, comme Anya. Tu as accepté de devenir Gardien(ne), même si tu n'avais pas tous les alliés autour de toi. Tu rentres à Brumeval avec la sphère blottie contre ton cœur, comme un petit oiseau secret.
 
@@ -5069,7 +5072,7 @@ Tu sais, maintenant, que tu ne quitteras jamais vraiment cette charge. Tu vivras
 
 Tu ne diras pas, en grandissant, que tu es Gardien(ne). Ce serait inutile. Tu le seras, simplement. Tu seras comme Mère Aïna : quelqu'un qui chantonne une comptine en cuisinant, et que personne ne soupçonne d'avoir tenu, toute sa vie, le ciel à bout de bras.
 
-Tu sens, en t'endormant ce soir-là, que tu as fait le choix le plus *adulte* de ta jeune vie. Tu as choisi la responsabilité plutôt que la facilité.
+Tu sens, en t'endormant ce soir-là, que tu as fait le choix le plus *adulte* de ta jeune vie. Tu as préféré la responsabilité à la facilité.
 
 **Tu as atteint une des fins de l'aventure : LA FIN DE SAGESSE.**
 
@@ -5093,15 +5096,16 @@ Tu sens, dans la poche, la Pierre de mémoire. Elle est tiède. Vivante. Pleine 
 Choix :
 - Pour atteindre ta fin, va au **342**.
 
-### 342 — Fin douce-amère
+### 342 — Fin douce-amère {lieu: Brumeval — Ta chambre} {ending: douce-amère}
+{requires-keyword: PROMESSE TRANSFORMÉE}
 
-Tu as transformé la Promesse en utilisant la Pierre de mémoire. Tu as partagé l'étoile en trois : un morceau pour la Pierre, un morceau pour le ciel, un morceau pour le sanctuaire. Tu as réussi. Le ciel, au-dessus de Brumeval, est presque complet.
+Tu as transformé la Promesse en passant par la Pierre de mémoire. Tu as partagé l'étoile en trois : un morceau pour la Pierre, un morceau pour le ciel, un morceau pour le sanctuaire. Au-dessus de Brumeval, le ciel est presque complet.
 
 Mais le Veilleur, en redevenant homme, n'a pas pu rester longtemps. Quatre-vingts ans d'immobilité l'ont rendu, dès le premier soir, fragile. Tu le sais en t'endormant : il a fini sa vie cette nuit-là, paisiblement, allongé dans l'herbe de la Serre. Anya l'a accueilli, du fond du temps. Il n'a pas été seul.
 
 Tu mets longtemps à t'endormir. Tu pleures un peu — pas pour toi, pour lui. Il a fallu qu'il vive trois jours d'homme pour pouvoir mourir comme un homme. Il a *attendu* toute sa longue, longue garde, pour ces trois jours-là.
 
-Tu te dis que c'était juste, mais que la justice fait parfois mal.
+Tu te dis que c'était juste. Mais que la justice fait parfois mal.
 
 La Pierre de mémoire, sous ton oreiller, brille très doucement, comme une petite veilleuse.
 
@@ -5127,21 +5131,22 @@ Tu sens, à ta poitrine, que tu portes encore un peu de chaleur de la Serre. Com
 Choix :
 - Pour atteindre ta fin, va au **345**.
 
-### 345 — Fin réussie
+### 345 — Fin réussie {lieu: Brumeval — Ta chambre} {ending: réussie}
+{requires-keyword: PROMESSE TRANSFORMÉE} {requires-alliances-min: 2}
 
-Tu as transformé la Promesse, et tu avais autour de toi suffisamment d'alliances pour que le poids soit partagé. Le Veilleur a pu redevenir homme et survivre. Il vit, désormais, dans une petite cabane à la lisière du Verger pâle. Personne, à part toi et Mère Aïna, ne sait qui il était.
+Tu as transformé la Promesse, et tu avais autour de toi assez d'alliances pour que le poids soit partagé. Le Veilleur a pu redevenir homme, et survivre. Il vit, désormais, dans une petite cabane à la lisière du Verger pâle. Personne, à part toi et Mère Aïna, ne sait qui il était.
 
-Le ciel, au-dessus de Brumeval, est entier. Toutes les étoiles sont revenues à leurs places. La fleur de joubarbe, sur ton appui de fenêtre, est verte de nouveau.
+Au-dessus de Brumeval, le ciel est entier. Toutes les étoiles sont revenues à leur place. La fleur de joubarbe, sur ton appui de fenêtre, est verte de nouveau.
 
-La Pierre de mémoire, sous ton oreiller, *partage* avec toi, quand tu dors, des morceaux de mémoire ancienne. Tu rêves, parfois, d'Anya, de Vellan, du Veilleur jeune. Tu te réveilles en souriant.
+La Pierre de mémoire, sous ton oreiller, *partage* avec toi, quand tu dors, des morceaux de mémoire ancienne. Tu rêves parfois d'Anya, de Vellan, du Veilleur jeune. Tu te réveilles en souriant.
 
-Tu n'as pas tout compris. Il reste des secrets dans la forêt. La forêt aime ça. Tu te dis : *On y retournera. Ensemble.* Avec Nilo. Avec Mémorine, peut-être. Avec ceux et celles qui voudront.
+Tu n'as pas tout compris. Il reste des secrets dans la forêt. La forêt aime ça. Tu te dis : *On y retournera. Ensemble.* Avec Nilo. Avec Mémorine, peut-être. Avec celles et ceux qui voudront.
 
 Tu t'endors, calme. Ta vie a changé. Mais elle a changé du bon côté.
 
 **Tu as atteint une des fins de l'aventure : LA FIN RÉUSSIE.**
 
-*Tu peux recommencer pour découvrir s'il existe encore plus complet…*
+*Tu peux recommencer pour découvrir s'il existe une fin encore plus complète…*
 
 ### 346
 
@@ -5161,11 +5166,12 @@ Tu sens, à travers la fenêtre, les lucioles s'approcher de ta chambre. Elles f
 Choix :
 - Pour atteindre ta fin, va au **348**.
 
-### 348 — Fin secrète
+### 348 — Fin secrète {lieu: Brumeval — Ta chambre} {ending: secrète}
+{requires-keyword: QUATRIÈME VOIE}
 
-Tu as choisi la quatrième voie : la **Promesse partagée** entre les lucioles, la Pierre, la Boussole, le ciel et la Serre. C'est une voie que personne, jamais, n'avait inventée avant toi. Pas même Anya. Pas même Vellan.
+Tu as choisi la quatrième voie : la **Promesse partagée** entre les lucioles, la Pierre, la Boussole, le ciel et la Serre. Une voie que personne, jamais, n'avait inventée avant toi. Pas même Anya. Pas même Vellan.
 
-Cette nuit-là, dans ton sommeil, tu te retrouves, en rêve, dans la grande Chambre de Verre-Lune. Anya t'attend. Elle te tend la main.
+Cette nuit-là, dans ton sommeil, tu te retrouves en rêve dans la grande Chambre de Verre-Lune. Anya t'attend. Elle te tend la main.
 
 — « Tu peux choisir, » dit-elle, « de rester un peu avec moi dans la mémoire, ou de te réveiller. »
 
@@ -5179,9 +5185,9 @@ Tu te lèves. Mère Aïna te tend un bol de lait fumant. Elle te regarde longuem
 
 Tu hoches la tête.
 
-Tu sors dans la rue. Les lucioles, en plein matin, sont là, posées sur le mur de chez Maître Orven. Elles t'attendent. Tu deviendras, en grandissant, *celle* ou *celui* qui apprend aux enfants comment regarder les étoiles. Tu ne seras pas une professeure, ou un professeur. Tu seras *raconteur, raconteuse de ciel.*
+Tu sors dans la rue. Les lucioles, en plein matin, sont là, posées sur le mur de chez Maître Orven. Elles t'attendent. En grandissant, tu deviendras *celle* ou *celui* qui apprend aux enfants à regarder les étoiles. Tu ne seras pas une professeure ou un professeur. Tu seras *raconteur, raconteuse de ciel.*
 
-Et un jour, dans trente ou quarante ans, une petite fille — ou un petit garçon — viendra te demander pourquoi sa fleur, ce matin, est devenue transparente. Et tu sauras, alors, exactement ce qu'il faut faire.
+Et un jour, dans trente ou quarante ans, une petite fille — ou un petit garçon — viendra te demander pourquoi sa fleur, ce matin-là, est devenue transparente. Et tu sauras, alors, exactement ce qu'il faut faire.
 
 **Tu as atteint la FIN SECRÈTE de l'aventure.**
 
@@ -5196,21 +5202,22 @@ Tu sens, à ta poitrine, que la sphère que tu portes est aussi *aimée* par ceu
 Choix :
 - Pour atteindre ta fin, va au **350**.
 
-### 350 — Fin parfaite
+### 350 — Fin parfaite {lieu: Brumeval — Ta chambre} {ending: parfaite}
+{requires-keywords: [GARDIEN DEVENU, AMITIÉ DE NILO, FAON SAUVÉ, CONFIANCE DES LUCIOLES, VEILLEUR APAISÉ, COMPTINE COMPLÈTE]}
 
-Tu as pris la sphère de la Promesse. Tu portes, désormais, la grande étoile dans le creux de ta poitrine. Tu as autour de toi tous ceux que tu as aidés, tous ceux qui t'ont accompagné(e) : Nilo, qui marche fier à côté de toi ; Petit Brin, le faon, qui te suit de loin et que les villageois prennent pour un vieux chien apprivoisé ; les lucioles bleues, qui de temps à autre, le soir, viennent se poser sur la fenêtre de ta chambre ; le Renard d'argent, qui apparaît parfois à la lisière du verger.
+Tu as pris la sphère de la Promesse. Tu portes, désormais, la grande étoile dans le creux de ta poitrine. Tu as autour de toi tous ceux que tu as aidés, tous ceux qui t'ont accompagné(e) : Nilo, qui marche fier à côté de toi ; Petit Brin, le faon, qui te suit de loin et que les villageois prennent pour un vieux chien apprivoisé ; les lucioles bleues, qui viennent parfois, le soir, se poser sur la fenêtre de ta chambre ; le Renard d'argent, qui apparaît, certains matins, à la lisière du verger.
 
 Le Veilleur s'est endormi paisiblement, dans l'herbe de la Serre. Personne ne le verra plus. Mais tu sais qu'il est *au repos*. C'est la plus belle chose qu'on puisse souhaiter à quelqu'un qui a longtemps gardé.
 
-Le ciel, au-dessus de Brumeval, est entier. *Entier*. Pas une étoile ne manque. Et même, certaines nuits, on en voit *une de plus* — une petite, qui clignote doucement, et qui n'est sur aucune carte ancienne. C'est la nouvelle étoile, celle qui est née de la Promesse renouvelée.
+Au-dessus de Brumeval, le ciel est entier. *Entier*. Pas une étoile ne manque. Et même, certaines nuits, on en voit *une de plus* — une petite, qui clignote doucement, qui n'est sur aucune carte ancienne. C'est la nouvelle étoile, celle qui est née de la Promesse renouvelée.
 
-Mère Aïna, le soir où tu rentres, te tend un petit paquet. Tu l'ouvres. À l'intérieur, il y a un autre ruban rouge. Identique au premier. Elle te le noue à ton poignet.
+Mère Aïna, le soir où tu rentres, te tend un petit paquet. Tu l'ouvres. À l'intérieur, il y a un autre ruban rouge. Identique au premier. Elle te le noue au poignet.
 
 — « Pour la prochaine fois où tu partiras, » dit-elle.
 
 Tu souris. Tu ne sais pas encore quand tu repartiras. Mais tu sais que ce ne sera pas la dernière fois.
 
-Mémorine vient te voir le lendemain. Elle te parle, normalement, à voix haute. Sa voix est claire, posée, juste un peu basse.
+Mémorine vient te voir le lendemain. Elle te parle, à voix haute, naturellement. Sa voix est claire, posée, juste un peu basse.
 
 — « Tu m'apprendras à lire les étoiles ? »
 
@@ -5218,7 +5225,7 @@ Tu hoches la tête.
 
 — « D'accord. »
 
-Vous allez grandir ensemble. Vous allez veiller, ensemble, sur ce qui a été cassé et recousu. Vous n'aurez pas peur, vous deux, parce que vous saurez l'un et l'autre que la peur, ça se traverse.
+Vous allez grandir ensemble. Vous allez veiller, ensemble, sur ce qui a été cassé et recousu. Vous n'aurez pas peur, vous deux, parce que vous saurez, l'un comme l'autre, que la peur, ça se traverse.
 
 Cette nuit-là, en t'endormant, tu lèves les yeux vers ta fenêtre. La fleur de joubarbe, dans le pot bleu, est *verte, complètement verte*, et tu te dis que c'est ça, le vrai signe que tout est rentré dans l'ordre.
 

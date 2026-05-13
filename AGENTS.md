@@ -48,6 +48,27 @@ When you touch this pipeline, keep two invariants:
 
 If you change manuscript phrasing in a way the rewriter can't handle cleanly (e.g. observational `Si tu remarques …`), edit the source line directly; do not add a new branch to `rewrite_choice_display` just to cover one section.
 
+## Mechanics Tags Migration
+
+Epic 9 introduces explicit inline mechanics tags in the manuscript. The chosen syntax is `{clé: valeur}` or `{clé: [valeur 1, valeur 2]}`. Multiple key/value pairs may share one brace block for branch metadata, for example `{branch: 345, requires-keyword: PROMESSE TRANSFORMÉE, requires-alliances-min: 2}`.
+
+Supported tags are:
+
+- Section metadata: `{lieu: Verger pâle}`, `{ending: parfaite}`
+- Section or choice grants: `{grants-object: Graine lumineuse}`, `{grants-keyword: AMITIÉ DE NILO}`, `{state+: FATIGUÉ}`
+- Section or choice removals: `{remove-keyword: FATIGUÉ}`, `{state-: BLESSÉ LÉGER}`
+- Choice or section requirements: `{requires-skill: Orientation}`, `{requires-object: Graine lumineuse}`, `{requires-keyword: CONFIANCE DES LUCIOLES}`, `{requires-keywords: [A, B]}`
+- Conditional branch audit metadata: `{branch: 348}`, `{requires-alliances-min: 2}`
+
+During migration, `build_xhtml.py` is hybrid:
+
+- Tags take priority per mechanics family. If a section has `{grants-object: ...}`, object grants come from tags; if it has no object grant tags, legacy prose regexes remain the fallback.
+- Choice targets can use either legacy `va au **N**` or the tagged form `- → N :: Texte du choix. {requires-skill: X}`.
+- Choice tags are stripped from visible text and become `data-*` attributes. Choice grants/removals are applied to `localStorage` before navigation.
+- Section-level tags are read from the heading and from lines before `Choix :`; tags on choice lines are not treated as section grants.
+
+Run `python3 livre/lint_tags.py` before changing tag syntax or retagging large ranges. The full handover validation command is `python3 livre/audit_full.py`.
+
 ## Testing Guidelines
 
 No automated test suite is present. For generator changes, run `python3 -m py_compile livre/build_xhtml.py`, then `python3 livre/build_xhtml.py`. Smoke-test `livre/xhtml/index.htm`, `setup.htm`, a few `sect*.htm` pages, and gated choices that depend on skills, objects, or keywords.

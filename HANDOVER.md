@@ -65,9 +65,9 @@ Voir les commits sur `main` pour le détail.
 
 ## 4 — Mission proposée
 
-### Schéma de balises (à valider en P1)
+### Schéma de balises (P1 implémenté)
 
-**Décision en suspens :** le format exact n'est pas tranché. La proposition par défaut est *inline* dans le Markdown, avec accolades :
+**Décision prise le 2026-05-13 :** le format retenu est *inline* dans le Markdown, avec accolades. Le socle technique est implémenté dans `livre/tag_spec.py`, `livre/lint_tags.py` et `livre/build_xhtml.py` :
 
 ```markdown
 ### 42 {lieu: Verger pâle}
@@ -101,6 +101,8 @@ Pour les carrefours conditionnels :
 ```
 
 **Pourquoi ce format** : grep-able trivialement (`re.findall(r'\{([^}]+)\}', line)`), lisible par un humain qui édite à la main, cohabite avec l'ancien manuscrit pendant la migration.
+
+Le générateur est désormais hybride : les balises ont priorité par famille de mécanique, et l'ancien parsing par prose reste fallback tant que les 350 sections ne sont pas retaggées.
 
 **Alternatives discutées non choisies pour l'instant** : YAML front-matter par section, fichier sidecar `.meta.yaml` par section. Voir `BACKLOG.md` Epic 9.
 
@@ -230,8 +232,8 @@ Cf. le commit `0d3af79` et les commits suivants.
 
 À trancher avec l'auteur **avant** de coder :
 
-1. **Syntaxe finale des balises** : `{clé: valeur}` inline (ma proposition) vs YAML front-matter vs fichier sidecar. Voir Epic 9 du backlog.
-2. **Migration big-bang vs incrémentale.** Recommandé : incrémentale (parser hybride pendant la transition). Moins risqué.
+1. **Syntaxe finale des balises** : décidé le 2026-05-13 — `{clé: valeur}` inline.
+2. **Migration big-bang vs incrémentale.** Décidé le 2026-05-13 — incrémentale avec parser hybride pendant la transition.
 3. **Audit fins d'abord ou balises d'abord.** L'auteur penche pour faire les balises d'abord — elles permettent un audit fins propre. Mais on peut commencer par une cartographie sèche des 7 fins pour identifier les pires ratés.
 4. **Périmètre P4 (passe éditoriale)** : qui écrit ? L'IA propose, l'auteur valide ? Tout l'auteur ? Mix ? La passe back-to-front est particulièrement importante pour l'auteur (cf. dégradation de qualité dans la 2e moitié).
 
@@ -244,6 +246,6 @@ Cf. le commit `0d3af79` et les commits suivants.
 3. Lire ce HANDOVER.md (cette note).
 4. Lire les ~100 premières lignes de `livre/Les_Jardins_de_Verre-Lune.md` pour saisir le ton et la structure.
 5. Lire `livre/build_xhtml.py` : surtout les constantes du début, `detect_grants`, `detect_choice_requirements`, `rewrite_choice_display`, `md_section_to_html`. ~300 lignes en tout, le reste est CSS/JS embarqués.
-6. Ouvrir un nouveau chat avec l'auteur : confirmer le format de balises avant de toucher au manuscrit.
+6. Avant de retagger massivement le manuscrit, lancer `python3 livre/lint_tags.py` puis travailler par lots de sections, avec validation XHTML à chaque lot.
 
 Bonne reprise.

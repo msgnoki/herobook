@@ -14,6 +14,8 @@ from pathlib import Path
 import html
 import json
 
+from tag_spec import extract_tags, has_tag, strip_render_tags, strip_tags, tag_values
+
 SRC = Path(__file__).parent / "Les_Jardins_de_Verre-Lune.md"
 OUT = Path(__file__).parent / "xhtml"
 OUT.mkdir(exist_ok=True)
@@ -100,6 +102,7 @@ MANUAL_GRANTS = {
 # Mots-clés d'état (cumulables/retirable). PERDU a été retiré : il n'était
 # jamais accordé ni testé, donc du code mort.
 STATE_KEYWORDS = {"FATIGUÉ", "BLESSÉ LÉGER", "ACCOMPAGNÉ"}
+STATE_KEYWORD_SCAN_ORDER = ["BLESSÉ LÉGER", "FATIGUÉ", "ACCOMPAGNÉ"]
 
 # Fins reconnues (pour le toc)
 ENDINGS = {333, 336, 339, 342, 345, 348, 350}
@@ -846,16 +849,16 @@ GAME_JS = r"""
     } catch (e) { return false; }
   }
 
-  function listFromAttr(article, attr) {
-    if (!article) return [];
-    const v = article.getAttribute(attr);
+  function listFromAttr(el, attr) {
+    if (!el) return [];
+    const v = el.getAttribute(attr);
     return v ? v.split('|').filter(Boolean) : [];
   }
 
-  function applyGrants(article, state) {
-    const objs = listFromAttr(article, 'data-grants-objects');
-    const kws = listFromAttr(article, 'data-grants-keywords');
-    const rmKws = listFromAttr(article, 'data-removes-keywords');
+  function applyGrants(el, state) {
+    const objs = listFromAttr(el, 'data-grants-objects');
+    const kws = listFromAttr(el, 'data-grants-keywords');
+    const rmKws = listFromAttr(el, 'data-removes-keywords');
     objs.forEach(o => {
       if (!state.objects.includes(o)) state.objects.push(o);
     });
@@ -894,6 +897,21 @@ GAME_JS = r"""
           a.addEventListener('click', e => { e.preventDefault(); });
         });
       }
+    });
+  }
+
+  function wireChoiceEffects(state) {
+    document.querySelectorAll('ul.choices li').forEach(li => {
+      const link = li.querySelector('a.choice-link[href]');
+      if (!link) return;
+      link.addEventListener('click', function (e) {
+        if (li.classList.contains('locked')) {
+          e.preventDefault();
+          return;
+        }
+        applyGrants(li, state);
+        saveState(state);
+      });
     });
   }
 
@@ -1247,6 +1265,7 @@ GAME_JS = r"""
       if (!state.startedAt) state.startedAt = new Date().toISOString();
       applyGrants(article, state);
       updateChoices(state);
+      wireChoiceEffects(state);
       saveState(state);
     }
 
@@ -1447,7 +1466,7 @@ def detect_grants(body):
     state_grant = re.compile(r'\*\*Tu es\b([^*]+?)\*\*')
     for m in state_grant.finditer(body):
         chunk = m.group(1)
-        for kw in STATE_KEYWORDS:
+        for kw in STATE_KEYWORD_SCAN_ORDER:
             if re.search(r'\b' + re.escape(kw) + r'\b', chunk):
                 if kw not in keywords:
                     keywords.append(kw)
@@ -1456,7 +1475,7 @@ def detect_grants(body):
     state_rm = re.compile(r"\*\*Tu n'es plus\b([^*]+?)\*\*")
     for m in state_rm.finditer(body):
         chunk = m.group(1)
-        for kw in STATE_KEYWORDS:
+        for kw in STATE_KEYWORD_SCAN_ORDER:
             if re.search(r'\b' + re.escape(kw) + r'\b', chunk):
                 if kw not in removed:
                     removed.append(kw)
@@ -1495,6 +1514,115 @@ def detect_choice_requirements(choice_text):
                     objects_req.append(name)
 
     return skills_req, objects_req, keywords_req
+
+
+def unique_keep_order(values):
+    seen = set()
+    out = []
+    for value in values:
+        if value and value not in seen:
+            seen.add(value)
+            out.append(value)
+    return out
+
+
+def split_state_keywords(values):
+    states = []
+    story = []
+    for value in values:
+        if value in STATE_KEYWORDS:
+            states.append(value)
+        else:
+            story.append(value)
+    return story, states
+
+
+def section_level_tags(body):
+    """Return tags that apply to the section, excluding choice-list tags."""
+    pre_choice = body.split('Choix :', 1)[0]
+    return extract_tags(pre_choice)
+
+
+def grants_from_tags(tags):
+    objects = tag_values(tags, "grants-object")
+    story_keywords = tag_values(tags, "grants-keyword")
+    state_keywords = tag_values(tags, "state+")
+    removed_story = tag_values(tags, "remove-keyword")
+    removed_states = tag_values(tags, "state-")
+    return (
+        unique_keep_order(objects),
+        unique_keep_order(story_keywords),
+        unique_keep_order(state_keywords),
+        unique_keep_order(removed_story),
+        unique_keep_order(removed_states),
+    )
+
+
+def tagged_or_legacy_grants(num, body, tags):
+    """Detect grants with per-family tag priority and legacy prose fallback."""
+    tagged_objects, tagged_story, tagged_states, tagged_removed_story, tagged_removed_states = grants_from_tags(tags)
+
+    legacy_objects, legacy_keywords, legacy_removed = detect_grants(body)
+    if num in MANUAL_GRANTS:
+        for obj in MANUAL_GRANTS[num].get("objects", []):
+            legacy_objects.append(obj)
+        for kw in MANUAL_GRANTS[num].get("keywords", []):
+            legacy_keywords.append(kw)
+        for kw in MANUAL_GRANTS[num].get("remove_keywords", []):
+            legacy_removed.append(kw)
+
+    legacy_story, legacy_states = split_state_keywords(legacy_keywords)
+    legacy_removed_story, legacy_removed_states = split_state_keywords(legacy_removed)
+
+    objects = tagged_objects if tagged_objects else legacy_objects
+    keywords = (tagged_story if tagged_story else legacy_story)
+    keywords += (tagged_states if tagged_states else legacy_states)
+    removed = (tagged_removed_story if tagged_removed_story else legacy_removed_story)
+    removed += (tagged_removed_states if tagged_removed_states else legacy_removed_states)
+
+    return (
+        unique_keep_order(objects),
+        unique_keep_order(keywords),
+        unique_keep_order(removed),
+    )
+
+
+def requirements_from_tags(tags):
+    return (
+        unique_keep_order(tag_values(tags, "requires-skill")),
+        unique_keep_order(tag_values(tags, "requires-object")),
+        unique_keep_order(tag_values(tags, "requires-keyword")),
+    )
+
+
+def tagged_or_legacy_choice_requirements(choice_text, tags):
+    tagged_skills, tagged_objects, tagged_keywords = requirements_from_tags(tags)
+    legacy_skills, legacy_objects, legacy_keywords = detect_choice_requirements(choice_text)
+    return (
+        tagged_skills if tagged_skills else legacy_skills,
+        tagged_objects if tagged_objects else legacy_objects,
+        tagged_keywords if tagged_keywords else legacy_keywords,
+    )
+
+
+def choice_effects_from_tags(tags):
+    tagged_objects, tagged_story, tagged_states, tagged_removed_story, tagged_removed_states = grants_from_tags(tags)
+    return (
+        tagged_objects,
+        unique_keep_order(tagged_story + tagged_states),
+        unique_keep_order(tagged_removed_story + tagged_removed_states),
+    )
+
+
+def parse_choice_target_and_text(choice_text):
+    """Support legacy 'va au **N**' and tagged '→ N :: action' choices."""
+    arrow = re.match(r'\s*(?:→|->)\s*(\d+)\s*::\s*(.+)$', choice_text)
+    if arrow:
+        return arrow.group(1), arrow.group(2).strip()
+
+    target_m = re.search(r'va au \*\*(\d+)\*\*', choice_text, re.IGNORECASE)
+    target = target_m.group(1) if target_m else None
+    return target, choice_text
 
 
 # ------------------------------- Réécriture d'un choix -------------------------------
@@ -1682,10 +1810,10 @@ def md_section_to_html(body):
     sont traitées avec ajout des data-requires-* sur chaque <li>."""
     # On découpe en blocs séparés par 'Choix :' (un seul bloc en général)
     if 'Choix :' not in body:
-        return md_block_to_html(body)
+        return md_block_to_html(strip_render_tags(body))
 
     parts = body.split('Choix :', 1)
-    pre = parts[0].strip()
+    pre = strip_render_tags(parts[0]).strip()
     post = parts[1] if len(parts) > 1 else ''
 
     # Tout ce qui suit "Choix :" est une liste "- ... va au **N**"
@@ -1704,14 +1832,16 @@ def md_section_to_html(body):
             # Si on tombe sur autre chose, on l'ignore en silence
             continue
         choice_text = s[2:]
-        skills_req, objects_req, keywords_req = detect_choice_requirements(choice_text)
+        choice_tags = extract_tags(choice_text)
+        skills_req, objects_req, keywords_req = tagged_or_legacy_choice_requirements(choice_text, choice_tags)
+        grants_objects, grants_keywords, removes_keywords = choice_effects_from_tags(choice_tags)
 
         # Extrait la cible avant toute réécriture (la regex source attend "va au **N**").
-        target_m = re.search(r'va au \*\*(\d+)\*\*', choice_text, re.IGNORECASE)
-        target = target_m.group(1) if target_m else None
+        target, display_source = parse_choice_target_and_text(choice_text)
 
         # Réécrit l'affichage : plus de "Si tu …", plus de "va au N".
-        display_text = rewrite_choice_display(choice_text)
+        clean_display_source = strip_tags(display_source) if "{" in display_source else display_source
+        display_text = rewrite_choice_display(clean_display_source)
 
         attrs = []
         if target:
@@ -1722,6 +1852,12 @@ def md_section_to_html(body):
             attrs.append(f'data-requires-object="{html.escape("|".join(objects_req))}"')
         if keywords_req:
             attrs.append(f'data-requires-keyword="{html.escape("|".join(keywords_req))}"')
+        if grants_objects:
+            attrs.append(f'data-grants-objects="{html.escape("|".join(grants_objects))}"')
+        if grants_keywords:
+            attrs.append(f'data-grants-keywords="{html.escape("|".join(grants_keywords))}"')
+        if removes_keywords:
+            attrs.append(f'data-removes-keywords="{html.escape("|".join(removes_keywords))}"')
 
         attrs_str = (' ' + ' '.join(attrs)) if attrs else ''
         inner = md_inline(display_text)
@@ -1759,10 +1895,33 @@ def md_section_to_html(body):
 
 # ------------------------------- LECTURE DU MD -------------------------------
 
+def parse_section_heading(rest):
+    tags = extract_tags(rest)
+    name = strip_tags(rest).strip() if "{" in rest else rest.strip()
+    if name.startswith("—"):
+        name = name[1:].strip()
+    return (name or None), tags
+
+
+def preserve_legacy_dialogue_title(name, body):
+    """Keep the historical parser behavior for sections opening with dialogue.
+
+    The old heading regex accidentally promoted a first body line beginning
+    with an em dash to the section title. Preserve that generated output while
+    still allowing tags on real heading lines.
+    """
+    if name:
+        return name, body
+    match = re.match(r'^—\s*([^\n]+)\n\s*\n', body)
+    if not match:
+        return name, body
+    return match.group(1).strip(), body[match.end():].strip()
+
+
 with open(SRC, "r", encoding="utf-8") as f:
     md = f.read()
 
-sect_pattern = re.compile(r'^### (\d+)(?:\s*—\s*(.+?))?\s*$', re.MULTILINE)
+sect_pattern = re.compile(r'^###\s+(\d+)(?P<rest>[^\n]*)$', re.MULTILINE)
 matches = list(sect_pattern.finditer(md))
 assert matches, "Aucune section trouvée."
 
@@ -1775,12 +1934,14 @@ annexes_start = annexes_match.start() if annexes_match else len(md)
 sections = []
 for idx, m in enumerate(matches):
     num = int(m.group(1))
-    name = m.group(2).strip() if m.group(2) else None
+    name, heading_tags = parse_section_heading(m.group("rest") or "")
     body_start = m.end()
     body_end = matches[idx+1].start() if idx + 1 < len(matches) else annexes_start
     body = md[body_start:body_end].strip()
     body = re.sub(r'(^|\n)---\s*(\n|$)', r'\1\2', body).strip()
-    sections.append((num, name, body))
+    name, body = preserve_legacy_dialogue_title(name, body)
+    tags = heading_tags + section_level_tags(body)
+    sections.append((num, name, body, tags))
 
 print(f"Sections : {len(sections)}")
 
@@ -1944,9 +2105,10 @@ with open(OUT / "keywords.htm", "w", encoding="utf-8") as f:
 
 
 # toc.htm — grille des 350 sections
+tagged_endings = {num for num, _, _, tags in sections if has_tag(tags, "ending")}
 toc_links = []
-for num, name, _ in sections:
-    extra = " ending" if num in ENDINGS else ""
+for num, name, _, _ in sections:
+    extra = " ending" if num in ENDINGS or num in tagged_endings else ""
     toc_links.append(f'<a class="cell{extra}" href="sect{num}.htm">{num}</a>')
 toc_body = f"""
 <h1 class="sectnum">Table des sections</h1>
@@ -1965,29 +2127,31 @@ with open(OUT / "toc.htm", "w", encoding="utf-8") as f:
 
 
 # Sections individuelles
-for num, name, body in sections:
-    objs, kws, rm_kws = detect_grants(body)
-    # Octrois manuels
-    if num in MANUAL_GRANTS:
-        for o in MANUAL_GRANTS[num].get("objects", []):
-            if o not in objs:
-                objs.append(o)
-        for k in MANUAL_GRANTS[num].get("keywords", []):
-            if k not in kws:
-                kws.append(k)
-        for k in MANUAL_GRANTS[num].get("remove_keywords", []):
-            if k not in rm_kws:
-                rm_kws.append(k)
+for num, name, body, tags in sections:
+    objs, kws, rm_kws = tagged_or_legacy_grants(num, body, tags)
+    section_req_skills, section_req_objects, section_req_keywords = requirements_from_tags(tags)
+    ending_labels = tag_values(tags, "ending")
+    locations = tag_values(tags, "lieu")
 
     article_attrs = [f'data-section="{num}"']
     if name:
         article_attrs.append(f'data-section-name="{html.escape(name)}"')
+    if locations:
+        article_attrs.append(f'data-section-location="{html.escape(locations[0])}"')
+    if ending_labels:
+        article_attrs.append(f'data-ending="{html.escape(ending_labels[0])}"')
     if objs:
         article_attrs.append(f'data-grants-objects="{html.escape("|".join(objs))}"')
     if kws:
         article_attrs.append(f'data-grants-keywords="{html.escape("|".join(kws))}"')
     if rm_kws:
         article_attrs.append(f'data-removes-keywords="{html.escape("|".join(rm_kws))}"')
+    if section_req_skills:
+        article_attrs.append(f'data-section-requires-skill="{html.escape("|".join(section_req_skills))}"')
+    if section_req_objects:
+        article_attrs.append(f'data-section-requires-object="{html.escape("|".join(section_req_objects))}"')
+    if section_req_keywords:
+        article_attrs.append(f'data-section-requires-keyword="{html.escape("|".join(section_req_keywords))}"')
 
     # Le numéro de section n'est plus affiché au lecteur ; il reste sur l'élément
     # <article data-section="…"> pour le moteur de jeu (sauvegarde, etc.).

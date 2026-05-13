@@ -52,16 +52,16 @@
     } catch (e) { return false; }
   }
 
-  function listFromAttr(article, attr) {
-    if (!article) return [];
-    const v = article.getAttribute(attr);
+  function listFromAttr(el, attr) {
+    if (!el) return [];
+    const v = el.getAttribute(attr);
     return v ? v.split('|').filter(Boolean) : [];
   }
 
-  function applyGrants(article, state) {
-    const objs = listFromAttr(article, 'data-grants-objects');
-    const kws = listFromAttr(article, 'data-grants-keywords');
-    const rmKws = listFromAttr(article, 'data-removes-keywords');
+  function applyGrants(el, state) {
+    const objs = listFromAttr(el, 'data-grants-objects');
+    const kws = listFromAttr(el, 'data-grants-keywords');
+    const rmKws = listFromAttr(el, 'data-removes-keywords');
     objs.forEach(o => {
       if (!state.objects.includes(o)) state.objects.push(o);
     });
@@ -100,6 +100,21 @@
           a.addEventListener('click', e => { e.preventDefault(); });
         });
       }
+    });
+  }
+
+  function wireChoiceEffects(state) {
+    document.querySelectorAll('ul.choices li').forEach(li => {
+      const link = li.querySelector('a.choice-link[href]');
+      if (!link) return;
+      link.addEventListener('click', function (e) {
+        if (li.classList.contains('locked')) {
+          e.preventDefault();
+          return;
+        }
+        applyGrants(li, state);
+        saveState(state);
+      });
     });
   }
 
@@ -453,6 +468,7 @@
       if (!state.startedAt) state.startedAt = new Date().toISOString();
       applyGrants(article, state);
       updateChoices(state);
+      wireChoiceEffects(state);
       saveState(state);
     }
 

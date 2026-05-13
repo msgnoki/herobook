@@ -73,19 +73,19 @@ But : passer du manuscrit Markdown à une app statique jouable.
 > Voir [`HANDOVER.md`](HANDOVER.md) pour le brief complet à un nouvel·le contributeur·rice (humain·e ou IA).
 
 ### Phase 9.1 — Schema lock
-| # | Story |
-|---|---|
-| 9.1.1 | Valider la syntaxe finale des balises (`{clé: valeur}` inline vs YAML front-matter vs sidecar) |
-| 9.1.2 | Définir le vocabulaire : `lieu`, `grants-object`, `grants-keyword`, `state+`, `state-`, `requires-skill`, `requires-object`, `requires-keyword`, `ending`, `branch`, `requires-alliances-min`, etc. |
-| 9.1.3 | Documenter la spec dans `AGENTS.md` |
-| 9.1.4 | Écrire un linter dédié à la spec (`livre/lint_tags.py`) qui vérifie la syntaxe et la cohérence des balises |
+| # | Story | Statut |
+|---|---|---|
+| 9.1.1 | Valider la syntaxe finale des balises (`{clé: valeur}` inline vs YAML front-matter vs sidecar) | ✅ inline |
+| 9.1.2 | Définir le vocabulaire : `lieu`, `grants-object`, `grants-keyword`, `state+`, `state-`, `requires-skill`, `requires-object`, `requires-keyword`, `ending`, `branch`, `requires-alliances-min`, etc. | ✅ |
+| 9.1.3 | Documenter la spec dans `AGENTS.md` | ✅ |
+| 9.1.4 | Écrire un linter dédié à la spec (`livre/lint_tags.py`) qui vérifie la syntaxe et la cohérence des balises | ✅ |
 
 ### Phase 9.2 — Parser hybride et migration
-| # | Story |
-|---|---|
-| 9.2.1 | `build_xhtml.py` : extraire les balises avant le parsing prose. Tags ont priorité ; la prose reste fallback pendant la migration. |
-| 9.2.2 | Retagger section par section (350 sections). Sens forward + back, en deux passes. |
-| 9.2.3 | Une fois 100% balisé : retirer le parsing prose-based (regex `Tu es FATIGUÉ`, etc.) du moteur. |
+| # | Story | Statut |
+|---|---|---|
+| 9.2.1 | `build_xhtml.py` : extraire les balises avant le parsing prose. Tags ont priorité ; la prose reste fallback pendant la migration. | ✅ |
+| 9.2.2 | Retagger section par section (350 sections). Sens forward + back, en deux passes. | ⏳ |
+| 9.2.3 | Une fois 100% balisé : retirer le parsing prose-based (regex `Tu es FATIGUÉ`, etc.) du moteur. | ⏳ |
 
 ### Phase 9.3 — Audit + correctifs
 | # | Story |

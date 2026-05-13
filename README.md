@@ -22,6 +22,8 @@ Builds générés via Gradle dans `android/`. Voir [`AGENTS.md`](AGENTS.md) pour
 
 - `livre/Les_Jardins_de_Verre-Lune.md` — manuscrit source (350 sections)
 - `livre/build_xhtml.py` — générateur statique (Python 3, stdlib uniquement)
+- `livre/tag_spec.py` — parseur partagé des balises mécaniques Epic 9
+- `livre/lint_tags.py` / `livre/audit_full.py` — validation des balises et audit de reprise
 - `livre/xhtml/` — sortie générée (servie par GitHub Pages)
 - `android/` — wrapper Android (WebView qui charge les XHTML embarqués)
 - `BACKLOG.md` — roadmap : epics, sprints, hors-scope

@@ -8,11 +8,15 @@ Une aventure dont tu es le héros — pour les lectrices et lecteurs de 10 à 14
 
 Marche sur tout navigateur (Chrome, Safari, Firefox), ordinateur comme téléphone. La sauvegarde de partie reste dans le navigateur — si tu changes d'appareil, tu repars de zéro.
 
-## 📱 App Android (debug / release)
+## 📱 App Android
+
+**→ [Télécharger la dernière version (APK)](https://github.com/msgnoki/herobook/releases/latest)**
+
+~4 Mo, Android 6.0 et plus. Ouvre le fichier après téléchargement et autorise « Sources inconnues » si demandé.
+
+Pour partager à un proche : envoie-lui simplement le lien ci-dessus (ou l'URL de jeu en ligne) par mail ou WhatsApp.
 
 Builds générés via Gradle dans `android/`. Voir [`AGENTS.md`](AGENTS.md) pour la procédure de build et de signature, et [`BACKLOG.md`](BACKLOG.md) pour la roadmap.
-
-L'APK signé est partagé main à main (mail / WhatsApp) pour le cercle proche. Pas de Play Store pour l'instant.
 
 ## 📚 Structure du projet
 

@@ -674,7 +674,7 @@ Choix :
 - Pour quitter ta cachette et te diriger droit vers le Verger pâle, va au **30**.
 - Pour suivre le tailleur jusque chez lui, ce qui peut t'apprendre encore quelque chose, va au **15**.
 
-### 30
+### 30 {lieu: Verger pâle — Lisière}
 
 Te voilà à la lisière du Verger pâle.
 
@@ -697,7 +697,7 @@ Choix :
 - Si tu repères une silhouette claire sur la pente d'en face entre deux troncs, va au **43**.
 - Si tu trouves, à demi enfouie dans la mousse, une pierre gravée du chiffre **50**, va au **50**.
 
-### 31
+### 31 {lieu: Verger pâle}
 
 Tu remontes l'arrière des jardins, le long du vieux muret de pierres sèches. Tu connais ce passage : tu l'as emprunté cent fois en cachette pour aller voler des cerises. Mais ce matin, le muret est froid sous tes mains, beaucoup plus froid qu'il ne devrait l'être.
 
@@ -710,7 +710,7 @@ Si tu possèdes la compétence **Observation**, tu remarques qu'à un mètre du 
 Choix :
 - Pour continuer vers le Verger pâle, va au **30**.
 
-### 32
+### 32 {lieu: Verger pâle}
 
 Tu prends ton élan et tu sautes pour attraper la branche basse du grand pommier qui surplombe le muret. Tu te hisses, tu grimpes, tu sautes de l'autre côté. C'est de la pure Agilité, et tu le sais.
 
@@ -721,7 +721,7 @@ Quand tu retombes dans l'herbe, ton pied glisse sur quelque chose. Tu te baisses
 Choix :
 - Pour continuer vers le Verger pâle, va au **30**.
 
-### 33
+### 33 {lieu: Verger pâle}
 
 Tu te penches sur la trace : c'est bien une trace de sabot, mais trop petite pour un cerf adulte. Un faon, peut-être. Tu remarques aussi, à côté de la trace, une goutte sombre. Tu y poses le bout du doigt. C'est encore frais. Tu portes ton doigt à ton nez. Du sang.
 
@@ -733,7 +733,7 @@ Choix :
 - Si tu suis la trace dans la direction où elle s'enfonce, va au **39**.
 - Si tu reviens sur l'allée principale, va au **37**.
 
-### 34
+### 34 {lieu: Verger pâle}
 
 Tu écartes les feuilles de l'arbuste. Au sol, dans une cuvette d'herbe écrasée, brille un éclat. Tu te penches. Ce n'est pas un os, ni un coquillage. C'est une graine, plus grosse qu'un pois, qui dégage une lumière douce, comme une braise verte sous la cendre. Elle pulse, très doucement, comme si elle respirait.
 
@@ -748,7 +748,7 @@ Tu te redresses, prêt à repartir.
 Choix :
 - Pour rejoindre la lisière du Verger pâle, va au **30**.
 
-### 35
+### 35 {lieu: Verger pâle}
 
 Tu fermes les yeux deux secondes. Tu écoutes la pente du terrain sous tes pieds. Tu sais, sans pouvoir l'expliquer, qu'il y a un quatrième chemin, plus discret, qui contourne le verger par derrière, en suivant la pente naturelle.
 
@@ -762,7 +762,7 @@ Choix :
 - Si tu prends la pente raide à droite, va au **44**.
 - Si tu suis le chemin plat, va au **40**.
 
-### 36
+### 36 {lieu: Verger pâle}
 
 Le sentier des fleurs grimpe doucement entre des touffes d'asters et de mauves. Mais les fleurs, ici aussi, ont changé. Les pétales des asters sont devenus translucides. Quand tu les frôles, ils tintent comme des éclats de glace.
 
@@ -776,7 +776,7 @@ Choix :
 - Pour reprendre ta route vers le cœur du Verger, va au **45**.
 - Si tu possèdes la **Graine lumineuse**, tu peux la déposer à côté du papillon, va au **42**.
 
-### 37
+### 37 {lieu: Verger pâle}
 
 L'allée principale du Verger pâle est tranquille. Trop tranquille. Pas un oiseau ne chante. Pas une mouche ne bourdonne. Tu entends seulement le doux tintement des pommes de verre quand le vent les bouscule.
 
@@ -789,7 +789,8 @@ Choix :
 - Si tu fais demi-tour pour ne pas l'effrayer, va au **45**.
 - Si tu cherches une branche solide pour, plus tard, lui faire une attelle, va au **41**.
 
-### 38
+### 38 {lieu: Verger pâle}
+{grants-keyword: MIROIR ENTREVU}
 
 Le ruisseau, ici, ne sonne pas comme un ruisseau ordinaire. Il a un bruit plus mat, plus profond, comme s'il coulait au fond d'un puits.
 
@@ -804,7 +805,7 @@ Quand tu te recules, le ciel d'autrefois disparaît. C'est juste de l'eau, de no
 Choix :
 - Pour continuer vers le cœur du Verger pâle, va au **45**.
 
-### 39
+### 39 {lieu: Verger pâle}
 
 Tu poses ton sac. Tu t'agenouilles à trois pas du faon, sans le regarder dans les yeux. Tu sais que les bêtes blessées ont peur des regards droits. Tu murmures des mots qui ne veulent rien dire — *là, là, doucement, doucement*. Le faon te regarde. Il ne s'enfuit pas.
 
@@ -817,7 +818,7 @@ Si tu n'as pas cette compétence, tu essaies aussi, plus maladroitement. Le faon
 Choix :
 - Pour repartir vers le cœur du verger, va au **45**.
 
-### 40
+### 40 {lieu: Verger pâle}
 
 Le chemin plat débouche dans une petite clairière, au centre de laquelle se trouve un vieux puits de pierre sèche. Il est si vieux qu'on ne sait plus à qui il appartient. Le tronc d'arbre qui en sortait autrefois a disparu, ne laissant qu'un trou rond ouvert sur le noir.
 
@@ -834,7 +835,7 @@ Choix :
 - Pour lancer un caillou dans le puits, va au **46**.
 - Si tu possèdes la **Corde tressée**, tu peux la nouer à un anneau du puits et descendre, va au **48**.
 
-### 41
+### 41 {lieu: Verger pâle}
 
 Tu cherches autour de toi une branche assez droite et assez solide pour faire une attelle de fortune. Tu en trouves une, sur le sol, sous un buisson. Tu la casses à la longueur du tibia. Tu cherches de quoi attacher. Le ruban rouge de Mère Aïna noué à ton poignet ferait l'affaire — mais alors tu n'aurais plus le ruban.
 
@@ -847,7 +848,7 @@ Si tu refuses de te séparer du ruban, tu cherches encore, mais tu ne trouves ri
 Choix :
 - Pour reprendre ta route, va au **45**.
 
-### 42
+### 42 {lieu: Verger pâle}
 
 Tu sors la Graine lumineuse de ta poche poitrine. Sa lumière verte palpite plus fort entre tes doigts, comme si elle reconnaissait quelque chose. Tu la poses tout doucement à côté du papillon de verre.
 
@@ -862,7 +863,7 @@ La graine, elle, est restée dans l'herbe. Elle brille toujours, un tout petit p
 Choix :
 - Pour continuer vers le cœur du Verger pâle, va au **45**.
 
-### 43
+### 43 {lieu: Verger pâle}
 
 Tu lèves les yeux. Sur la pente d'en face, au-dessus du verger, il y a une forme claire entre deux troncs. Tu plisses les paupières.
 
@@ -876,7 +877,9 @@ Choix :
 - Si tu décides de le suivre, va au **44**.
 - Si tu te méfies et reprends ta route, va au **45**.
 
-### 44
+### 44 {lieu: Verger pâle}
+{grants-keyword: RENARD GUIDE}
+{grants-object: ruban d'écorce gravé}
 
 Tu suis le renard d'argent. Il marche sans bruit. Il ne te laisse jamais te rapprocher à moins de cinq pas, mais il ne te perd jamais non plus.
 
@@ -893,7 +896,7 @@ Quand tu relèves la tête, le renard est parti. Il a laissé, à la place de so
 Choix :
 - Pour continuer ta route vers la forêt, va au **49**.
 
-### 45
+### 45 {lieu: Verger pâle}
 
 Tu marches encore un peu. Le verger te paraît plus long que d'habitude, comme s'il avait grandi pendant la nuit. Les pommes de verre tintent au-dessus de toi. Une bouffée d'air froid arrive de la forêt, plus loin.
 
@@ -910,7 +913,7 @@ Choix :
 - Pour t'agenouiller un instant et poser ta main sur la plaque, va au **47**.
 - Pour t'éloigner sans rien faire, va au **49**.
 
-### 46
+### 46 {lieu: Verger pâle}
 
 Tu prends un caillou. Tu le tiens un instant dans ta main, comme pour dire au caillou que tu es désolé. Puis tu le laisses tomber dans le puits.
 
@@ -925,7 +928,7 @@ Tu te recules d'un pas, et puis de deux. Tu ne veux pas que ce quelque chose se 
 Choix :
 - Pour t'éloigner du puits, va au **47**.
 
-### 47
+### 47 {lieu: Lisière Forêt}
 
 Tu sens dans l'air une odeur nouvelle, plus humide, presque parfumée. C'est l'odeur de la Forêt des Fils d'Argent qui descend jusqu'ici. Tu approches.
 
@@ -939,7 +942,8 @@ Choix :
 - Pour t'enfoncer dans la forêt par où pointe la boussole, va au **51**.
 - Pour reculer un peu et chercher un autre passage, va au **49**.
 
-### 48
+### 48 {lieu: Verger pâle — Puits}
+{grants-object: Clé d'Ambre}
 
 Tu noues fermement ta Corde tressée à l'anneau de fer rouillé du puits. Tu testes le nœud d'un coup sec. Il tient. Tu inspires un grand coup. Tu n'es pas obligé(e) de descendre tout au fond : tu peux juste descendre jusqu'à ce que tes pieds touchent quelque chose.
 
@@ -956,7 +960,7 @@ Tu remontes par la corde. Tu la décroches. Tu glisses la clé dans ta poche poi
 Choix :
 - Pour reprendre ta route vers la forêt, va au **47**.
 
-### 49
+### 49 {lieu: Lisière Forêt}
 
 Tu marches un peu en lisière, là où le verger devient forêt sans qu'on sache exactement où la frontière passe. Tu finis par trouver une petite trouée : un arbre est tombé pendant l'hiver dernier, et personne ne l'a déplacé. Tu peux passer dessous.
 
@@ -972,7 +976,7 @@ Si tu te trouves accompagné(e) de Nilo (mot-clé **AMITIÉ DE NILO**), il pose 
 Choix :
 - Pour t'engager plus avant dans la forêt, va au **51**.
 
-### 50
+### 50 {lieu: Lisière Forêt}
 
 Tu te tiens, sans le savoir, à un croisement secret de chemins. Une petite pierre, dans la mousse, porte le chiffre **50** gravé d'une main maladroite. Quelqu'un a fait de cet endroit un repère.
 
@@ -983,7 +987,7 @@ Tu pousses la mousse. Sous le **50**, une petite flèche est gravée. Elle point
 Choix :
 - Pour t'engager dans la Forêt des Fils d'Argent, va au **51**.
 
-### 51
+### 51 {lieu: Forêt des Fils d'Argent}
 
 Tu fais ton premier pas sous la Forêt des Fils d'Argent.
 
@@ -998,7 +1002,7 @@ Choix :
 - Si tu choisis le chemin droit devant, va au **53**.
 - Si tu prends le sentier qui monte à droite, va au **54**.
 
-### 52
+### 52 {lieu: Forêt — Étang noir}
 
 Le sentier descend doucement dans une cuvette tapissée de fougères. Au fond, dans un creux de roche, il y a un petit étang noir. À peine plus grand qu'une cuvette de bain. L'eau est si calme qu'on dirait un disque de métal.
 
@@ -1012,7 +1016,7 @@ Choix :
 - Pour t'éloigner de l'étang sans regarder en arrière, va au **55**.
 - Pour t'agenouiller et écouter ce que le visage veut te dire, va au **62**.
 
-### 53
+### 53 {lieu: Forêt des Fils d'Argent}
 
 Le chemin droit devant t'enfonce sans détour dans la forêt. Au bout de cinquante pas, tu remarques quelque chose d'étrange : tes propres traces sont déjà visibles devant toi. Tu te baisses. Ce sont bien tes pas. Tu reconnais la pointe de ta botte gauche, plus usée que la droite.
 
@@ -1028,7 +1032,7 @@ Choix :
 - Pour quitter le sentier et avancer en biais, va au **55**.
 - Pour t'asseoir et attendre que la forêt te laisse passer, va au **56**.
 
-### 54
+### 54 {lieu: Forêt des Fils d'Argent}
 
 Le sentier monte doucement à droite. À mesure que tu grimpes, l'air devient plus léger. Le bourdonnement des lucioles s'éloigne en bas. Tu atteins une petite crête où trois bouleaux ont poussé serrés, en triangle.
 
@@ -1040,7 +1044,7 @@ Choix :
 - Si tu ramasses la petite figurine d'enfant pour l'emporter, va au **57**.
 - Si tu laisses tout en place et redescends, va au **55**.
 
-### 55
+### 55 {lieu: Forêt des Fils d'Argent}
 
 Tu débouches dans une clairière vaste, baignée d'une lumière qui tombe en colonnes d'or vert à travers les feuilles. C'est si beau que tu t'arrêtes. Au centre, sur une souche large comme une table, est posé un grand tas de feuilles séchées. Ces feuilles ont gardé leur couleur d'automne, alors qu'on est au printemps.
 
@@ -1052,7 +1056,7 @@ Choix :
 - Pour avancer au centre de la clairière sur la souche, va au **56**.
 - Pour faire le tour des lucioles sans les déranger, va au **65**.
 
-### 56
+### 56 {lieu: Forêt des Fils d'Argent}
 
 Tu te tiens au milieu de la clairière, sous la spirale des lucioles. Tu lèves doucement la main. Une luciole quitte le cercle et vient se poser au creux de ta paume. Elle pèse à peine plus qu'une feuille. Sa lumière bleue traverse ta peau et tu vois, un instant, l'ombre de tes os à l'intérieur. Tu te sens drôle, mais pas mal.
 
@@ -1062,7 +1066,8 @@ Choix :
 - Si tu suis la luciole, va au **66**.
 - Si tu préfères chercher seul(e), va au **65**.
 
-### 57
+### 57 {lieu: Forêt des Fils d'Argent}
+{grants-object: figurine "V"}
 
 Tu prends délicatement la petite figurine d'enfant entre tes doigts. Elle est faite de bois sculpté, à peine plus grosse qu'une noix. Sur son ventre, à la pointe d'aiguille, est gravée une initiale : **V**.
 
@@ -1077,7 +1082,7 @@ Tu redescends de la crête. Le bourdonnement des lucioles t'attend en bas.
 Choix :
 - Pour rejoindre la clairière des lucioles, va au **55**.
 
-### 58
+### 58 {lieu: Forêt — Sources d'Étoiles}
 
 Tu suis une petite veine d'eau qui sort entre deux racines. Cinquante pas plus loin, elle se jette dans un bassin naturel, creusé dans la roche.
 
@@ -1092,7 +1097,7 @@ Choix :
 - Pour reprendre la canne avant de continuer, va au **64**.
 - Pour t'éloigner sans rien toucher, va au **65**.
 
-### 59
+### 59 {lieu: Forêt — Arbre-Ours}
 
 Tu passes devant un arbre tordu qui a la forme d'un grand ours dressé. Tu sais que c'est juste un arbre. Tu te le répètes. Mais tu te le répètes parce qu'au fond, tu n'en es pas sûr(e).
 
@@ -1105,7 +1110,7 @@ Si tu possèdes la compétence **Discrétion**, tu sais marcher le long de cet a
 Choix :
 - Pour continuer ta route, va au **65**.
 
-### 60
+### 60 {lieu: Forêt des Fils d'Argent}
 
 Tu entends, derrière toi, des pas. Des pas humains. Quelqu'un marche, mais maladroitement, en cassant des brindilles.
 
@@ -1121,7 +1126,8 @@ Choix :
 - Si tu te montres et l'accueilles, va au **20**.
 - Si tu restes caché(e) et le laisses passer pour le suivre discrètement, va au **65**.
 
-### 61
+### 61 {lieu: Forêt des Fils d'Argent}
+{grants-keyword: GUIDE DE BRUME}
 
 Tu sors la Flûte de brume de ton sac. L'os blanc est froid contre tes lèvres. Tu hésites. Garance Maillard a dit : *Souffle-la le jour où tu te sentiras vraiment seul.* Tu n'es pas sûr(e) d'être vraiment seul(e).
 
@@ -1140,7 +1146,8 @@ Elle penche la tête. Puis, sans bruit, elle s'envole vers le sud. La flûte t'a
 Choix :
 - Pour suivre le vol de la chouette, va au **66**.
 
-### 62
+### 62 {lieu: Forêt — Étang noir}
+{grants-keyword: ÉCHO DE TOI-MÊME}
 
 Tu t'agenouilles au bord de l'étang noir. Tu poses tes deux paumes à plat sur la mousse. Tu fermes les yeux à demi.
 
@@ -1157,7 +1164,8 @@ Quand tu rouvres tout à fait les yeux, l'eau ne montre plus rien. C'est une eau
 Choix :
 - Pour quitter l'étang et regagner ton chemin, va au **65**.
 
-### 63
+### 63 {lieu: Forêt — Sources d'Étoiles}
+{grants-keyword: VŒU MIS EN EAU}
 
 Tu prends entre tes doigts une mèche de tes cheveux. Tu la coupes avec ton petit couteau (objet d'équipement que tu portes toujours). Tu la déposes sur l'eau du bassin. Elle flotte un instant, puis elle coule lentement, et elle rejoint les points lumineux du fond.
 
@@ -1170,7 +1178,8 @@ Tu te sens un peu plus léger(e), comme si tu avais laissé un petit poids dans 
 Choix :
 - Pour reprendre ta route, va au **65**.
 
-### 64
+### 64 {lieu: Forêt — Sources d'Étoiles}
+{grants-object: Canne de pèlerin}
 
 Tu prends la canne de bois noir et tu la pèses dans ta main. Elle est légère pour ce qu'elle paraît. Le bois est lisse à la poignée, ce qui montre qu'on l'a beaucoup tenue. Tu en fais ta canne de marche.
 
@@ -1183,7 +1192,7 @@ Tu lèves les épaules. Tu repars.
 Choix :
 - Pour rejoindre le sentier, va au **65**.
 
-### 65
+### 65 {lieu: Forêt — Cour des Lucioles}
 
 Tu marches encore une bonne heure. La forêt se transforme : les bouleaux laissent place à des frênes plus sombres, plus serrés. La lumière baisse. Les lucioles, elles, ne s'éloignent jamais tout à fait — elles voltigent toujours dans le coin de ton œil.
 
@@ -1201,7 +1210,7 @@ Choix :
 - Si tu fredonnes machinalement la comptine de Mère Aïna, va au **74**.
 - Si tu remarques, sous une racine retournée, un morceau de papier roulé, va au **76**.
 
-### 66
+### 66 {lieu: Forêt — Cour des Lucioles}
 
 Tu approches.
 
@@ -1216,7 +1225,8 @@ Choix :
 - Si tu donnes le nom de quelqu'un d'autre, va au **68**.
 - Si tu refuses de répondre, va au **69**.
 
-### 67
+### 67 {lieu: Forêt — Cour des Lucioles}
+{grants-keyword: CONFIANCE DES LUCIOLES}
 
 — « Je m'appelle ____, » dis-tu, et tu donnes le vrai nom que tu t'es choisi sur ta fiche.
 
@@ -1235,7 +1245,7 @@ Le visage se dissout. L'essaim se replie dans la pierre, qui reprend sa pâleur 
 Choix :
 - Pour continuer ta route, va au **69**.
 
-### 68
+### 68 {lieu: Forêt — Cour des Lucioles}
 
 Tu inventes. Tu dis le nom de quelqu'un d'autre. Tu ne sais même pas pourquoi : peut-être par crainte de donner ton vrai nom à quelque chose d'aussi grand.
 
@@ -1250,7 +1260,7 @@ Tu te retrouves seul(e), dans la cour de feuilles, avec un petit poids sur le c�
 Choix :
 - Pour reprendre ta route, va au **69**.
 
-### 69
+### 69 {lieu: Forêt — Plateau du Ravin}
 
 Tu repars vers le sud. Le sentier devient une vraie sente, large d'un pas, qui descend doucement entre les fougères. Tu commences à entendre, au loin, un bruit qui te trompait avant : ce n'est pas le vent dans les feuilles. C'est de l'eau qui coule. Pas un ruisseau. Quelque chose de plus grand.
 
@@ -1273,7 +1283,8 @@ Choix :
 - Si tu sens qu'on te suit sans bruit dans les fougères, va au **85**.
 - Si tu portes le mot-clé **CONFIANCE DES LUCIOLES** et que tu veux les inviter à t'ouvrir un chemin sûr, va au **86**.
 
-### 70
+### 70 {lieu: Forêt des Fils d'Argent}
+{grants-object: Coquille sonore}
 
 Tu t'assieds au pied d'un grand frêne. Tu sors le pain aux noix de Mère Aïna. Tu en romps un bout. Il a déjà un peu durci, mais il est bon. Le goût des noix te ramène cinq secondes dans la cuisine de ta grand-mère.
 
@@ -1288,7 +1299,8 @@ Tu te lèves. Tu te sens prêt(e).
 Choix :
 - Pour t'approcher du Pont des Racines, va au **88**.
 
-### 71
+### 71 {lieu: Forêt des Fils d'Argent}
+{grants-object: page de croquis de Vellan}
 
 Tu remarques, derrière une touffe de bambous, une carriole brisée. Quelqu'un l'a abandonnée là il y a longtemps. Les roues sont mangées par la mousse, la bâche est en lambeaux. Sur le bord, en lettres pâles, est peint un mot : **VELLAN**.
 
@@ -1305,7 +1317,8 @@ Tu glisses la page dans ta poche.
 Choix :
 - Pour rejoindre le Pont des Racines, va au **88**.
 
-### 72
+### 72 {lieu: Forêt des Fils d'Argent}
+{grants-object: Boussole cassée de Vellan}
 
 Tu vois, sous une racine, un petit objet métallique qui dépasse. Tu te baisses. C'est une boussole, mais cassée : l'aiguille est tordue, le verre est fendu.
 
@@ -1320,7 +1333,7 @@ Tu lèves la boussole vers ton oreille. Elle ne tic-taque pas, bien sûr, ce n'e
 Choix :
 - Pour continuer, va au **88**.
 
-### 73
+### 73 {lieu: Forêt des Fils d'Argent}
 
 Tu t'endors un instant contre un tronc. Tu n'as pas voulu, mais ton corps a décidé. Tu rêves.
 
@@ -1335,7 +1348,7 @@ Tu te réveilles. Tu as la joue collée à l'écorce.
 Choix :
 - Pour repartir vers le Pont, va au **88**.
 
-### 74
+### 74 {lieu: Forêt des Fils d'Argent}
 
 Tu entends un chant, faible, comme si quelqu'un fredonnait derrière un arbre. Tu reconnais l'air : c'est la comptine de Mère Aïna. Mais l'air est repris à l'envers, à partir de la fin.
 
@@ -1350,7 +1363,7 @@ Si tu portes le mot-clé **COMPTINE COMPLÈTE**, tu te mets à fredonner toi aus
 Choix :
 - Pour reprendre ta route vers le Pont, va au **88**.
 
-### 75
+### 75 {lieu: Forêt des Fils d'Argent}
 
 Tu vois, accrochée à une branche basse, une corde d'arc en boyau séché. Elle est très vieille. Tu la touches : elle s'effrite sous tes doigts.
 
@@ -1365,7 +1378,8 @@ Tu fais un grand détour.
 Choix :
 - Pour rejoindre le Pont, va au **88**.
 
-### 76
+### 76 {lieu: Forêt des Fils d'Argent}
+{grants-object: page arrachée}
 
 Sous une racine retournée, tu trouves un morceau de papier roulé. Tu le défroisses. C'est une page arrachée à un carnet.
 
@@ -1384,7 +1398,8 @@ Tu plies la page et la mets avec tes papiers.
 Choix :
 - Pour continuer, va au **88**.
 
-### 77
+### 77 {lieu: Forêt des Fils d'Argent}
+{grants-object: plume de verre}
 
 Tu entends, derrière toi, un battement d'aile lourd. Tu te retournes : un oiseau gris se pose à dix pas. Il a deux ailes, mais l'une est faite de plumes ordinaires, et l'autre est faite — incroyablement — de verre. De petites lames de verre, attachées les unes aux autres comme des plumes.
 
@@ -1401,7 +1416,7 @@ Tu te demandes si l'oiseau aussi est en train d'oublier, ou s'il devient quelque
 Choix :
 - Pour reprendre ton chemin, va au **88**.
 
-### 78
+### 78 {lieu: Forêt des Fils d'Argent}
 
 Tu trouves, au pied d'un hêtre, une pomme entière, transparente comme du verre. Quelqu'un, ou plutôt quelque chose, l'a posée là sur un nid de mousse. Comme une offrande. Ou un échange.
 
@@ -1416,7 +1431,7 @@ Sinon, tu te contentes de la déplacer doucement vers l'ombre.
 Choix :
 - Pour repartir, va au **88**.
 
-### 79
+### 79 {lieu: Forêt des Fils d'Argent}
 
 Tu décides de prendre de la hauteur. Tu repères un grand frêne, et tu grimpes. Quand tu atteins la fourche supérieure, la forêt s'ouvre sous toi comme une mer verte.
 
